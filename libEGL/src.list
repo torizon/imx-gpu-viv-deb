@@ -1,0 +1,6 @@
+libEGL-fb.so
+libEGL.so
+libEGL.so.1
+libEGL.so.1.0
+libEGL-wl.so
+libEGL-x11.so

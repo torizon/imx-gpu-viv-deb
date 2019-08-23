@@ -1,0 +1,17 @@
+FROM debian-package-devel-base
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+	tree \
+	build-essential:native \
+	licensecheck \
+	&& rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+	libwayland-server \
+	libwayland-client \
+	libdrm-vivante1
+	
+
+RUN mkdir -p ~debian/BUILD && chown debian:debian ~debian/BUILD
+RUN sed -i 's/^#alias/alias/g' ~debian/.bashrc
+
