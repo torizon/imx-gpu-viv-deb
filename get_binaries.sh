@@ -12,7 +12,7 @@ then
 	wget $URL/$ARCHNAME && chmod +x $ARCHNAME
 fi
 
-./$ARCHNAME
+./$ARCHNAME --auto-accept
 
 rm -rf gpu-core
 mv $FULLNAME/gpu-core/ .
