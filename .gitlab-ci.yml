@@ -1,0 +1,15 @@
+image: gitlab.int.toradex.com:4567/stefan.agner/debian-package-devel/arm64v8-debian-package-devel:buster
+
+stages:
+        -build
+
+build:
+        script:
+                # Remove all downloaded/generated artifacts 
+                - ./clean.sh
+                # Download and unpack archive from the NXP repo
+                - ./get_binaries.sh
+                  # Distribute .so from big pile to separate package directories
+                - ./for_every_package.sh copy_binaries.sh
+                  # Debianazing sources and build debs 
+                - ./for_every_package.sh build_deb.sh 
