@@ -12,7 +12,7 @@ SRCDIR=src
 BUILDDIR=build
 DEBDIR=debian
 
-rm -rf $BUILDDIR/*
+mkdir -p $BUILDDIR 
 tar --transform "s/^$SRCDIR/$FULLNAME/" -czvf $BUILDDIR/$FULLNAME.tar.gz $SRCDIR
 cd $BUILDDIR
 tar xzvf $FULLNAME.tar.gz
