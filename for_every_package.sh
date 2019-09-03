@@ -18,7 +18,7 @@ echo $dirs
 for d in $dirs
 do
 	cd $d
-	../$1
+	$1
 	status=$?
 
 	if [ $status -ne 0 ]
