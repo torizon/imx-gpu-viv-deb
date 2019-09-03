@@ -17,6 +17,14 @@ echo $dirs
 
 for d in $dirs
 do
-	cd $d; ../$1; cd -
+	cd $d
+	../$1
+	status=$?
+
+	if [ $status -ne 0 ]
+	then
+		exit $status
+	fi
+	cd -
 done
 

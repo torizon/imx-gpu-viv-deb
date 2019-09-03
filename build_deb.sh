@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
- set -x
+ set +x
 
 TOPDIR=$(pwd)
 # package name should be in lowercase.
@@ -18,6 +18,13 @@ cd $BUILDDIR
 tar xzvf $FULLNAME.tar.gz
 cd $FULLNAME
 debmake 
+status=$?
+
+if [ $status -ne 0 ]
+then
+	exit $status
+fi
+
 cd debian
 
 if [ -d $TOPDIR/$DEBDIR ] 
@@ -26,5 +33,13 @@ then
 fi
 
 debuild -uc -us
+status=$?
+echo $status
+
+if [ $status -ne 0 ]
+then
+	exit $status 
+fi
+
 cd ..
 
