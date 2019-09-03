@@ -3,10 +3,19 @@ image: gitlab.int.toradex.com:4567/stefan.agner/debian-package-devel/arm64v8-deb
 build:
   script:
   # Remove all downloaded/generated artifacts 
-  - ./clean.sh
+  - rm -rf debs
+  - rm -rf gpu-core
+  - ./for_every_package.sh ../clean.sh
   # Download and unpack archive from the NXP repo
   - ./get_binaries.sh
   # Distribute .so from big pile to separate package directories
-  - ./for_every_package.sh copy_binaries.sh
+  - ./for_every_package.sh ../copy_binaries.sh
   # Debianazing sources and build debs 
-  - ./for_every_package.sh build_deb.sh 
+  - ./for_every_package.sh ../build_deb.sh 
+  # Copy packages to single direcory
+  - mkdir -p debs
+  - ./for_every_package copy_deb.sh
+
+  artifacts:
+          path: 
+          - debs
