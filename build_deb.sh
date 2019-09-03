@@ -12,6 +12,8 @@ SRCDIR=src
 BUILDDIR=build
 DEBDIR=debian
 
+echo -e "\e[92m $FULLNAME \e[0m"
+
 mkdir -p $BUILDDIR 
 tar --transform "s/^$SRCDIR/$FULLNAME/" -czvf $BUILDDIR/$FULLNAME.tar.gz $SRCDIR
 cd $BUILDDIR
@@ -34,7 +36,6 @@ fi
 
 debuild -uc -us
 status=$?
-echo $status
 
 if [ $status -ne 0 ]
 then
