@@ -1,4 +1,4 @@
-image: gitlab.int.toradex.com:4567/stefan.agner/debian-package-devel/arm64v8-debian-package-devel:buster
+image: gitlab.int.toradex.com:4567/rd/torizon-core/debian/debian-package-devel/arm64v8-debian-package-devel:buster
 
 variables:
         DEBFULLNAME: "Eugene Nuribekov"
