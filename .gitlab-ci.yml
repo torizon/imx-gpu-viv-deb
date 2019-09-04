@@ -1,5 +1,9 @@
 image: gitlab.int.toradex.com:4567/stefan.agner/debian-package-devel/arm64v8-debian-package-devel:buster
 
+variables:
+        DEBFULLNAME: "Eugene Nuribekov"
+        DEBEMAIL: "eugene.nuribekov@toradex.com"
+
 build:
   script:
   # Remove all downloaded/generated artifacts 
