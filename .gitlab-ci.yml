@@ -17,5 +17,5 @@ build:
   - ./for_every_package copy_deb.sh
 
   artifacts:
-          path: 
+          paths: 
           - debs
