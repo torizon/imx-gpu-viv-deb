@@ -18,7 +18,7 @@ build:
   - ./for_every_package.sh ../build_deb.sh 
   # Copy packages to single direcory
   - mkdir -p debs
-  - ./for_every_package copy_deb.sh
+  - ./for_every_package.sh ../copy_deb.sh
 
   artifacts:
           paths: 
