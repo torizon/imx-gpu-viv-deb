@@ -8,7 +8,8 @@ Homepage: http://www.nxp.com
 
 Package: libopenvg
 Section: libs
-Architecture: any
+Architecture: arm64
 Multi-Arch: same
-Depends: libgal (=6.2.4) libvsc (=6.2.4)
-Description: OpenVG is a royalty-free, cross-platform API that provides a low-level hardware acceleration interface for vector graphics libraries such as Flash and SVG.
+Depends: libgal (=6.2.4), libvsc (=6.2.4), libc6
+Description: libOpenVG
+ OpenVG is a royalty-free, cross-platform API that provides a low-level hardware acceleration interface for vector graphics libraries such as Flash and SVG.
