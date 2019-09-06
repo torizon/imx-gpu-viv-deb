@@ -1,0 +1,15 @@
+Source: libglesv1-cm
+Section: x11 
+Priority: optional
+Maintainer: Eugene Nuribekov <eugene.nuribekov@toradex.com>
+Build-Depends: debhelper (>=11~)
+Standards-Version: 4.1.4
+Homepage: http://nxp.com
+
+Package: libgles-cl
+Section: libs
+Architecture: arm64
+Multi-Arch: same
+Depends: libgal (=6.2.4). libvsc (6.2.4), libc6
+Description: libGLESv1-CM
+ OpenGL ES common lite library

@@ -13,7 +13,7 @@ fi
 # src.list considered as a marker of directory for packaging
 dirs=$(dirname $(find -name src.list))
 
-echo $dirs
+#echo $dirs
 
 for d in $dirs
 do

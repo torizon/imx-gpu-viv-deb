@@ -1,0 +1,14 @@
+Source: libopenvg
+Section: x11
+Priority: optional
+Maintainer: Eugene Nuribekov <eugene.nuribekov@toradex.com>
+Build-Depends: debhelper (>=11~)
+Standards-Version: 4.1.4
+Homepage: http://www.nxp.com
+
+Package: libopenvg
+Section: libs
+Architecture: any
+Multi-Arch: same
+Depends: libgal (=6.2.4) libvsc (=6.2.4)
+Description: OpenVG is a royalty-free, cross-platform API that provides a low-level hardware acceleration interface for vector graphics libraries such as Flash and SVG.
