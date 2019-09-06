@@ -1,0 +1,15 @@
+Source: libgl
+Section: x11
+Priority: optional
+Maintainer: Eugene Nuribekov <eugene.nuribekov@toradex.com>
+Build-Depends: debhelper (>=11~)
+Standards-Version: 4.1.4
+Homepage: http://nxp.com
+
+Package: libgl
+Section: libs
+Architecture: arm64
+Multi-Arch: same
+Depends: libgal (=6.2.4), libxext6, libx11-6, libxfixes3, libxdamage1, libglapi-mesa, libc6
+Description: libGL
+ libGL implements the GLX interface as well as the main OpenGL API entrypoints
