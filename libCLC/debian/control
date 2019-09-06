@@ -1,0 +1,15 @@
+Source: libclc
+Section: x11
+Priority: optional
+Maintainer: Eugene Nuribekov <eugene.nuribekov@toradex.com>
+Build-Depends: debhelper (>=11~)
+Standards-Version: 4.1.4
+Homepage: http://nxp.com
+
+Package: libclc
+Section: libs
+Architecture: arm64
+Multi-Arch: same
+Depends: libvsc (=6.2.4), libgal (=6.2.4), libllvm_viv (=6.2.4), libstdc++ 
+Description: libCLC
+ OpenCL C language implementation
