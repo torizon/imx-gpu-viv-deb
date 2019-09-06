@@ -1,0 +1,15 @@
+Source: libgal
+Section: x11
+Priority: optional
+Maintainer: Eugene Nuribekov <eugene.nuribekov@toradex.com>
+Build-Depends: debhelper (>=11~)
+Standards-Version: 4.1.4
+Homepage: http://nxp.com
+
+Package: libgal
+Section: libs
+Architecture: arm64
+Multi-Arch: same
+Depends: libc6
+Description: libGAL
+ Graphic Abstraction Layer
