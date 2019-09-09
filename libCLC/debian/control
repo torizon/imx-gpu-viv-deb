@@ -6,10 +6,10 @@ Build-Depends: debhelper (>=11~)
 Standards-Version: 4.1.4
 Homepage: http://nxp.com
 
-Package: libclc
+Package: libclc-vivante1
 Section: libs
 Architecture: arm64
 Multi-Arch: same
-Depends: libigal (=6.2.4), libvsc (=6.2.4), libllvm-viv (=6.2.4), libstdc++
+Depends: libigal-vivante1 (=6.2.4), libvsc-vivante1 (=6.2.4), libllvm-vivante1 (=6.2.4), libstdc++
 Description: libCLC
  OpenCL C language implementation

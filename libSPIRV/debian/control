@@ -6,10 +6,10 @@ Build-Depends: debhelper (>=11~)
 Standards-Version: 4.1.4
 Homepage: http://nxp.com
 
-Package: libspirv
+Package: libspirv-vivante1
 Section: libs
 Architecture: arm64
 Multi-Arch: same
-Depends: libGAL (=6.2.4), libvsc(=6.2.4), libc6 
+Depends: libgal-vivante1 (=6.2.4), libvsc-vivante1 (=6.2.4), libc6 
 Description: libSPRIV
  Standard Portable Intermediate Representation (SPIR) is an intermediate language for parallel compute and graphics by Khronos Group, originally developed for use with OpenCL.

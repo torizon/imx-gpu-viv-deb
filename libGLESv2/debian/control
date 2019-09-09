@@ -6,10 +6,10 @@ Build-Depends: debhelper (>=11~)
 Standards-Version: 4.1.4
 Homepage: http://nxp.com
 
-Package: libglesv2
+Package: libglesv2-vivante1
 Section: libs
 Architecture: arm64
 Multi-Arch: same
-Depends: libgal (=6.2.4), libvsc(=6.2.4), libc6
+Depends: libgal-vivante1 (=6.2.4), libvsc-vivante1 (=6.2.4), libc6
 Description: libGLESv2
  OpenGL ES common lite library
