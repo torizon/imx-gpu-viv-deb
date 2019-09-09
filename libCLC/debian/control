@@ -10,6 +10,6 @@ Package: libclc
 Section: libs
 Architecture: arm64
 Multi-Arch: same
-Depends: libvsc (=6.2.4), libgal (=6.2.4), libllvm_viv (=6.2.4), libstdc++ 
+Depends: libigal (=6.2.4), libvsc (=6.2.4), libllvm-viv (=6.2.4), libstdc++
 Description: libCLC
  OpenCL C language implementation

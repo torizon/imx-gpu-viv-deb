@@ -10,6 +10,6 @@ Package: libgles-cl
 Section: libs
 Architecture: arm64
 Multi-Arch: same
-Depends: libgal (=6.2.4). libvsc (6.2.4), libc6
+Depends: libgal (=6.2.4), libvsc (=6.2.4), libc6
 Description: libGLES-CL
  OpenGL ES common lite library
