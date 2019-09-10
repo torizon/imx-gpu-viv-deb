@@ -10,6 +10,6 @@ Package: libgles-cm-vivante1
 Section: libs
 Architecture: arm64
 Multi-Arch: same
-Depends: libgal-vivante1 (=6.2.4), libvsc-vivante1 (=6.2.4), libc6
+Depends: libgal-vivante1 (=6.2.4.p4.0), libvsc-vivante1 (=6.2.4.p4.0), libc6
 Description: libGLES-CM
  OpenGL ES common lite library
