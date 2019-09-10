@@ -2,7 +2,7 @@
 set +x
 URL=https://www.nxp.com/lgfiles/NMG/MAD/YOCTO/
 FILENAME=imx-gpu-viv
-FILEVER=6.2.4.p4.0
+FILEVER=$(cat binary.version)
 FILEARCH=aarch64
 FULLNAME=$FILENAME-$FILEVER-$FILEARCH
 ARCHNAME=$FULLNAME.bin

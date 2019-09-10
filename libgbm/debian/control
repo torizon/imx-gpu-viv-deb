@@ -10,6 +10,6 @@ Package: libgbm-vivante1
 Section: libs
 Architecture: arm64
 Multi-Arch: same
-Depends: libgal-vivante1 (=6.2.4), libdrm-vivante1, libwayland-server0, libc6
+Depends: libgal-vivante1 (>=6.2.4), libdrm-vivante1, libwayland-server0, libc6
 Description: libGBM
  Graphic buffer manager

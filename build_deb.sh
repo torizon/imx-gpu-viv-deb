@@ -6,7 +6,7 @@ TOPDIR=$(pwd)
 # package name should be in lowercase.
 # libraries inside save their names
 LIBNAME=$(basename $TOPDIR | awk '{print tolower($0)}')
-LIBVERSION="6.2.4.p2.3"
+LIBVERSION=$(cat ../binary.version)
 FULLNAME=$LIBNAME-$LIBVERSION
 SRCDIR=src
 BUILDDIR=build
