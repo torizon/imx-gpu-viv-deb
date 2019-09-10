@@ -10,6 +10,6 @@ Package: libspirv-vivante1
 Section: libs
 Architecture: arm64
 Multi-Arch: same
-Depends: libgal-vivante1 (=6.2.4.p4.0), libvsc-vivante1 (=6.2.4.p4.0), libc6 
+Depends: libgal-vivante1 (=6.2.4.p4.0-1), libvsc-vivante1 (=6.2.4.p4.0-1), libc6 
 Description: libSPRIV
  Standard Portable Intermediate Representation (SPIR) is an intermediate language for parallel compute and graphics by Khronos Group, originally developed for use with OpenCL.
