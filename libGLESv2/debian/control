@@ -1,5 +1,5 @@
 Source: libglesv2
-Section: x11 
+Section: non-free/x11 
 Priority: optional
 Maintainer: Eugene Nuribekov <eugene.nuribekov@toradex.com>
 Build-Depends: debhelper (>=11~)
@@ -11,5 +11,8 @@ Section: libs
 Architecture: arm64
 Multi-Arch: same
 Depends: libgal-vivante1 (=6.2.4.p4.0-1), libvsc-vivante1 (=6.2.4.p4.0-1), libc6
+Conflicts: libgles2
+Replaces: libgles2
+Provides: libgles2
 Description: libGLESv2
  OpenGL ES common lite library
