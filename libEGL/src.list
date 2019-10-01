@@ -1,1 +1,6 @@
 libEGL-wl.so
+egl.pc
+egl.h
+eglext.h
+eglplatform.h
+eglvivante.h
