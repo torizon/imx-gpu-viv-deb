@@ -11,5 +11,18 @@ Section: libs
 Architecture: arm64
 Multi-Arch: same
 Depends: libgal-vivante1 (=6.2.4.p4.0-1), libxext6, libx11-6, libxfixes3, libxdamage1, libglapi-mesa, libc6
-Description: libGL
- libGL implements the GLX interface as well as the main OpenGL API entrypoints
+Description: Vendor neutral GL dispatch library -- legacy GL support
+ This is an implementation of the vendor-neutral dispatch layer for
+ arbitrating OpenGL API calls between multiple vendors on a per-screen basis.
+
+Package: libgl-vivante1-dev
+Section: libs
+Architecture: arm64
+Multi-Arch: same
+Depends: libgl-vivante1 (=6.2.4.p4.0-1)
+Description: Vendor neutral GL dispatch library -- legacy GL support
+ This is an implementation of the vendor-neutral dispatch layer for
+ arbitrating OpenGL API calls between multiple vendors on a per-screen basis.
+ .
+ This package provides the development environment for compiling programs
+ against the GL library.

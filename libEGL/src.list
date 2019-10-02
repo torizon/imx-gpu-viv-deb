@@ -1,6 +1,4 @@
-libEGL-wl.so
-egl.pc
-egl.h
-eglext.h
-eglplatform.h
-eglvivante.h
+lib/libEGL-wl.so
+lib/pkgconfig/egl.pc
+include/EGL/*
+include/KHR/khrplatform.h
