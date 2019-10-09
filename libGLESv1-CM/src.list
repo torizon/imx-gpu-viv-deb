@@ -1,3 +1,5 @@
-libGLESv1_CM.so
-libGLESv1_CM.so.1
-libGLESv1_CM.so.1.1.0
+lib/libGLESv1_CM.so
+lib/libGLESv1_CM.so.1
+lib/libGLESv1_CM.so.1.1.0
+lib/pkgconfig/glesv1_cm.pc
+include/GLES/*

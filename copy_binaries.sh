@@ -1,11 +1,15 @@
 #! /usr/bin/env bash
+set -x
 
-set +x
+DIR=../gpu-core/usr
+
+mkdir -p src
 
 files=$(cat src.list)
-mkdir -p src
+
 for f in $files
 do
-	find ../gpu-core -name "$f" -exec cp -d {} src ';'
+	cp -d $DIR/$f src 
 done
+
 

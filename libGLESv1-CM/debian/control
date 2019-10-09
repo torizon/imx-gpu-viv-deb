@@ -11,5 +11,26 @@ Section: libs
 Architecture: arm64
 Multi-Arch: same
 Depends: libgal-vivante1 (=6.2.4.p4.0-1), libvsc-vivante1 (=6.2.4.p4.0-1), libc6
-Description: libGLESv1-CM
- OpenGL ES common lite library
+Description: Vivante implementation of the OpenGL|ES 1.x API
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 1.x provides an API for fixed-function hardware.
+
+Package: libglesv1-cm-vivante1-dev
+Section: libs
+Architecture: arm64
+Multi-Arch: same
+Depends: libglesv1-cm-vivante1 (=6.2.4.p4.0-1)
+Description: Viavnte implementation of the OpenGL|ES 1.x API -- development files
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 1.x provides an API for fixed-function hardware.
+ .
+ This package provides a development environment for building programs using
+ the OpenGL|ES 1.x APIs.

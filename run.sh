@@ -12,6 +12,7 @@ IMAGE_NAME=$1
 #VOL_GPG="--volume /home/../../gnupg/:/home/debian/.gnupg"
 #VOL_DEBPKG="--volume /home/../../debian-pkg/:/home/debian/debian-pkg"
 
+VOL_DEB="--volume $(pwd)/.ssh:/home/debian/.ssh"
 VOL_DEB="--volume $(pwd):/home/debian/DEB"
 
 VOLUMES="$VOL_DEB"
