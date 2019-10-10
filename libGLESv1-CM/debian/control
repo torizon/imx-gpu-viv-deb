@@ -11,6 +11,7 @@ Section: libs
 Architecture: arm64
 Multi-Arch: same
 Depends: libgal-vivante1 (=6.2.4.p4.0-1), libvsc-vivante1 (=6.2.4.p4.0-1), libc6
+Provides: libgles1-mesa
 Description: Vivante implementation of the OpenGL|ES 1.x API
  OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
  embedded systems - including consoles, phones, appliances and vehicles.
@@ -24,6 +25,7 @@ Section: libs
 Architecture: arm64
 Multi-Arch: same
 Depends: libglesv1-cm-vivante1 (=6.2.4.p4.0-1)
+Provides: libgles1-mesa-dev
 Description: Viavnte implementation of the OpenGL|ES 1.x API -- development files
  OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
  embedded systems - including consoles, phones, appliances and vehicles.
