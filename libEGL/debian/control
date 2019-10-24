@@ -25,6 +25,7 @@ Package: libegl-vivante1-dev
 Section: libdevel
 Architecture: any
 Depends: libegl-vivante1 (=6.2.4.p4.0-1), libx11-dev
+Provides: libegl1-mesa-dev
 Multi-Arch: same
 Description: implementation of the EGL API -- development file
  This package contains the development environment required for compiling

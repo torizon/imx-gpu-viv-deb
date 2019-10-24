@@ -22,6 +22,7 @@ Package: libgbm-vivante1-dev
 Section: libdevel
 Architecture: linux-any
 Depends: libgbm-vivante1 (=6.2.4.p4.0-1) 
+Provides: libgbm-dev
 Multi-Arch: same
 Description: generic buffer management API -- development files
  This package contains the GBM buffer management library.  It provides a

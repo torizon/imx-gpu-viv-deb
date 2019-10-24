@@ -26,6 +26,7 @@ Description: Vivante implementation of the OpenGL|ES 2.x API -- development file
 Package: libglesv2-vivante1-dev
 Architecture: any
 Depends: libglesv2-vivante1 (=6.2.4.p4.0-1)
+Provides: libgles2-mesa-dev
 Multi-Arch: same
 Description: Vivante implementation of the OpenGL|ES 2.x API -- development files
  OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
