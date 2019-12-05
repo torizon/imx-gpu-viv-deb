@@ -1,0 +1,11 @@
+libgl (6.2.4.p4.0-2) unstable; urgency=medium
+
+  * Add symlink to emulate gl.pc
+
+ -- Eugene Nuribekov <eugene.nuribekov@toradex.com>  Thu, 05 Dec 2019 14:40:58 +0200
+
+libgl (6.2.4.p4.0-2) unstable; urgency=low
+
+  * Initial release.
+
+ -- Eugene Nuribekov <eugene.nuribekov@toradex.com>  Thu, 05 Dec 2019 14:02:09 +0200
