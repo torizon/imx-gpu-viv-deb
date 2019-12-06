@@ -1,0 +1,11 @@
+libopencl (6.2.4.p4.0-2) unstable; urgency=medium
+
+  * Add development package. 
+
+ -- Eugene Nuribekov <eugene.nuribekov@toradex.com>  Fri, 06 Dec 2019 16:30:39 +0200
+
+libopencl (6.2.4.p4.0-2) unstable; urgency=low
+
+  * Initial release. 
+
+ -- Eugene Nuribekov <eugene.nuribekov@toradex.com> Fri, 06 Dec 2019 16:30:15 +0200

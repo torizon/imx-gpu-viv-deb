@@ -1,1 +1,3 @@
 lib/libOpenCL.so
+include/CL/*.h
+include/CL/*.hpp
