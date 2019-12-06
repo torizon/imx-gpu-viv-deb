@@ -1,5 +1,5 @@
 Source: libopencl
-Section: x11
+Section: non-free/x11
 Priority: optional
 Maintainer: Eugene Nuribekov <eugene.nuribekov@toradex.com>
 Build-Depends: debhelper (>=11~)
@@ -11,5 +11,29 @@ Section: libs
 Architecture: arm64
 Multi-Arch: same
 Depends: libc6
-Description: libOpenCL 
- OpenCL (Open Computing Language) is a framework for writing programs that execute across heterogeneous platforms consisting of central processing units (CPUs), graphics processing units (GPUs), digital signal processors (DSPs), field-programmable gate arrays (FPGAs) and other processors or hardware accelerators. OpenCL specifies programming languages (based on C99 and C++11) for programming these devices and application programming interfaces (APIs) to control the platform and execute programs on the compute devices. OpenCL provides a standard interface for parallel computing using task- and data-based parallelism.
+Description: OpenCL (Open Computing Language) is a framework for writing programs
+ that execute across heterogeneous platforms consisting of central processing
+ units (CPUs), graphics processing units (GPUs), digital signal processors
+ (DSPs), field-programmable gate arrays (FPGAs) and other processors or hardware
+ accelerators. OpenCL specifies programming languages (based on C99 and C++11)
+ for programming these devices and application programming interfaces (APIs)
+ to control the platform and execute programs on the compute devices.
+ .
+ This package contains NXP library for OpenCL.
+ Implementation of OpenCL for Vivante GPU.
+
+Package: libopencl-vivante1-dev
+Section: libs
+Architecture: arm64
+Multi-Arch: same
+Depends: libopencl-vivante1 (=6.2.4.p4.0-2)
+Description: OpenCL (Open Computing Language) is a framework for writing programs
+ that execute across heterogeneous platforms consisting of central processing
+ units (CPUs), graphics processing units (GPUs), digital signal processors
+ (DSPs), field-programmable gate arrays (FPGAs) and other processors or hardware
+ accelerators. OpenCL specifies programming languages (based on C99 and C++11)
+ for programming these devices and application programming interfaces (APIs)
+ to control the platform and execute programs on the compute devices.
+ .
+ This package provides the development environment for compiling programs
+ against the OpenCL library.
