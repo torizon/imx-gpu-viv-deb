@@ -1,4 +1,4 @@
-lib/libGLESv2-wl.so
-lib/pkgconfig/glesv2.pc
-include/GLES2/*
-include/GLES3/*
+usr/lib/libGLESv2-wl.so
+usr/lib/pkgconfig/glesv2.pc
+usr/include/GLES2/*
+usr/include/GLES3/*

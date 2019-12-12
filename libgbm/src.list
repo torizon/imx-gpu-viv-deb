@@ -1,4 +1,4 @@
-lib/gbm_viv.so
-lib/libgbm.so
-lib/pkgconfig/gbm.pc
-include/gbm.h
+usr/lib/gbm_viv.so
+usr/lib/libgbm.so
+usr/lib/pkgconfig/gbm.pc
+usr/include/gbm.h

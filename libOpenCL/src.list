@@ -1,3 +1,5 @@
-lib/libOpenCL.so
-include/CL/*.h
-include/CL/*.hpp
+usr/lib/libOpenCL.so
+usr/lib/libVivanteOpenCL.so
+usr/include/CL/*.h
+usr/include/CL/*.hpp
+etc/Vivante.icd

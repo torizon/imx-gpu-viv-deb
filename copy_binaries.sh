@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 set -x
 
-DIR=../gpu-core/usr
+DIR=../gpu-core
 
 mkdir -p src
 

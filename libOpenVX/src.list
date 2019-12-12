@@ -1,2 +1,2 @@
-lib/libOpenVX.so
-lib/libOpenVXU.so
+usr/lib/libOpenVX.so
+usr/lib/libOpenVXU.so

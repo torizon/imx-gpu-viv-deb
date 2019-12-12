@@ -1,4 +1,4 @@
-lib/libVDK-fb.so
-lib/libVDK.so
-lib/libVDK-wl.so
-lib/libVDK-x11.so
+usr/lib/libVDK-fb.so
+usr/lib/libVDK.so
+usr/lib/libVDK-wl.so
+usr/lib/libVDK-x11.so
