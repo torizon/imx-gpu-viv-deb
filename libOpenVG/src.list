@@ -1,4 +1,4 @@
-lib/libOpenVG.3d.so
-lib/libOpenVG.so
-lib/pkgconfig/vg.pc
-include/VG/*
+usr/lib/libOpenVG.3d.so
+usr/lib/libOpenVG.so
+usr/lib/pkgconfig/vg.pc
+usr/include/VG/*

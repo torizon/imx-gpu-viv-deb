@@ -1,4 +1,4 @@
-lib/libEGL-wl.so
-lib/pkgconfig/egl.pc
-include/EGL/*
-include/KHR/khrplatform.h
+usr/lib/libEGL-wl.so
+usr/lib/pkgconfig/egl.pc
+usr/include/EGL/*
+usr/include/KHR/khrplatform.h
