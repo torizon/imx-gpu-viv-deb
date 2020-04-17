@@ -20,5 +20,3 @@ mv $FULLNAME/gpu-core/ .
 rm $ARCHNAME
 rm -rf $FULLNAME
 
-
-

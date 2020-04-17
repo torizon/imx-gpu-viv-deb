@@ -1,3 +1,9 @@
+libopencl (6.2.4.p4.8-1) unstable; urgency=medium
+
+  * move to 6.2.4.p4.8
+
+ -- Abdur Rehman <abdur.rehman@toradex.com>  Fri, 17 Apr 2020 16:07:56 +0500
+
 libopencl (6.2.4.p4.0-2) unstable; urgency=medium
 
   * Add development package. 

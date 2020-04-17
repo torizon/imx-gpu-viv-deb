@@ -10,6 +10,6 @@ Package: libvdk-vivante1
 Section: libs
 Architecture: arm64
 Multi-Arch: same
-Depends: libegl-vivante1 (=6.2.4.p4.0-1), libgbm-vivante1 (=6.2.4.p4.0-1), libwayland-cursor1, libwayland-client1, libc6
+Depends: libegl-vivante1 (=6.2.4.p4.8-1), libgbm-vivante1 (=6.2.4.p4.8-1), libwayland-cursor1, libwayland-client1, libc6
 Description: libVDK
  The Visual Development Kit (VDK) is a C++ library that wraps the GTK+ toolkit.

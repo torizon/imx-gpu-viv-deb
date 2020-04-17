@@ -10,7 +10,7 @@ Package: libopenvg-vivante1
 Section: libs
 Architecture: arm64
 Multi-Arch: same
-Depends: libgal-vivante1 (=6.2.4.p4.0-1), libvsc-vivante1 (=6.2.4.p4.0-1), libc6
+Depends: libgal-vivante1 (=6.2.4.p4.8-1), libvsc-vivante1 (=6.2.4.p4.8-1), libc6
 Provides: libopnvg1-mesa
 Description: Vivante implementation of the OpenVG API -- runtime
  This package contains the mesa implementation of the OpenVG 2D acceleration
@@ -23,7 +23,7 @@ Package: libopenvg-vivante1-dev
 Section: libs
 Architecture: any 
 Multi-Arch: same
-Depends: libopenvg-vivante1 (=6.2.4.p4.0-1)
+Depends: libopenvg-vivante1 (=6.2.4.p4.8-1)
 Provides: libopenvg1-mesa-dev 
 Description: Vivante implementation of the OpenVG API -- development files
  This package contains the mesa implementation of the OpenVG 2D acceleration
