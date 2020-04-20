@@ -25,5 +25,3 @@ do
 	echo $l
 done
 
-
-

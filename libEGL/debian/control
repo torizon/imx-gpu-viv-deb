@@ -10,7 +10,7 @@ Package: libegl-vivante1
 Section: libs
 Architecture: arm64
 Multi-Arch: same
-Depends: libgal-vivante1 (=6.2.4.p4.0-1), libdrm-vivante1, libgbm-vivante1 (=6.2.4.p4.0-1), libc6
+Depends: libgal-vivante1 (=6.2.4.p4.8-1), libdrm-vivante1, libgbm-vivante1 (=6.2.4.p4.8-1), libc6
 Provides: libegl1
 Description: libEGL
  Implementation of EGL API for Vivante GPU
@@ -24,7 +24,7 @@ Description: libEGL
 Package: libegl-vivante1-dev
 Section: libdevel
 Architecture: any
-Depends: libegl-vivante1 (=6.2.4.p4.0-1), libx11-dev
+Depends: libegl-vivante1 (=6.2.4.p4.8-1), libx11-dev
 Provides: libegl1-mesa-dev
 Multi-Arch: same
 Description: implementation of the EGL API -- development file

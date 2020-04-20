@@ -10,6 +10,6 @@ Package: libopenvx-vivante1
 Section: libs
 Architecture: any
 Multi-Arch: same
-Depends: libgalvivante1 (=6.2.4.p4.0-1), libvsc-vivante1 (=6.2.4.p4.0-1), libc6
+Depends: libgalvivante1 (=6.2.4.p4.8-1), libvsc-vivante1 (=6.2.4.p4.8-1), libc6
 Description: libOpenVX
  Computer vision library
