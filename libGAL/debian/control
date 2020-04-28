@@ -13,3 +13,12 @@ Multi-Arch: same
 Depends: libc6
 Description: libGAL
  Graphic Abstraction Layer
+
+Package: libgal-vivante1-dev
+Section: libs
+Architecture: arm64
+Multi-Arch: same
+Depends: libgal-vivante1 (=6.2.4.p4.8-1)
+Description: libGAL
+ Graphic Abstraction Layer
+
