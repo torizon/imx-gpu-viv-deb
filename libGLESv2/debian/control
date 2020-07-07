@@ -10,7 +10,7 @@ Package: libglesv2-vivante1
 Section: libs
 Architecture: arm64
 Multi-Arch: same
-Depends: libgal-vivante1 (=6.2.4.p4.8-1), libvsc-vivante1 (=6.2.4.p4.8-1), libc6
+Depends: libgal-vivante1 (=6.4.0.p2.4-1), libvsc-vivante1 (=6.4.0.p2.4-1), libc6
 Conflicts: libgles2
 Replaces: libgles2
 Provides: libgles2
@@ -25,7 +25,7 @@ Description: Vivante implementation of the OpenGL|ES 2.x API -- development file
 
 Package: libglesv2-vivante1-dev
 Architecture: any
-Depends: libglesv2-vivante1 (=6.2.4.p4.8-1)
+Depends: libglesv2-vivante1 (=6.4.0.p2.4-1)
 Provides: libgles2-mesa-dev
 Multi-Arch: same
 Description: Vivante implementation of the OpenGL|ES 2.x API -- development files

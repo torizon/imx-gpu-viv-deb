@@ -1,3 +1,9 @@
+libgl (6.4.0.p2.4-1) unstable; urgency=medium
+
+  * move to 6.4.0.p2.4
+
+ -- arehman <arehman@gitlab.omen.com>  Tue, 07 Jul 2020 15:32:58 +0500
+
 libgl (6.2.4.p4.8-1) unstable; urgency=medium
 
   * update to 6.2.4.p4.8

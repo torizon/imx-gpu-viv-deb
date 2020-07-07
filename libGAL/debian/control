@@ -18,7 +18,7 @@ Package: libgal-vivante1-dev
 Section: libs
 Architecture: arm64
 Multi-Arch: same
-Depends: libgal-vivante1 (=6.2.4.p4.8-1)
+Depends: libgal-vivante1 (=6.4.0.p2.4-1)
 Description: libGAL
  Graphic Abstraction Layer
 
