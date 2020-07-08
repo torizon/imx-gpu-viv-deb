@@ -7,6 +7,7 @@ Standards-Version: 4.1.4
 Homepage: http://nxp.com
 
 Package: libopencl-vivante1
+Provides: ocl-icd-opencl-dev
 Section: libs
 Architecture: arm64
 Multi-Arch: same
@@ -23,6 +24,7 @@ Description: OpenCL (Open Computing Language) is a framework for writing program
  Implementation of OpenCL for Vivante GPU.
 
 Package: libopencl-vivante1-dev
+Provides: opencl-c-headers
 Section: libs
 Architecture: arm64
 Multi-Arch: same
