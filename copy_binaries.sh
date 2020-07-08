@@ -9,6 +9,6 @@ files=$(cat src.list)
 
 for f in $files
 do
-	cp -d $DIR/$f src 
+	cp -rd $DIR/$f src 
 done
 

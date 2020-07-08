@@ -17,6 +17,9 @@ fi
 rm -rf gpu-core
 mv $FULLNAME/gpu-core/ .
 
+rm -rf gpu-demos
+mv $FULLNAME/gpu-demos/ .
+
 rm $ARCHNAME
 rm -rf $FULLNAME
 
