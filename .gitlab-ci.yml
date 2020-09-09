@@ -1,8 +1,8 @@
-image: gitlab.int.toradex.com:4567/rd/torizon-core/debian/debian-package-devel/arm64v8-debian-package-devel:buster
+image: gitlab.int.toradex.com:4567/rd/torizon-core/debian/debian-package-devel/arm64v8-debian-package-devel:bullseye
 
 variables:
-        DEBFULLNAME: "Eugene Nuribekov"
-        DEBEMAIL: "eugene.nuribekov@toradex.com"
+        DEBFULLNAME: "Abdur Rehman"
+        DEBEMAIL: "abdur.rehman@toradex.com"
 
 build:
   script:
