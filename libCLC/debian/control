@@ -10,6 +10,6 @@ Package: libclc-vivante1
 Section: libs
 Architecture: arm64
 Multi-Arch: same
-Depends: libgal-vivante1 (=6.4.0.p2.4-1), libvsc-vivante1 (=6.4.0.p2.4-1), libllvm-vivante1 (=6.4.0.p2.4-1), libstdc++6
+Depends: libgal-vivante1 (=6.4.0.p2.4-1), libvsc-vivante1 (=6.4.0.p2.4-1), libstdc++6
 Description: libCLC
  OpenCL C language implementation
