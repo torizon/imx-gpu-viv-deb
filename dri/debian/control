@@ -9,6 +9,6 @@ Homepage: http://nxp.com
 Package: dri
 Architecture: arm64
 Multi-Arch: foreign
-Depends: libgal (=6.4.0.p2.4-1), libvsc (=6.4.0.p2.4-1), libgl (=6.4.0.p2.4-1), libdrm-vivante1, libxext6, libx11-6, libxfixes3, libxdamage1, libc6
+Depends: libgal-vivante1 (=6.4.0.p2.4-1), libvsc-vivante1 (=6.4.0.p2.4-1), libgl-vivante1 (=6.4.0.p2.4-1), libdrm-vivante1, libxext6, libx11-6, libxfixes3, libxdamage1, libc6
 Description: dri 
  The Direct Rendering Infrastructure, also known as the DRI, is a framework for allowing direct access to graphics hardware under the X Window System in a safe and efficient manner. 
