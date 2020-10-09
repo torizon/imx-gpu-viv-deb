@@ -1,2 +1,2 @@
-*.so /usr/lib/aarch64-linux-gnu/
+*.so* /usr/lib/aarch64-linux-gnu/
 *.icd /etc/OpenCL/vendors/

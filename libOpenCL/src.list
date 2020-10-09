@@ -1,4 +1,4 @@
-usr/lib/libOpenCL.so
+usr/lib/libOpenCL.so*
 usr/lib/libVivanteOpenCL.so
 usr/include/CL/*.h
 usr/include/CL/*.hpp
