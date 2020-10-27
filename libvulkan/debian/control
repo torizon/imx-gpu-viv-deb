@@ -11,5 +11,8 @@ Section: libs
 Architecture: arm64
 Multi-Arch: same
 Depends: libgal-vivante1 (=6.4.0.p2.4-1), libvsc-vivante1 (=6.4.0.p2.4-1), libspirv-vivante1 (=6.4.0.p2.4-1), libglslc-vivante1 (=6.4.0.p2.4-1), libwayland-client0, libc6
+Provides: libvulkan1 (= 1.2.141.0-1)
+Conflicts: libvulkan1
+Replaces: libvulkan1
 Description: libvulkan
  The Loader implements the main VK library. It handles layer management and driver management. The loader fully supports multi-gpu operation. As part of this, it dispatches API calls to the correct driver, and to the correct layers, based on the GPU object selected by the application.
