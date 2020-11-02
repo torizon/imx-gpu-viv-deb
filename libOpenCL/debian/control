@@ -7,7 +7,9 @@ Standards-Version: 4.1.4
 Homepage: http://nxp.com
 
 Package: libopencl-vivante1
-Provides: ocl-icd-opencl-dev
+Provides: ocl-icd-opencl-dev, ocl-icd-libopencl1 (= 1.0)
+Conflicts: ocl-icd-opencl-dev, ocl-icd-libopencl1 (= 1.0)
+Replaces: ocl-icd-opencl-dev, ocl-icd-libopencl1 (= 1.0)
 Section: libs
 Architecture: arm64
 Multi-Arch: same
@@ -25,6 +27,8 @@ Description: OpenCL (Open Computing Language) is a framework for writing program
 
 Package: libopencl-vivante1-dev
 Provides: opencl-c-headers
+Conflicts: opencl-c-headers
+Replaces: opencl-c-headers
 Section: libs
 Architecture: arm64
 Multi-Arch: same
