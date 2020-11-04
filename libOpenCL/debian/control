@@ -7,9 +7,15 @@ Standards-Version: 4.1.4
 Homepage: http://nxp.com
 
 Package: libopencl-vivante1
-Provides: ocl-icd-opencl-dev, ocl-icd-libopencl1 (= 1.0)
-Conflicts: ocl-icd-opencl-dev, ocl-icd-libopencl1 (= 1.0)
-Replaces: ocl-icd-opencl-dev, ocl-icd-libopencl1 (= 1.0)
+Provides: ocl-icd-opencl-dev,
+          libopencl1,
+          libopencl-1.2-1
+Conflicts: ocl-icd-opencl-dev,
+          libopencl1,
+          libopencl-1.2-1
+Replaces: ocl-icd-opencl-dev,
+          libopencl1,
+          libopencl-1.2-1
 Section: libs
 Architecture: arm64
 Multi-Arch: same
