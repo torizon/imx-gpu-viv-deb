@@ -12,6 +12,8 @@ Architecture: arm64
 Multi-Arch: same
 Depends: libgal-vivante1 (=6.4.0.p2.4-1), libdrm-vivante1, libwayland-server0, libc6
 Provides: libgbm1 (=20.2.2-1)
+Conflicts: libgbm1
+Replaces: libgbm1
 Description: generic buffer management API -- runtime
  This package contains the GBM buffer management library.  It provides a
  mechanism for allocating buffers for graphics rendering tied to Mesa.
@@ -23,6 +25,8 @@ Section: libdevel
 Architecture: linux-any
 Depends: libgbm-vivante1 (=6.4.0.p2.4-1) 
 Provides: libgbm-dev
+Conflicts: libgbm-dev
+Replaces: libgbm-dev
 Multi-Arch: same
 Description: generic buffer management API -- development files
  This package contains the GBM buffer management library.  It provides a
