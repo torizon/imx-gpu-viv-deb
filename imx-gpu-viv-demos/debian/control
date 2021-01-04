@@ -11,6 +11,5 @@ Description: imx-gpu-viv version 6.4.0.p2.4-aarch64-r0
  GPU driver and apps for i.MX
 Section: libs
 Priority: optional
-Maintainer: Abdur Rehman <abdur.rehman@toradex.com>
 Architecture: arm64
 Depends: libc6 (>= 2.30), libclc-vivante1 (>= 6.4.0.p2.4-1), libegl-vivante1 (>= 6.4.0.p2.4-1), libgal-vivante1 (>= 6.4.0.p2.4-1), libgcc1 (>= 9.2.0), libgles-cl-vivante1 (>= 6.4.0.p2.4-1), libgles-cm-vivante1 (>= 6.4.0.p2.4-1), libglesv1-cl-vivante1 (>= 6.4.0.p2.4-1), libglesv1-cm-vivante1 (>= 6.4.0.p2.4-1), libglesv2-vivante1 (>= 6.4.0.p2.4-1), libopencl-vivante1 (>= 6.4.0.p2.4-1), libopenvg-vivante1 (>= 6.4.0.p2.4-1), libstdc++6 (>= 9.2.0), libvdk-vivante1 (>= 6.4.0.p2.4-1)
