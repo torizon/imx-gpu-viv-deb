@@ -1,0 +1,44 @@
+Source: imx-gpu-viv
+Priority: optional
+Maintainer: Abdur Rehman <abdur.rehman@toradex.com>
+Build-Depends:
+ debhelper,
+ libx11-6,
+ libxfixes3,
+ libxdamage1,
+ libxext6,
+ libdrm2,
+ libwayland-server0,
+ libwayland-client0,
+ libwayland-cursor0,
+ libwayland-egl1
+Standards-Version: 3.9.6
+Section: libs
+
+Package: imx-gpu-viv-wayland
+Section: libs
+Architecture: arm64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Vivante Wayland binaries
+ Vivante Userspace Graphics libraries for wayland.
+
+Package: imx-gpu-viv-wayland-dev
+Section: libdevel
+Architecture: arm64
+Depends: imx-gpu-viv-wayland
+Description: Development files for imx-gpu-viv-wayland
+ Vivante development files for wayland.
+
+Package: imx-gpu-viv-demos
+Architecture: arm64
+Section: devel
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Vivante Demo Applications
+ Demo applications for Vivante
+
+Package: imx-gpu-viv-tools
+Architecture: arm64
+Section: devel
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Vivante Tools
+ Tools for Vivante

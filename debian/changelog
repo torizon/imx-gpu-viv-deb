@@ -1,0 +1,5 @@
+imx-gpu-viv (6.4.3.p1.0-1) testing; urgency=medium
+
+  * Unified packaging for Vivante binaries
+
+ -- Abdur Rehman <abdur.rehman@toradex.com>  Sun, 14 Mar 2021 10:25:30 +0000

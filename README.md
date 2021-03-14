@@ -1,1 +1,1 @@
-# NXP Vivante debian packaging.
+# Dbian packaging for NXP Vivante userspace

@@ -1,2 +1,0 @@
-*.pc /usr/lib/aarch64-linux-gnu/pkgconfig/
-*.h /usr/include/VG
