@@ -11,4 +11,4 @@ build:
 
   artifacts:
     paths: 
-      - build/debs
+      - build/debs/*

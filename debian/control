@@ -11,13 +11,42 @@ Build-Depends:
  libwayland-server0,
  libwayland-client0,
  libwayland-cursor0,
- libwayland-egl1
-Standards-Version: 3.9.6
+ libwayland-egl1,
+ libdrm-common,
+ libx11-data,
+ libxau6,
+ libxcb1,
+ libxdmcp6
+Standards-Version: 4.1.4
 Section: libs
 
 Package: imx-gpu-viv-wayland
 Section: libs
 Architecture: arm64
+Provides:
+ libegl1,
+ libgbm1 (=20.3.4-1),
+ libgl1,
+ libgles1,
+ libgles2,
+ ocl-icd-libopencl1,
+ libopencl-1.2-1
+Conflicts:
+ libegl1,
+ libgbm1,
+ libgl1,
+ libgles1,
+ libgles2,
+ ocl-icd-libopencl1,
+ libopencl-1.2-1
+Replaces:
+ libegl1,
+ libgbm1,
+ libgl1,
+ libgles1,
+ libgles2,
+ ocl-icd-libopencl1,
+ libopencl-1.2-1
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Vivante Wayland binaries
  Vivante Userspace Graphics libraries for wayland.
@@ -26,6 +55,45 @@ Package: imx-gpu-viv-wayland-dev
 Section: libdevel
 Architecture: arm64
 Depends: imx-gpu-viv-wayland
+Provides:
+ libegl-dev,
+ libgbm-dev,
+ libgl-dev,
+ libgles-dev,
+ libglx-dev,
+ ocl-icd-opencl-dev,
+ opencl-c-headers,
+ opencl-clhpp-headers,
+ libgl1-mesa-dev,
+ libgles1-mesa-dev,
+ libgles2-mesa-dev,
+ libegl1-mesa-dev
+Conflicts:
+ libegl-dev,
+ libgbm-dev,
+ libgl-dev,
+ libgles-dev,
+ libglx-dev,
+ ocl-icd-opencl-dev,
+ opencl-c-headers,
+ opencl-clhpp-headers,
+ libgl1-mesa-dev,
+ libgles1-mesa-dev,
+ libgles2-mesa-dev,
+ libegl1-mesa-dev
+Replaces:
+ libegl-dev,
+ libgbm-dev,
+ libgl-dev,
+ libgles-dev,
+ libglx-dev,
+ ocl-icd-opencl-dev,
+ opencl-c-headers,
+ opencl-clhpp-headers,
+ libgl1-mesa-dev,
+ libgles1-mesa-dev,
+ libgles2-mesa-dev,
+ libegl1-mesa-dev
 Description: Development files for imx-gpu-viv-wayland
  Vivante development files for wayland.
 

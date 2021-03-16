@@ -48,12 +48,13 @@ rm gpu-core/usr/lib/wayland/libvulkan.so*
 # Separate .so files for the development package
 # Only copy the .so files that are symlinks, rest go inside the runtime package
 mkdir sodev
-find . -type l -name *.so -exec mv {} sodev \;
+find gpu-core -type l -name *.so -exec mv {} sodev \;
 
 # Prepare .pc files for installation
 cd gpu-core/usr/lib/pkgconfig
 rm *linuxfb.pc *x11.pc egl.pc
 mv egl_wayland.pc egl.pc
+sed -i 's@^libdir.*@libdir=/usr/lib/aarch64-linux-gnu@' *.pc
 cd -
 
 cd ..
@@ -68,11 +69,8 @@ BUILDDIR=build
 DEBDIR=debian
 
 mkdir -p $BUILDDIR
-echo "build tar"
 tar --transform "s/^$SRCDIR/imx-gpu-viv-$FILEVER/" -czf $BUILDDIR/imx-gpu-viv-$FILEVER.tar.gz $SRCDIR
-ls
 cd $BUILDDIR
-echo "extract tar"
 tar xzf imx-gpu-viv-$FILEVER.tar.gz
 cd imx-gpu-viv-$FILEVER
 cp -rf $TOPDIR/$DEBDIR .
