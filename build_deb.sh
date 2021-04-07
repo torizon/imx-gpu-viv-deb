@@ -52,6 +52,7 @@ find gpu-core -type l -name *.so -exec mv {} sodev \;
 
 # Prepare .pc files for installation
 cd gpu-core/usr/lib/pkgconfig
+mv gl_x11.pc gl.pc
 rm *linuxfb.pc *x11.pc egl.pc
 mv egl_wayland.pc egl.pc
 sed -i 's@^libdir.*@libdir=/usr/lib/aarch64-linux-gnu@' *.pc
