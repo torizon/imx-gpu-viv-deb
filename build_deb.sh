@@ -17,6 +17,7 @@ fi
 md5sum -c - <<< "$CHKSUM  $FULLNAME.bin"
 if [ "$?" != "0" ]; then
     echo "Error: Checksum verification failed. Aborting!"
+    echo "Expecting $(md5sum $FULLNAME.bin | cut -d ' ' -f1)"
     exit 1
 fi
 
