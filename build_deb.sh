@@ -46,9 +46,12 @@ ln -sf libvulkan_VSI.so.1.1.6 gpu-core/usr/lib/wayland/libvulkan_VSI.so
 rm gpu-core/usr/lib/wayland/libvulkan.so*
 
 # Separate .so files for the development package
-# Only copy the .so files that are symlinks, rest go inside the runtime package
+# In NXP BSP, currently all development time .so symlinks, except libGL.so,
+# are dev-so INSANE_SKIP-ed. Strace of programs such as kmscube show that these
+# symlinks are required at runtime also.
+# Rest of the .so symlinks will go into the runtime package
 mkdir sodev
-find gpu-core -type l -name *.so -exec mv {} sodev \;
+find gpu-core -name libGL.so -exec mv {} sodev \;
 
 # Prepare .pc files for installation
 cd gpu-core/usr/lib/pkgconfig
