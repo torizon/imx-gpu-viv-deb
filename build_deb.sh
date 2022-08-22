@@ -30,9 +30,6 @@ mv $FULLNAME/gpu-demos/ imx-gpu-viv-src
 mv $FULLNAME/gpu-tools/ imx-gpu-viv-src
 cd imx-gpu-viv-src
 
-# Special case for libVDK on Wayland backend, deliver fb library as well
-cp gpu-core/usr/lib/fb/libVDK.so.1.2.0 gpu-core/usr/lib/wayland/libVDK-fb.so.1.2.0
-
 # Remove files for backends other than wayland
 rm -rf gpu-core/usr/lib/x11 gpu-core/usr/lib/fb
 
