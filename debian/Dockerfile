@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     apt-file \
     && apt-file update
 
-RUN mk-build-deps --install --tool 'apt-get -y -o Acquire::http::Dl-Limit=1000 -o Debug::pkgProblemResolver=yes --no-install-recommends' debian/control
+RUN mk-build-deps --install --tool 'apt-get -y -o Debug::pkgProblemResolver=yes --no-install-recommends' debian/control
 RUN ./build_deb.sh
 
 RUN rm -rf /var/lib/apt/lists/*
