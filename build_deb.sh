@@ -37,10 +37,12 @@ rm -rf gpu-core/usr/lib/x11 gpu-core/usr/lib/fb
 rm -rf gpu-core/usr/include/vulkan/
 
 # Rename our libvulkan.so so it doesn't clash with vulkan-loader libvulkan.so
-mv gpu-core/usr/lib/wayland/libvulkan.so.1.1.6 gpu-core/usr/lib/wayland/libvulkan_VSI.so.1.1.6
-patchelf --set-soname libvulkan_VSI.so.1 gpu-core/usr/lib/wayland/libvulkan_VSI.so.1.1.6
-ln -sf libvulkan_VSI.so.1.1.6 gpu-core/usr/lib/wayland/libvulkan_VSI.so.1
-ln -sf libvulkan_VSI.so.1.1.6 gpu-core/usr/lib/wayland/libvulkan_VSI.so
+LIBVULKAN_VERSION="1.2.1"
+LIBVULKAN_VERSION_MAJOR="1"
+mv gpu-core/usr/lib/wayland/libvulkan.so.${LIBVULKAN_VERSION} gpu-core/usr/lib/wayland/libvulkan_VSI.so.${LIBVULKAN_VERSION}
+patchelf --set-soname libvulkan_VSI.so.${LIBVULKAN_VERSION_MAJOR} gpu-core/usr/lib/wayland/libvulkan_VSI.so.${LIBVULKAN_VERSION}
+ln -sf libvulkan_VSI.so.${LIBVULKAN_VERSION} gpu-core/usr/lib/wayland/libvulkan_VSI.so.${LIBVULKAN_VERSION_MAJOR}
+ln -sf libvulkan_VSI.so.${LIBVULKAN_VERSION} gpu-core/usr/lib/wayland/libvulkan_VSI.so
 rm gpu-core/usr/lib/wayland/libvulkan.so*
 
 # Copy libNN* for all targets
