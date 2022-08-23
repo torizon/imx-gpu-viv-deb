@@ -1,3 +1,9 @@
+imx-gpu-viv (6.4.3.p4.2-1) testing; urgency=medium
+
+  * Bump to v6.4.3.p4.2
+
+ -- Abdur Rehman <abdur.rehman@toradex.com>  Tue, 09 Aug 2022 23:59:40 +0500
+
 imx-gpu-viv (6.4.3.p1.4-1) testing; urgency=medium
 
   * Bump to v6.4.3.p1.4
