@@ -43,6 +43,9 @@ ln -sf libvulkan_VSI.so.1.1.6 gpu-core/usr/lib/wayland/libvulkan_VSI.so.1
 ln -sf libvulkan_VSI.so.1.1.6 gpu-core/usr/lib/wayland/libvulkan_VSI.so
 rm gpu-core/usr/lib/wayland/libvulkan.so*
 
+# Copy libNN* for all targets
+mv -n gpu-core/usr/lib/mx*/* gpu-core/usr/lib/
+
 # Separate .so files for the development package
 # In NXP BSP, currently all development time .so symlinks, except libGL.so,
 # are dev-so INSANE_SKIP-ed. Strace of programs such as kmscube show that these
