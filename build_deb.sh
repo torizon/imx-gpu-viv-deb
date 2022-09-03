@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
-set +x
+set -x
 
 # Download and unpack
 URL=https://www.nxp.com/lgfiles/NMG/MAD/YOCTO/
@@ -108,3 +108,10 @@ do
     find . -type f,l | sed 's/^.//' | apt-file search -F -f "-"
     cd $builddir
 done
+
+# Make sure all packages are installable
+apt-get install -y \
+    ./debs/imx-gpu-viv-demos_6.4.3.p4.2-1_arm64.deb \
+    ./debs/imx-gpu-viv-tools_6.4.3.p4.2-1_arm64.deb \
+    ./debs/imx-gpu-viv-wayland-dev_6.4.3.p4.2-1_arm64.deb \
+    ./debs/imx-gpu-viv-wayland_6.4.3.p4.2-1_arm64.deb
