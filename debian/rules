@@ -3,3 +3,8 @@
 %:
 	dh $@
 
+override_dh_strip_nondeterminism:
+	@echo "Skipping dh_strip_nondeterminism: package binaries without modification"
+
+override_dh_strip:
+	@echo "Skipping dh_strip: package binaries without modification"
