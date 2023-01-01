@@ -111,7 +111,7 @@ done
 
 # Make sure all packages are installable
 apt-get install -y \
-    ./debs/imx-gpu-viv-demos_6.4.3.p4.2-2_arm64.deb \
-    ./debs/imx-gpu-viv-tools_6.4.3.p4.2-2_arm64.deb \
-    ./debs/imx-gpu-viv-wayland-dev_6.4.3.p4.2-2_arm64.deb \
-    ./debs/imx-gpu-viv-wayland_6.4.3.p4.2-2_arm64.deb
+    ./debs/imx-gpu-viv-demos_6.4.3.p4.4-1_arm64.deb \
+    ./debs/imx-gpu-viv-tools_6.4.3.p4.4-1_arm64.deb \
+    ./debs/imx-gpu-viv-wayland-dev_6.4.3.p4.4-1_arm64.deb \
+    ./debs/imx-gpu-viv-wayland_6.4.3.p4.4-1_arm64.deb
