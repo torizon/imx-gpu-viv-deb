@@ -6,6 +6,10 @@ on:
 
 jobs:
   build-debs:
+    permissions:
+      id-token: write
+      contents: read
+      attestations: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,6 +24,11 @@ jobs:
           buildpackage-opts: --build=binary --no-sign
           extra-docker-args: --platform arm64
           apt-opts: --install-recommends
+
+      - name: Attest
+        uses: actions/attest-build-provenance@v1
+        with:
+          subject-path: 'debian/artifacts*'
 
       - name: Upload Workflow Artifacts
         uses: actions/upload-artifact@v4
