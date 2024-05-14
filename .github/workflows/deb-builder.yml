@@ -1,0 +1,29 @@
+name: Build Debian Package
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build-debs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up binfmt with qemu
+        uses: docker/setup-qemu-action@v3
+
+      - uses: jtdor/build-deb-action@v1.8.0
+        env:
+          DEB_BUILD_OPTIONS: noautodbgsym
+        with:
+          buildpackage-opts: --build=binary --no-sign
+          extra-docker-args: --platform arm64
+          apt-opts: --install-recommends
+
+      - name: Upload Workflow Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: imx-gpu-viv
+          path: debian/artifacts/*
+          retention-days: 90
