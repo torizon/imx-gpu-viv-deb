@@ -1,5 +1,0 @@
-Run this command inside the git repository directory:
-- docker build -t imx-gpu-viv -f debian/Dockerfile .
-
-This will build a container with the build artifacts available at
-/builddir/build/debs inside the built container.

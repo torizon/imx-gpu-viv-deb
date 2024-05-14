@@ -1,10 +1,34 @@
 #!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+
+DEB_BUILD_OPTIONS=noautodbgsym
+
+FILENAME="imx-gpu-viv-6.4.3.p4.6-aarch64"
+URL="https://www.nxp.com/lgfiles/NMG/MAD/YOCTO/$(FILENAME).bin"
+
+LIBVULKAN_VERSION=1.2.1
+LIBVULKAN_VERSION_MAJOR=1
 
 %:
 	dh $@
 
+override_dh_auto_configure:
+	wget $(URL) && chmod +x $(FILENAME).bin
+	./$(FILENAME).bin --auto-accept
+	mv $(FILENAME)/* .
+	rm -rf $(FILENAME)
+	mv -n gpu-core/usr/lib/mx*/* gpu-core/usr/lib/
+# Separate .so files for the development package
+# In NXP BSP, currently all development time .so symlinks, except libGL.so,
+# are dev-so INSANE_SKIP-ed. Strace of programs such as kmscube show that these
+# symlinks are required at runtime also.
+# Rest of the .so symlinks will go into the runtime package
+	mkdir sodev
+	find gpu-core -name libGL.so -exec mv {} sodev \;
+
 override_dh_strip_nondeterminism:
-	@echo "Skipping dh_strip_nondeterminism: package binaries without modification"
 
 override_dh_strip:
-	@echo "Skipping dh_strip: package binaries without modification"
