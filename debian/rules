@@ -5,8 +5,7 @@
 export DH_VERBOSE=1
 
 DEB_BUILD_OPTIONS=noautodbgsym
-
-FILENAME="imx-gpu-viv-6.4.3.p4.6-aarch64"
+FILENAME="imx-gpu-viv-6.4.11.p2.4-aarch64-b07999b"
 URL="https://www.nxp.com/lgfiles/NMG/MAD/YOCTO/$(FILENAME).bin"
 
 LIBVULKAN_VERSION=1.2.1
@@ -26,9 +25,11 @@ override_dh_auto_configure:
 # are dev-so INSANE_SKIP-ed. Strace of programs such as kmscube show that these
 # symlinks are required at runtime also.
 # Rest of the .so symlinks will go into the runtime package
-	mkdir sodev
-	find gpu-core -name libGL.so -exec mv {} sodev \;
+#	mkdir sodev
+#	find gpu-core -name libGL.so -exec mv {} sodev \;
 
 override_dh_strip_nondeterminism:
 
 override_dh_strip:
+
+# override_dh_makeshlibs:
