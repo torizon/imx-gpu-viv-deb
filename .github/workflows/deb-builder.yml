@@ -1,38 +1,22 @@
 name: Build Debian Package
 
-on:
-  push:
-  workflow_dispatch:
+on: push
 
 jobs:
-  build-debs:
+  build:
     permissions:
       id-token: write
       contents: read
       attestations: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up binfmt with qemu
-        uses: docker/setup-qemu-action@v3
-
-      - uses: jtdor/build-deb-action@v1.8.0
-        env:
-          DEB_BUILD_OPTIONS: noautodbgsym
-        with:
-          buildpackage-opts: --build=binary --no-sign
-          extra-docker-args: --platform arm64
-          apt-opts: --install-recommends
-
-      - name: Attest
-        uses: actions/attest-build-provenance@v1
-        with:
-          subject-path: 'debian/artifacts*'
-
-      - name: Upload Workflow Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: imx-gpu-viv
-          path: debian/artifacts/*
-          retention-days: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        arch: ['arm64']
+    uses: torizon/torizon-deb-ci/.github/workflows/toradex-deb-ci.yml@v0
+    with:
+      arch: ${{ matrix.arch }}
+      docker-image: debian:bookworm
+      package-name: aktualizr-torizon
+      run-attestation: true
+      run-piuparts: false
+      upload-artifacts: true
