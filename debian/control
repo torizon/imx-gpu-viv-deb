@@ -99,13 +99,6 @@ Replaces:
 Description: Development files for imx-gpu-viv-wayland
  Vivante development files for wayland.
 
-Package: imx-gpu-viv-demos
-Architecture: arm64
-Section: devel
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: Vivante Demo Applications
- Demo applications for Vivante
-
 Package: imx-gpu-viv-tools
 Architecture: arm64
 Section: devel
