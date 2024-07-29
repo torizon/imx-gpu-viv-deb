@@ -1,4 +1,5 @@
 libArchModelSw.so imx-gpu-viv-wayland #MINVER#
+ archBottleneckDetail@Base 6.4.3.p4.6-1
  archCalculateArchPerf@Base 6.4.3.p4.4
  archFillOpInfo@Base 6.4.3.p4.4
  archGetPerfResult@Base 6.4.3.p4.4
@@ -7,6 +8,7 @@ libArchModelSw.so imx-gpu-viv-wayland #MINVER#
  archPredictPerfAnalysing@Base 6.4.3.p4.4
  archPredictPerfFillLayer@Base 6.4.3.p4.4
  archSetManualFeatures@Base 6.4.3.p4.4
+ archShowNNCommand@Base 6.4.3.p4.6-1
  archSwLibDeInit@Base 6.4.3.p4.4
  archSwLibDeInitFromDriver@Base 6.4.3.p4.4
  archSwLibInit@Base 6.4.3.p4.4
@@ -103,69 +105,69 @@ libEGL.so.1 imx-gpu-viv-wayland #MINVER#
  eglWaitNative@Base 6.4.3.p4.4
  eglWaitSync@Base 6.4.3.p4.4
  eglWaitSyncKHR@Base 6.4.3.p4.4
- fbCreatePixmap@Base 6.4.3.p4.4
- fbCreatePixmapWithBpp@Base 6.4.3.p4.4
- fbCreateWindow@Base 6.4.3.p4.4
- fbDestroyDisplay@Base 6.4.3.p4.4
- fbDestroyPixmap@Base 6.4.3.p4.4
- fbDestroyWindow@Base 6.4.3.p4.4
- fbGetDisplay@Base 6.4.3.p4.4
- fbGetDisplayByIndex@Base 6.4.3.p4.4
- fbGetDisplayGeometry@Base 6.4.3.p4.4
- fbGetDisplayInfo@Base 6.4.3.p4.4
- fbGetPixmapGeometry@Base 6.4.3.p4.4
- fbGetPixmapInfo@Base 6.4.3.p4.4
- fbGetWindowGeometry@Base 6.4.3.p4.4
- fbGetWindowInfo@Base 6.4.3.p4.4
- fbdev_CancelDisplayBackbuffer@Base 6.4.3.p4.4
- fbdev_CapturePointer@Base 6.4.3.p4.4
- fbdev_CopyPixmapBits@Base 6.4.3.p4.4
- fbdev_CreateClientBuffer@Base 6.4.3.p4.4
- fbdev_CreateContext@Base 6.4.3.p4.4
- fbdev_CreateDrawable@Base 6.4.3.p4.4
- fbdev_CreatePixmap@Base 6.4.3.p4.4
- fbdev_CreateWindow@Base 6.4.3.p4.4
- fbdev_DeinitLocalDisplayInfo@Base 6.4.3.p4.4
- fbdev_DestroyClientBuffer@Base 6.4.3.p4.4
- fbdev_DestroyContext@Base 6.4.3.p4.4
- fbdev_DestroyDisplay@Base 6.4.3.p4.4
- fbdev_DestroyDrawable@Base 6.4.3.p4.4
- fbdev_DestroyPixmap@Base 6.4.3.p4.4
- fbdev_DestroyWindow@Base 6.4.3.p4.4
- fbdev_DisplayBufferRegions@Base 6.4.3.p4.4
- fbdev_DrawImage@Base 6.4.3.p4.4
- fbdev_DrawImageEx@Base 6.4.3.p4.4
- fbdev_DrawPixmap@Base 6.4.3.p4.4
- fbdev_GetClientBufferInfo@Base 6.4.3.p4.4
- fbdev_GetDisplay@Base 6.4.3.p4.4
- fbdev_GetDisplayBackbuffer@Base 6.4.3.p4.4
- fbdev_GetDisplayBackbufferEx@Base 6.4.3.p4.4
- fbdev_GetDisplayByIndex@Base 6.4.3.p4.4
- fbdev_GetDisplayInfo@Base 6.4.3.p4.4
- fbdev_GetDisplayInfoEx2@Base 6.4.3.p4.4
- fbdev_GetDisplayInfoEx@Base 6.4.3.p4.4
- fbdev_GetDisplayVirtual@Base 6.4.3.p4.4
- fbdev_GetFbdevPlatform@Base 6.4.3.p4.4
- fbdev_GetImage@Base 6.4.3.p4.4
- fbdev_GetNativeVisualId@Base 6.4.3.p4.4
- fbdev_GetPixmapInfo@Base 6.4.3.p4.4
- fbdev_GetPixmapInfoEx@Base 6.4.3.p4.4
- fbdev_GetSwapInterval@Base 6.4.3.p4.4
- fbdev_GetWindowInfo@Base 6.4.3.p4.4
- fbdev_GetWindowInfoEx@Base 6.4.3.p4.4
- fbdev_InitLocalDisplayInfo@Base 6.4.3.p4.4
- fbdev_IsValidDisplay@Base 6.4.3.p4.4
- fbdev_MakeCurrent@Base 6.4.3.p4.4
- fbdev_RSForSwap@Base 6.4.3.p4.4
- fbdev_ResizeWindow@Base 6.4.3.p4.4
- fbdev_SetDisplayVirtual@Base 6.4.3.p4.4
- fbdev_SetDisplayVirtualEx@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbCreatePixmap@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbCreatePixmapWithBpp@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbCreateWindow@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbDestroyDisplay@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbDestroyPixmap@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbDestroyWindow@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbGetDisplay@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbGetDisplayByIndex@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbGetDisplayGeometry@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbGetDisplayInfo@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbGetPixmapGeometry@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbGetPixmapInfo@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbGetWindowGeometry@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbGetWindowInfo@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_CancelDisplayBackbuffer@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_CapturePointer@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_CopyPixmapBits@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_CreateClientBuffer@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_CreateContext@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_CreateDrawable@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_CreatePixmap@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_CreateWindow@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_DeinitLocalDisplayInfo@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_DestroyClientBuffer@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_DestroyContext@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_DestroyDisplay@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_DestroyDrawable@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_DestroyPixmap@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_DestroyWindow@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_DisplayBufferRegions@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_DrawImage@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_DrawImageEx@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_DrawPixmap@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_GetClientBufferInfo@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_GetDisplay@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_GetDisplayBackbuffer@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_GetDisplayBackbufferEx@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_GetDisplayByIndex@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_GetDisplayInfo@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_GetDisplayInfoEx2@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_GetDisplayInfoEx@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_GetDisplayVirtual@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_GetFbdevPlatform@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_GetImage@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_GetNativeVisualId@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_GetPixmapInfo@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_GetPixmapInfoEx@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_GetSwapInterval@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_GetWindowInfo@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_GetWindowInfoEx@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_InitLocalDisplayInfo@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_IsValidDisplay@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_MakeCurrent@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_RSForSwap@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_ResizeWindow@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_SetDisplayVirtual@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_SetDisplayVirtualEx@Base 6.4.3.p4.4
  fbdev_SetServerTag@Base 6.4.3.p4.4
- fbdev_SetSwapInterval@Base 6.4.3.p4.4
- fbdev_SetWindowFormat@Base 6.4.3.p4.4
- fbdev_SetWindowTitle@Base 6.4.3.p4.4
- fbdev_SwapBuffers@Base 6.4.3.p4.4
- fbdev_SynchronousFlip@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_SetSwapInterval@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_SetWindowFormat@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_SetWindowTitle@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_SwapBuffers@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# fbdev_SynchronousFlip@Base 6.4.3.p4.4
  fbdev_UnSetServerTag@Base 6.4.3.p4.4
  forward_glActiveTexture@Base 6.4.3.p4.4
  forward_glBindBuffer@Base 6.4.3.p4.4
@@ -247,6 +249,7 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcInvokeThreadWalker@Base 6.4.3.p4.4
  gcLoadShaders@Base 6.4.3.p4.4
  gcQueryShaderCompilerHwCfg@Base 6.4.3.p4.4
+ gcQueryShaderCompilerHwCfgWithHardware@Base 6.4.3.p4.6-1
  gcfAddMemoryInfo@Base 6.4.3.p4.4
  gcfDelMemoryInfo@Base 6.4.3.p4.4
  gcfMEM_AFSMemPoolFreeANode@Base 6.4.3.p4.4
@@ -288,6 +291,7 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gco2D_FlushBrush@Base 6.4.3.p4.4
  gco2D_FreeFilterBuffer@Base 6.4.3.p4.4
  gco2D_Get2DEngine@Base 6.4.3.p4.4
+ gco2D_GetActiveCoreIndex@Base 6.4.3.p4.6-1
  gco2D_GetBrushCache@Base 6.4.3.p4.4
  gco2D_GetMaximumDataCount@Base 6.4.3.p4.4
  gco2D_GetMaximumRectCount@Base 6.4.3.p4.4
@@ -305,6 +309,7 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gco2D_ProfileEngine@Base 6.4.3.p4.4
  gco2D_QueryU32@Base 6.4.3.p4.4
  gco2D_Set2DEngine@Base 6.4.3.p4.4
+ gco2D_SetActiveCoreIndex@Base 6.4.3.p4.6-1
  gco2D_SetAutoFlushCycles@Base 6.4.3.p4.4
  gco2D_SetBitBlitMirror@Base 6.4.3.p4.4
  gco2D_SetBrushLimit@Base 6.4.3.p4.4
@@ -318,27 +323,34 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gco2D_SetGdiStretchMode@Base 6.4.3.p4.4
  gco2D_SetGenericSource@Base 6.4.3.p4.4
  gco2D_SetGenericTarget@Base 6.4.3.p4.4
+ gco2D_SetInitError@Base 6.4.3.p4.6-1
  gco2D_SetKernelSize@Base 6.4.3.p4.4
  gco2D_SetMaskedSource64@Base 6.4.3.p4.4
  gco2D_SetMaskedSource@Base 6.4.3.p4.4
  gco2D_SetMaskedSourceEx@Base 6.4.3.p4.4
+ gco2D_SetMeanValue@Base 6.4.3.p4.6-1
  gco2D_SetMonochromeSource@Base 6.4.3.p4.4
  gco2D_SetPixelMultiplyModeAdvanced@Base 6.4.3.p4.4
  gco2D_SetPorterDuffBlending@Base 6.4.3.p4.4
  gco2D_SetROP@Base 6.4.3.p4.4
+ gco2D_SetScaleFactor@Base 6.4.3.p4.6-1
  gco2D_SetSource@Base 6.4.3.p4.4
+ gco2D_SetSourceCacheMode@Base 6.4.3.p4.6-1
  gco2D_SetSourceColorKeyAdvanced@Base 6.4.3.p4.4
  gco2D_SetSourceColorKeyRangeAdvanced@Base 6.4.3.p4.4
  gco2D_SetSourceEndianMode@Base 6.4.3.p4.4
  gco2D_SetSourceGlobalColorAdvanced@Base 6.4.3.p4.4
  gco2D_SetSourceTileStatus@Base 6.4.3.p4.4
+ gco2D_SetState@Base 6.4.3.p4.6-1
  gco2D_SetStateArrayI32@Base 6.4.3.p4.4
  gco2D_SetStateArrayU32@Base 6.4.3.p4.4
  gco2D_SetStateU32@Base 6.4.3.p4.4
+ gco2D_SetStdReciprocal@Base 6.4.3.p4.6-1
  gco2D_SetStretchFactors@Base 6.4.3.p4.4
  gco2D_SetStretchRectFactors@Base 6.4.3.p4.4
  gco2D_SetTarget64@Base 6.4.3.p4.4
  gco2D_SetTarget@Base 6.4.3.p4.4
+ gco2D_SetTargetCacheMode@Base 6.4.3.p4.6-1
  gco2D_SetTargetColorKeyAdvanced@Base 6.4.3.p4.4
  gco2D_SetTargetColorKeyRangeAdvanced@Base 6.4.3.p4.4
  gco2D_SetTargetEndianMode@Base 6.4.3.p4.4
@@ -375,6 +387,7 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gco3D_EnableSampleMaskOut@Base 6.4.3.p4.4
  gco3D_EnableSampleShading@Base 6.4.3.p4.4
  gco3D_EnableTextureStage@Base 6.4.3.p4.4
+ gco3D_FlushPipe@Base 6.4.3.p4.6-1
  gco3D_FlushSHL1Cache@Base 6.4.3.p4.4
  gco3D_Get3DEngine@Base 6.4.3.p4.4
  gco3D_GetAPI@Base 6.4.3.p4.4
@@ -508,20 +521,34 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoBUFFER_AddVidmemAddressPatch@Base 6.4.3.p4.4
  gcoBUFFER_AppendFence@Base 6.4.3.p4.4
  gcoBUFFER_Capture@Base 6.4.3.p4.4
- gcoBUFFER_CaptureInitState@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# gcoBUFFER_CaptureInitState@Base 6.4.3.p4.4
+ gcoBUFFER_CaptureWrite@Base 6.4.3.p4.6-1
  gcoBUFFER_Commit@Base 6.4.3.p4.4
  gcoBUFFER_Commit_Worker@Base 6.4.3.p4.4
  gcoBUFFER_Construct@Base 6.4.3.p4.4
+ gcoBUFFER_CreateCAPBUF@Base 6.4.3.p4.6-1
  gcoBUFFER_Destroy@Base 6.4.3.p4.4
+ gcoBUFFER_EndCAPBUF@Base 6.4.3.p4.6-1
  gcoBUFFER_EndTEMPCMDBUF@Base 6.4.3.p4.4
  gcoBUFFER_FlushCommand@Base 6.4.3.p4.4
+ gcoBUFFER_FreeCAPBUFMetaQueryBuffer@Base 6.4.3.p4.6-1
+ gcoBUFFER_GetAutoCommit@Base 6.4.3.p4.6-1
+ gcoBUFFER_GetCaptureBufferInfo@Base 6.4.3.p4.6-1
  gcoBUFFER_GetChannelInfo@Base 6.4.3.p4.4
+ gcoBUFFER_GetCommitCommandBufferCount@Base 6.4.3.p4.6-1
  gcoBUFFER_GetFence@Base 6.4.3.p4.4
+ gcoBUFFER_GetOffsetInCAPBUF@Base 6.4.3.p4.6-1
+ gcoBUFFER_IsCAPBUFInUse@Base 6.4.3.p4.6-1
  gcoBUFFER_IsCaptureEnabled@Base 6.4.3.p4.4
  gcoBUFFER_IsEmpty@Base 6.4.3.p4.4
  gcoBUFFER_OnIssueFence@Base 6.4.3.p4.4
+ gcoBUFFER_PushCAPBUFMetaData@Base 6.4.3.p4.6-1
+ gcoBUFFER_QueryCAPBUFMetaData@Base 6.4.3.p4.6-1
  gcoBUFFER_Reserve@Base 6.4.3.p4.4
  gcoBUFFER_SelectChannel@Base 6.4.3.p4.4
+ gcoBUFFER_SetAutoCommit@Base 6.4.3.p4.6-1
+ gcoBUFFER_SetAutoSync@Base 6.4.3.p4.6-1
+ gcoBUFFER_StartCAPBUF@Base 6.4.3.p4.6-1
  gcoBUFFER_StartTEMPCMDBUF@Base 6.4.3.p4.4
  gcoBUFFER_Write@Base 6.4.3.p4.4
  gcoBUFOBJ_AlignIndexBufferWhenNeeded@Base 6.4.3.p4.4
@@ -541,6 +568,7 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoBUFOBJ_IsFenceEnabled@Base 6.4.3.p4.4
  gcoBUFOBJ_Lock@Base 6.4.3.p4.4
  gcoBUFOBJ_ReAllocBufNode@Base 6.4.3.p4.4
+ gcoBUFOBJ_SetBufferEndianHint@Base 6.4.3.p4.6-1
  gcoBUFOBJ_SetCPUWrite@Base 6.4.3.p4.4
  gcoBUFOBJ_SetDirty@Base 6.4.3.p4.4
  gcoBUFOBJ_Unlock@Base 6.4.3.p4.4
@@ -549,26 +577,43 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoCL_3dBltLock@Base 6.4.3.p4.4
  gcoCL_3dBltUnlock@Base 6.4.3.p4.4
  gcoCL_AllocateMemory@Base 6.4.3.p4.4
+ gcoCL_AllocateMemoryEx@Base 6.4.3.p4.6-1
  gcoCL_ChooseBltEngine@Base 6.4.3.p4.4
  gcoCL_Commit@Base 6.4.3.p4.4
+ gcoCL_CommitCmdBuffer@Base 6.4.3.p4.6-1
+ gcoCL_CommitWithHardware@Base 6.4.3.p4.6-1
  gcoCL_CreateHW@Base 6.4.3.p4.4
+ gcoCL_CreateHWEx@Base 6.4.3.p4.6-1
  gcoCL_CreateHWWithType@Base 6.4.3.p4.4
  gcoCL_CreateSignal@Base 6.4.3.p4.4
+ gcoCL_CreateSubMemory@Base 6.4.3.p4.6-1
  gcoCL_CreateTexture@Base 6.4.3.p4.4
  gcoCL_DestroyHW@Base 6.4.3.p4.4
- gcoCL_DestroyNode@Base 6.4.3.p4.4
+ gcoCL_DestroyHWEx@Base 6.4.3.p4.6-1
+#MISSING: 6.4.3.p4.6-1# gcoCL_DestroyNode@Base 6.4.3.p4.4
  gcoCL_DestroySignal@Base 6.4.3.p4.4
  gcoCL_DestroyTexture@Base 6.4.3.p4.4
+ gcoCL_EnableLocalMemory@Base 6.4.3.p4.6-1
  gcoCL_Flush@Base 6.4.3.p4.4
  gcoCL_FlushCache@Base 6.4.3.p4.4
+ gcoCL_FlushCmdBuffer@Base 6.4.3.p4.6-1
  gcoCL_FlushMemory@Base 6.4.3.p4.4
  gcoCL_FlushSurface@Base 6.4.3.p4.4
+ gcoCL_FlushWithHardware@Base 6.4.3.p4.6-1
  gcoCL_ForceRestoreHardwareType@Base 6.4.3.p4.4
  gcoCL_ForceSetHardwareType@Base 6.4.3.p4.4
- gcoCL_FreeDmaBufferSurfNode@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# gcoCL_FreeDmaBufferSurfNode@Base 6.4.3.p4.4
  gcoCL_FreeMemory@Base 6.4.3.p4.4
- gcoCL_GetCurrentPhysicalAddr@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# gcoCL_GetCurrentPhysicalAddr@Base 6.4.3.p4.4
  gcoCL_GetHWConfigGpuCount@Base 6.4.3.p4.4
+ gcoCL_GetLogicalAddr@Base 6.4.3.p4.6-1
+ gcoCL_GetNodeIndex@Base 6.4.3.p4.6-1
+ gcoCL_GetOCLDeviceCount@Base 6.4.3.p4.6-1
+ gcoCL_GetPatchID@Base 6.4.3.p4.6-1
+ gcoCL_GetPhysicalAddr@Base 6.4.3.p4.6-1
+ gcoCL_GetProductName@Base 6.4.3.p4.6-1
+ gcoCL_GetUniqueLogicalAddr@Base 6.4.3.p4.6-1
+ gcoCL_GetUscCacheRatio@Base 6.4.3.p4.6-1
  gcoCL_ImportDmabuffer@Base 6.4.3.p4.4
  gcoCL_InitializeHardware@Base 6.4.3.p4.4
  gcoCL_InvalidateMemoryCache@Base 6.4.3.p4.4
@@ -579,40 +624,59 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoCL_LockSurface@Base 6.4.3.p4.4
  gcoCL_MemBltCopy@Base 6.4.3.p4.4
  gcoCL_MemWaitAndGetFence@Base 6.4.3.p4.4
+ gcoCL_MemWaitAndGetFenceWithHardware@Base 6.4.3.p4.6-1
+ gcoCL_MemoryCache@Base 6.4.3.p4.6-1
  gcoCL_MultiDevcieCacheFlush@Base 6.4.3.p4.4
+ gcoCL_MultiGPUAffinityConfig@Base 6.4.3.p4.6-1
  gcoCL_MultiGPUFlushCache@Base 6.4.3.p4.4
  gcoCL_MultiGPUSync@Base 6.4.3.p4.4
+ gcoCL_NodeGetHardwareAddress@Base 6.4.3.p4.6-1
+ gcoCL_NodeSetHardwareAddress@Base 6.4.3.p4.6-1
+ gcoCL_PhysicalInNode@Base 6.4.3.p4.6-1
+ gcoCL_QueryBLTFenceEndianHint@Base 6.4.3.p4.6-1
  gcoCL_QueryDeviceCount@Base 6.4.3.p4.4
  gcoCL_QueryDeviceCountWith3D2DType@Base 6.4.3.p4.4
  gcoCL_QueryDeviceCountWithGPUType@Base 6.4.3.p4.4
  gcoCL_QueryDeviceCountWithVIPType@Base 6.4.3.p4.4
  gcoCL_QueryDeviceInfo@Base 6.4.3.p4.4
  gcoCL_RestoreContext@Base 6.4.3.p4.4
+ gcoCL_RestoreHardware@Base 6.4.3.p4.6-1
  gcoCL_SetDefaultHardware@Base 6.4.3.p4.4
  gcoCL_SetHardware@Base 6.4.3.p4.4
  gcoCL_SetHardwareType@Base 6.4.3.p4.4
+ gcoCL_SetOwningHardware@Base 6.4.3.p4.6-1
  gcoCL_SetSignal@Base 6.4.3.p4.4
+ gcoCL_SetTimeOut@Base 6.4.3.p4.6-1
  gcoCL_SetupTexture@Base 6.4.3.p4.4
  gcoCL_ShareMemoryWithBufObj@Base 6.4.3.p4.4
+ gcoCL_ShareMemoryWithBufObjEx@Base 6.4.3.p4.6-1
  gcoCL_ShareMemoryWithStream@Base 6.4.3.p4.4
  gcoCL_SubmitCmdBuffer@Base 6.4.3.p4.4
  gcoCL_SubmitSignal@Base 6.4.3.p4.4
+ gcoCL_SwitchHardware@Base 6.4.3.p4.6-1
  gcoCL_SyncFreeMemory@Base 6.4.3.p4.4
- gcoCL_Unlock@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# gcoCL_Unlock@Base 6.4.3.p4.4
  gcoCL_UnlockSurface@Base 6.4.3.p4.4
- gcoCL_UnlockWithCoreIndex@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# gcoCL_UnlockWithCoreIndex@Base 6.4.3.p4.4
  gcoCL_UnshareMemory@Base 6.4.3.p4.4
+ gcoCL_UnshareMemoryEx@Base 6.4.3.p4.6-1
  gcoCL_WaitSignal@Base 6.4.3.p4.4
  gcoCL_WrapUserMemory@Base 6.4.3.p4.4
+ gcoCL_WrapUserMemoryEx@Base 6.4.3.p4.6-1
  gcoCL_WrapUserPhysicalMemory@Base 6.4.3.p4.4
+ gcoCL_WrapUserPhysicalMemoryEx@Base 6.4.3.p4.6-1
  gcoCL_coreIdToChip@Base 6.4.3.p4.4
  gcoHAL_AddFrameDB@Base 6.4.3.p4.4
  gcoHAL_AlignToTile@Base 6.4.3.p4.4
  gcoHAL_AllocateMCFESemaphore@Base 6.4.3.p4.4
  gcoHAL_AllocateVideoMemory@Base 6.4.3.p4.4
- gcoHAL_AttachExternalMemory@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# gcoHAL_AttachExternalMemory@Base 6.4.3.p4.4
  gcoHAL_Call@Base 6.4.3.p4.4
+ gcoHAL_CancelJob@Base 6.4.3.p4.6-1
+ gcoHAL_CommandBufferAutoCommit@Base 6.4.3.p4.6-1
+ gcoHAL_CommandBufferAutoSync@Base 6.4.3.p4.6-1
  gcoHAL_Commit@Base 6.4.3.p4.4
+ gcoHAL_CommitDone@Base 6.4.3.p4.6-1
  gcoHAL_Compact@Base 6.4.3.p4.4
  gcoHAL_ConfigPowerManagement@Base 6.4.3.p4.4
  gcoHAL_Construct@Base 6.4.3.p4.4
@@ -623,10 +687,11 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoHAL_Destroy@Base 6.4.3.p4.4
  gcoHAL_DestroyEx@Base 6.4.3.p4.4
  gcoHAL_DestroyShBuffer@Base 6.4.3.p4.4
- gcoHAL_DetachExternalMemory@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# gcoHAL_DetachExternalMemory@Base 6.4.3.p4.4
  gcoHAL_DumpFrameDB@Base 6.4.3.p4.4
- gcoHAL_DumpGPUProfile@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# gcoHAL_DumpGPUProfile@Base 6.4.3.p4.4
  gcoHAL_ExportVideoMemory@Base 6.4.3.p4.4
+ gcoHAL_FinishVideoMemory@Base 6.4.3.p4.6-1
  gcoHAL_FlushCommand@Base 6.4.3.p4.4
  gcoHAL_FrameInfoOps@Base 6.4.3.p4.4
  gcoHAL_FreeMCFESemaphore@Base 6.4.3.p4.4
@@ -635,13 +700,17 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoHAL_Get3DEngine@Base 6.4.3.p4.4
  gcoHAL_GetBaseAddr@Base 6.4.3.p4.4
  gcoHAL_GetCurrentCoreIndex@Base 6.4.3.p4.4
+ gcoHAL_GetCurrentDeviceIndex@Base 6.4.3.p4.6-1
+ gcoHAL_GetExportedVideoMemoryFd@Base 6.4.3.p4.6-1
  gcoHAL_GetFscaleValue@Base 6.4.3.p4.4
  gcoHAL_GetGraphicBufferFd@Base 6.4.3.p4.4
  gcoHAL_GetHardware@Base 6.4.3.p4.4
  gcoHAL_GetHardwareType@Base 6.4.3.p4.4
+ gcoHAL_GetLastCommitStatus@Base 6.4.3.p4.6-1
  gcoHAL_GetOption@Base 6.4.3.p4.4
  gcoHAL_GetPLS@Base 6.4.3.p4.4
  gcoHAL_GetPatchID@Base 6.4.3.p4.4
+ gcoHAL_GetPriority@Base 6.4.3.p4.6-1
  gcoHAL_GetProductName@Base 6.4.3.p4.4
  gcoHAL_GetProductNameWithHardware@Base 6.4.3.p4.4
  gcoHAL_GetSpecialHintData@Base 6.4.3.p4.4
@@ -649,20 +718,26 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoHAL_GetUserDebugOption@Base 6.4.3.p4.4
  gcoHAL_GetVideoMemoryFd@Base 6.4.3.p4.4
  gcoHAL_ImportVideoMemory@Base 6.4.3.p4.4
+ gcoHAL_InitCoreIndexByType@Base 6.4.3.p4.6-1
  gcoHAL_InitGPUProfile@Base 6.4.3.p4.4
  gcoHAL_Is3DAvailable@Base 6.4.3.p4.4
  gcoHAL_IsFeatureAvailable1@Base 6.4.3.p4.4
  gcoHAL_IsFeatureAvailable@Base 6.4.3.p4.4
  gcoHAL_IsFeatureAvailableWithHardware@Base 6.4.3.p4.4
+ gcoHAL_IsFlatMapped@Base 6.4.3.p4.6-1
  gcoHAL_LockVideoMemory@Base 6.4.3.p4.4
+ gcoHAL_LockVideoMemoryEx@Base 6.4.3.p4.6-1
  gcoHAL_LockVideoNode@Base 6.4.3.p4.4
  gcoHAL_MCFESemaphore@Base 6.4.3.p4.4
  gcoHAL_MapMemory@Base 6.4.3.p4.4
  gcoHAL_MapShBuffer@Base 6.4.3.p4.4
  gcoHAL_NameVideoMemory@Base 6.4.3.p4.4
+ gcoHAL_PrepareVideoMemory@Base 6.4.3.p4.6-1
  gcoHAL_ProfileEnd@Base 6.4.3.p4.4
  gcoHAL_ProfileStart@Base 6.4.3.p4.4
+ gcoHAL_Query2DCoreCount@Base 6.4.3.p4.6-1
  gcoHAL_Query3DCoreCount@Base 6.4.3.p4.4
+ gcoHAL_QueryCPUFrequency@Base 6.4.3.p4.6-1
  gcoHAL_QueryChipAxiBusWidth@Base 6.4.3.p4.4
  gcoHAL_QueryChipCount@Base 6.4.3.p4.4
  gcoHAL_QueryChipFeature@Base 6.4.3.p4.4
@@ -672,7 +747,9 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoHAL_QueryChipLimits@Base 6.4.3.p4.4
  gcoHAL_QueryCluster@Base 6.4.3.p4.4
  gcoHAL_QueryCoreCount@Base 6.4.3.p4.4
+ gcoHAL_QueryHwDeviceIdByEnv@Base 6.4.3.p4.6-1
  gcoHAL_QueryHybrid2D@Base 6.4.3.p4.4
+ gcoHAL_QueryMCFESemaphoreCapacity@Base 6.4.3.p4.6-1
  gcoHAL_QueryMultiGPUAffinityConfig@Base 6.4.3.p4.4
  gcoHAL_QueryPowerManagementState@Base 6.4.3.p4.4
  gcoHAL_QueryResetTimeStamp@Base 6.4.3.p4.4
@@ -687,6 +764,7 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoHAL_QueryTextureMaxAniso@Base 6.4.3.p4.4
  gcoHAL_QueryTiled@Base 6.4.3.p4.4
  gcoHAL_QueryUniformBase@Base 6.4.3.p4.4
+ gcoHAL_QueryUscAttribCacheRatio@Base 6.4.3.p4.6-1
  gcoHAL_QueryVideoMemory@Base 6.4.3.p4.4
  gcoHAL_ReadShBuffer@Base 6.4.3.p4.4
  gcoHAL_ReleaseVideoMemory@Base 6.4.3.p4.4
@@ -698,16 +776,22 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoHAL_SetBltNP2Texture@Base 6.4.3.p4.4
  gcoHAL_SetCompilerFuncTable@Base 6.4.3.p4.4
  gcoHAL_SetCoreIndex@Base 6.4.3.p4.4
+ gcoHAL_SetDeviceIndex@Base 6.4.3.p4.6-1
  gcoHAL_SetFscaleValue@Base 6.4.3.p4.4
  gcoHAL_SetFscaleValueEx@Base 6.4.3.p4.4
  gcoHAL_SetGlobalPatchID@Base 6.4.3.p4.4
  gcoHAL_SetHardwareType@Base 6.4.3.p4.4
+ gcoHAL_SetLastCommitStatus@Base 6.4.3.p4.6-1
  gcoHAL_SetOption@Base 6.4.3.p4.4
  gcoHAL_SetPatchID@Base 6.4.3.p4.4
  gcoHAL_SetPowerManagementState@Base 6.4.3.p4.4
+ gcoHAL_SetPriority@Base 6.4.3.p4.6-1
  gcoHAL_SetTimeOut@Base 6.4.3.p4.4
  gcoHAL_SetTimer@Base 6.4.3.p4.4
+ gcoHAL_TimeQuery_SendFence@Base 6.4.3.p4.6-1
+ gcoHAL_TimeQuery_WaitFence@Base 6.4.3.p4.6-1
  gcoHAL_UnlockVideoMemory@Base 6.4.3.p4.4
+ gcoHAL_UnlockVideoMemoryEX@Base 6.4.3.p4.6-1
  gcoHAL_UnmapMemory@Base 6.4.3.p4.4
  gcoHAL_WaitFence@Base 6.4.3.p4.4
  gcoHAL_WrapUserMemory@Base 6.4.3.p4.4
@@ -745,6 +829,8 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoMATH_Log2in5dot5@Base 6.4.3.p4.4
  gcoMATH_UInt8AsFloat16@Base 6.4.3.p4.4
  gcoMATH_UIntAsFloat@Base 6.4.3.p4.4
+ gcoOS_2D_DumpSpendTimeEnd@Base 6.4.3.p4.6-1
+ gcoOS_2D_DumpSpendTimeStart@Base 6.4.3.p4.6-1
  gcoOS_AcquireMutex@Base 6.4.3.p4.4
  gcoOS_AddRecordAllocation@Base 6.4.3.p4.4
  gcoOS_AddSignalHandler@Base 6.4.3.p4.4
@@ -761,8 +847,11 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoOS_BinaryTrace@Base 6.4.3.p4.4
  gcoOS_CPUPhysicalToGPUPhysical@Base 6.4.3.p4.4
  gcoOS_CacheClean@Base 6.4.3.p4.4
+ gcoOS_CacheCleanEx@Base 6.4.3.p4.6-1
  gcoOS_CacheFlush@Base 6.4.3.p4.4
+ gcoOS_CacheFlushEx@Base 6.4.3.p4.6-1
  gcoOS_CacheInvalidate@Base 6.4.3.p4.4
+ gcoOS_CacheInvalidateEx@Base 6.4.3.p4.6-1
  gcoOS_ClientWaitNativeFence@Base 6.4.3.p4.4
  gcoOS_Close@Base 6.4.3.p4.4
  gcoOS_CloseFD@Base 6.4.3.p4.4
@@ -784,6 +873,7 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoOS_DebugTrace@Base 6.4.3.p4.4
  gcoOS_DebugTraceZone@Base 6.4.3.p4.4
  gcoOS_Delay@Base 6.4.3.p4.4
+ gcoOS_DelayUs@Base 6.4.3.p4.6-1
  gcoOS_DeleteMutex@Base 6.4.3.p4.4
  gcoOS_Destroy@Base 6.4.3.p4.4
  gcoOS_DestroySignal@Base 6.4.3.p4.4
@@ -850,6 +940,7 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoOS_PrintStrVSafe@Base 6.4.3.p4.4
  gcoOS_ProfileEnd@Base 6.4.3.p4.4
  gcoOS_ProfileStart@Base 6.4.3.p4.4
+ gcoOS_QueryCurrentProcessArguments@Base 6.4.3.p4.6-1
  gcoOS_QueryCurrentProcessName@Base 6.4.3.p4.4
  gcoOS_QuerySystemInfo@Base 6.4.3.p4.4
  gcoOS_QueryTLS@Base 6.4.3.p4.4
@@ -905,11 +996,23 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoPROFILER_Construct@Base 6.4.3.p4.4
  gcoPROFILER_Destroy@Base 6.4.3.p4.4
  gcoPROFILER_Disable@Base 6.4.3.p4.4
+ gcoPROFILER_Enable@Base 6.4.3.p4.6-1
  gcoPROFILER_EnableCounters@Base 6.4.3.p4.4
  gcoPROFILER_End@Base 6.4.3.p4.4
  gcoPROFILER_Flush@Base 6.4.3.p4.4
+ gcoPROFILER_GetProbeNumber@Base 6.4.3.p4.6-1
  gcoPROFILER_Initialize@Base 6.4.3.p4.4
  gcoPROFILER_Write@Base 6.4.3.p4.4
+ gcoPROFILER_WriteChipInfo@Base 6.4.3.p4.6-1
+ gcoPROFILER_getCounterBufferSize@Base 6.4.3.p4.6-1
+ gcoPROFILER_getModuleAddress@Base 6.4.3.p4.6-1
+ gcoPROFILER_getMuduleAddress@Base 6.4.3.p4.6-1
+ gcoPROFILER_getMuduleNum@Base 6.4.3.p4.6-1
+ gcoPROFILER_getMuduleProbeNum@Base 6.4.3.p4.6-1
+ gcoPROFILER_getProbeAddress@Base 6.4.3.p4.6-1
+ gcoPROFILER_getVPGConst@Base 6.4.3.p4.6-1
+ gcoPROFILER_getVersion@Base 6.4.3.p4.6-1
+ gcoPROFILER_probeInitialize@Base 6.4.3.p4.6-1
  gcoSHADER_AllocateVidMem@Base 6.4.3.p4.4
  gcoSHADER_BindBufferBlock@Base 6.4.3.p4.4
  gcoSHADER_BindUniform@Base 6.4.3.p4.4
@@ -943,10 +1046,12 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoSTREAM_Upload@Base 6.4.3.p4.4
  gcoSTREAM_UploadUnCacheableAttributes@Base 6.4.3.p4.4
  gcoSTREAM_WaitFence@Base 6.4.3.p4.4
+ gcoSURF_3DBlitClearTileStatus@Base 6.4.3.p4.6-1
  gcoSURF_AlignResolveRect@Base 6.4.3.p4.4
  gcoSURF_AllocShBuffer@Base 6.4.3.p4.4
  gcoSURF_AllocateHzBuffer@Base 6.4.3.p4.4
  gcoSURF_AllocateTileStatus@Base 6.4.3.p4.4
+ gcoSURF_AllocateTileStatusWithUserPool@Base 6.4.3.p4.6-1
  gcoSURF_AppendTileStatus@Base 6.4.3.p4.4
  gcoSURF_BindShBuffer@Base 6.4.3.p4.4
  gcoSURF_Blend@Base 6.4.3.p4.4
@@ -959,6 +1064,7 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoSURF_ComputeBlit@Base 6.4.3.p4.4
  gcoSURF_ComputeColorMask@Base 6.4.3.p4.4
  gcoSURF_Construct@Base 6.4.3.p4.4
+ gcoSURF_ConstructWithUserPool@Base 6.4.3.p4.6-1
  gcoSURF_ConstructWrapper@Base 6.4.3.p4.4
  gcoSURF_Copy@Base 6.4.3.p4.4
  gcoSURF_CopyPixels@Base 6.4.3.p4.4
@@ -1012,6 +1118,7 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoSURF_PixelToLinear@Base 6.4.3.p4.4
  gcoSURF_PixelToNonLinear@Base 6.4.3.p4.4
  gcoSURF_PixelToSignedInteger@Base 6.4.3.p4.4
+ gcoSURF_PixelYUV601FullRangeToLinear@Base 6.4.3.p4.6-1
  gcoSURF_PopSharedInfo@Base 6.4.3.p4.4
  gcoSURF_Preserve@Base 6.4.3.p4.4
  gcoSURF_PushSharedInfo@Base 6.4.3.p4.4
@@ -1061,6 +1168,7 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoTEXTURE_BindTextureDesc@Base 6.4.3.p4.4
  gcoTEXTURE_BindTextureEx@Base 6.4.3.p4.4
  gcoTEXTURE_BindTextureTS@Base 6.4.3.p4.4
+ gcoTEXTURE_CheckHWSupportedImage@Base 6.4.3.p4.6-1
  gcoTEXTURE_CheckTexLevel0Attrib@Base 6.4.3.p4.4
  gcoTEXTURE_Clear@Base 6.4.3.p4.4
  gcoTEXTURE_Construct@Base 6.4.3.p4.4
@@ -1090,6 +1198,8 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoTEXTURE_SetDepthTextureFlag@Base 6.4.3.p4.4
  gcoTEXTURE_SetDescDirty@Base 6.4.3.p4.4
  gcoTEXTURE_SetEndianHint@Base 6.4.3.p4.4
+ gcoTEXTURE_SetSpecialSwap@Base 6.4.3.p4.6-1
+ gcoTEXTURE_SetSurfType@Base 6.4.3.p4.6-1
  gcoTEXTURE_Upload@Base 6.4.3.p4.4
  gcoTEXTURE_UploadCompressed@Base 6.4.3.p4.4
  gcoTEXTURE_UploadCompressedSub@Base 6.4.3.p4.4
@@ -1112,7 +1222,9 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoVERTEX_DisableAttribute@Base 6.4.3.p4.4
  gcoVERTEX_EnableAttribute@Base 6.4.3.p4.4
  gcoVERTEX_Reset@Base 6.4.3.p4.4
+ gcoVX_AllocateCacheableMemory@Base 6.4.3.p4.6-1
  gcoVX_AllocateMemory@Base 6.4.3.p4.4
+ gcoVX_AllocateMemoryEx2@Base 6.4.3.p4.6-1
  gcoVX_AllocateMemoryEx@Base 6.4.3.p4.4
  gcoVX_AllocateMemoryExAddAllocflag@Base 6.4.3.p4.4
  gcoVX_BindImage@Base 6.4.3.p4.4
@@ -1124,13 +1236,19 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoVX_CreateHW@Base 6.4.3.p4.4
  gcoVX_Destroy@Base 6.4.3.p4.4
  gcoVX_DestroyHW@Base 6.4.3.p4.4
+ gcoVX_EndCAPBUF@Base 6.4.3.p4.6-1
  gcoVX_Flush@Base 6.4.3.p4.4
  gcoVX_FlushCache@Base 6.4.3.p4.4
+ gcoVX_FreeCAPBUFMetaQueryBuffer@Base 6.4.3.p4.6-1
  gcoVX_FreeMemory@Base 6.4.3.p4.4
  gcoVX_FreeMemoryEx@Base 6.4.3.p4.4
+ gcoVX_GetCaptureBufferInfo@Base 6.4.3.p4.6-1
  gcoVX_GetEvisNoInstFeatureCap@Base 6.4.3.p4.4
+ gcoVX_GetImageDescriptor@Base 6.4.3.p4.6-1
+ gcoVX_GetImageDescriptorVA40@Base 6.4.3.p4.6-1
  gcoVX_GetMemorySize@Base 6.4.3.p4.4
  gcoVX_GetNNConfig@Base 6.4.3.p4.4
+ gcoVX_GetUniformBase@Base 6.4.3.p4.6-1
  gcoVX_Initialize@Base 6.4.3.p4.4
  gcoVX_InvokeKernel@Base 6.4.3.p4.4
  gcoVX_InvokeKernelShader@Base 6.4.3.p4.4
@@ -1141,18 +1259,27 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoVX_MultiDevcieCacheFlush@Base 6.4.3.p4.4
  gcoVX_MultiGPUSync@Base 6.4.3.p4.4
  gcoVX_ProgrammCrossEngine@Base 6.4.3.p4.4
+ gcoVX_ProgrammDMAEngine@Base 6.4.3.p4.6-1
+ gcoVX_ProgrammNNLoopCommand@Base 6.4.3.p4.6-1
+ gcoVX_ProgrammStreamProcessor@Base 6.4.3.p4.6-1
  gcoVX_ProgrammYUV2RGBScale@Base 6.4.3.p4.4
+ gcoVX_QueryCAPBUFMetaData@Base 6.4.3.p4.6-1
  gcoVX_QueryCoreCount@Base 6.4.3.p4.4
  gcoVX_QueryDeviceCount@Base 6.4.3.p4.4
  gcoVX_QueryHWChipInfo@Base 6.4.3.p4.4
  gcoVX_QueryMultiCore@Base 6.4.3.p4.4
+ gcoVX_QueryNNClusters@Base 6.4.3.p4.6-1
+ gcoVX_QueryNNRingCount@Base 6.4.3.p4.6-1
  gcoVX_Replay@Base 6.4.3.p4.4
  gcoVX_RestoreContext@Base 6.4.3.p4.4
+ gcoVX_SetCurrentDevice@Base 6.4.3.p4.6-1
  gcoVX_SetFeatueCap@Base 6.4.3.p4.4
  gcoVX_SetHardwareType@Base 6.4.3.p4.4
  gcoVX_SetImageInfo@Base 6.4.3.p4.4
  gcoVX_SetNNImage@Base 6.4.3.p4.4
  gcoVX_SetRemapAddress@Base 6.4.3.p4.4
+ gcoVX_StartCAPBUF@Base 6.4.3.p4.6-1
+ gcoVX_StreamProcessorHasVector@Base 6.4.3.p4.6-1
  gcoVX_SwitchContext@Base 6.4.3.p4.4
  gcoVX_TriggerAccelerator@Base 6.4.3.p4.4
  gcoVX_VerifyHardware@Base 6.4.3.p4.4
@@ -1179,973 +1306,6 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcsSURF_NODE_SetHardwareAddress@Base 6.4.3.p4.4
  gcsSURF_NODE_Unlock@Base 6.4.3.p4.4
  gcsSURF_NODE_WaitFence@Base 6.4.3.p4.4
-libGL.so.1 imx-gpu-viv-wayland #MINVER#
- GLESv2_DISPATCH_TABLE@VERSION 6.4.3.p4.4
- GL_DISPATCH_TABLE@VERSION 6.4.3.p4.4
- VERSION@VERSION 6.4.3.p4.4
- glAccum@VERSION 6.4.3.p4.4
- glActiveShaderProgram@VERSION 6.4.3.p4.4
- glActiveTexture@VERSION 6.4.3.p4.4
- glActiveTextureARB@VERSION 6.4.3.p4.4
- glAlphaFunc@VERSION 6.4.3.p4.4
- glAreTexturesResident@VERSION 6.4.3.p4.4
- glArrayElement@VERSION 6.4.3.p4.4
- glAttachShader@VERSION 6.4.3.p4.4
- glBegin@VERSION 6.4.3.p4.4
- glBeginConditionalRender@VERSION 6.4.3.p4.4
- glBeginQuery@VERSION 6.4.3.p4.4
- glBeginQueryIndexed@VERSION 6.4.3.p4.4
- glBeginTransformFeedback@VERSION 6.4.3.p4.4
- glBindAttribLocation@VERSION 6.4.3.p4.4
- glBindBuffer@VERSION 6.4.3.p4.4
- glBindBufferBase@VERSION 6.4.3.p4.4
- glBindBufferRange@VERSION 6.4.3.p4.4
- glBindFragDataLocation@VERSION 6.4.3.p4.4
- glBindFragDataLocationIndexed@VERSION 6.4.3.p4.4
- glBindFramebuffer@VERSION 6.4.3.p4.4
- glBindImageTexture@VERSION 6.4.3.p4.4
- glBindProgramPipeline@VERSION 6.4.3.p4.4
- glBindRenderbuffer@VERSION 6.4.3.p4.4
- glBindSampler@VERSION 6.4.3.p4.4
- glBindTexture@VERSION 6.4.3.p4.4
- glBindTransformFeedback@VERSION 6.4.3.p4.4
- glBindVertexArray@VERSION 6.4.3.p4.4
- glBindVertexArrayOES@VERSION 6.4.3.p4.4
- glBindVertexBuffer@VERSION 6.4.3.p4.4
- glBitmap@VERSION 6.4.3.p4.4
- glBlendBarrier@VERSION 6.4.3.p4.4
- glBlendBarrierKHR@VERSION 6.4.3.p4.4
- glBlendColor@VERSION 6.4.3.p4.4
- glBlendEquation@VERSION 6.4.3.p4.4
- glBlendEquationSeparate@VERSION 6.4.3.p4.4
- glBlendEquationSeparatei@VERSION 6.4.3.p4.4
- glBlendEquationi@VERSION 6.4.3.p4.4
- glBlendFunc@VERSION 6.4.3.p4.4
- glBlendFuncSeparate@VERSION 6.4.3.p4.4
- glBlendFuncSeparatei@VERSION 6.4.3.p4.4
- glBlendFunci@VERSION 6.4.3.p4.4
- glBlitFramebuffer@VERSION 6.4.3.p4.4
- glBufferData@VERSION 6.4.3.p4.4
- glBufferSubData@VERSION 6.4.3.p4.4
- glCallList@VERSION 6.4.3.p4.4
- glCallLists@VERSION 6.4.3.p4.4
- glCheckFramebufferStatus@VERSION 6.4.3.p4.4
- glClampColor@VERSION 6.4.3.p4.4
- glClear@VERSION 6.4.3.p4.4
- glClearAccum@VERSION 6.4.3.p4.4
- glClearBufferfi@VERSION 6.4.3.p4.4
- glClearBufferfv@VERSION 6.4.3.p4.4
- glClearBufferiv@VERSION 6.4.3.p4.4
- glClearBufferuiv@VERSION 6.4.3.p4.4
- glClearColor@VERSION 6.4.3.p4.4
- glClearDepth@VERSION 6.4.3.p4.4
- glClearDepthf@VERSION 6.4.3.p4.4
- glClearIndex@VERSION 6.4.3.p4.4
- glClearStencil@VERSION 6.4.3.p4.4
- glClientActiveTexture@VERSION 6.4.3.p4.4
- glClientActiveTextureARB@VERSION 6.4.3.p4.4
- glClientWaitSync@VERSION 6.4.3.p4.4
- glClipPlane@VERSION 6.4.3.p4.4
- glColor3b@VERSION 6.4.3.p4.4
- glColor3bv@VERSION 6.4.3.p4.4
- glColor3d@VERSION 6.4.3.p4.4
- glColor3dv@VERSION 6.4.3.p4.4
- glColor3f@VERSION 6.4.3.p4.4
- glColor3fv@VERSION 6.4.3.p4.4
- glColor3i@VERSION 6.4.3.p4.4
- glColor3iv@VERSION 6.4.3.p4.4
- glColor3s@VERSION 6.4.3.p4.4
- glColor3sv@VERSION 6.4.3.p4.4
- glColor3ub@VERSION 6.4.3.p4.4
- glColor3ubv@VERSION 6.4.3.p4.4
- glColor3ui@VERSION 6.4.3.p4.4
- glColor3uiv@VERSION 6.4.3.p4.4
- glColor3us@VERSION 6.4.3.p4.4
- glColor3usv@VERSION 6.4.3.p4.4
- glColor4b@VERSION 6.4.3.p4.4
- glColor4bv@VERSION 6.4.3.p4.4
- glColor4d@VERSION 6.4.3.p4.4
- glColor4dv@VERSION 6.4.3.p4.4
- glColor4f@VERSION 6.4.3.p4.4
- glColor4fv@VERSION 6.4.3.p4.4
- glColor4i@VERSION 6.4.3.p4.4
- glColor4iv@VERSION 6.4.3.p4.4
- glColor4s@VERSION 6.4.3.p4.4
- glColor4sv@VERSION 6.4.3.p4.4
- glColor4ub@VERSION 6.4.3.p4.4
- glColor4ubv@VERSION 6.4.3.p4.4
- glColor4ui@VERSION 6.4.3.p4.4
- glColor4uiv@VERSION 6.4.3.p4.4
- glColor4us@VERSION 6.4.3.p4.4
- glColor4usv@VERSION 6.4.3.p4.4
- glColorMask@VERSION 6.4.3.p4.4
- glColorMaski@VERSION 6.4.3.p4.4
- glColorMaterial@VERSION 6.4.3.p4.4
- glColorP3ui@VERSION 6.4.3.p4.4
- glColorP3uiv@VERSION 6.4.3.p4.4
- glColorP4ui@VERSION 6.4.3.p4.4
- glColorP4uiv@VERSION 6.4.3.p4.4
- glColorPointer@VERSION 6.4.3.p4.4
- glColorSubTable@VERSION 6.4.3.p4.4
- glColorTable@VERSION 6.4.3.p4.4
- glColorTableParameterfv@VERSION 6.4.3.p4.4
- glColorTableParameteriv@VERSION 6.4.3.p4.4
- glCompileShader@VERSION 6.4.3.p4.4
- glCompressedTexImage1D@VERSION 6.4.3.p4.4
- glCompressedTexImage2D@VERSION 6.4.3.p4.4
- glCompressedTexImage3D@VERSION 6.4.3.p4.4
- glCompressedTexSubImage1D@VERSION 6.4.3.p4.4
- glCompressedTexSubImage2D@VERSION 6.4.3.p4.4
- glCompressedTexSubImage3D@VERSION 6.4.3.p4.4
- glConvolutionFilter1D@VERSION 6.4.3.p4.4
- glConvolutionFilter2D@VERSION 6.4.3.p4.4
- glConvolutionParameterf@VERSION 6.4.3.p4.4
- glConvolutionParameterfv@VERSION 6.4.3.p4.4
- glConvolutionParameteri@VERSION 6.4.3.p4.4
- glConvolutionParameteriv@VERSION 6.4.3.p4.4
- glCopyBufferSubData@VERSION 6.4.3.p4.4
- glCopyColorSubTable@VERSION 6.4.3.p4.4
- glCopyColorTable@VERSION 6.4.3.p4.4
- glCopyConvolutionFilter1D@VERSION 6.4.3.p4.4
- glCopyConvolutionFilter2D@VERSION 6.4.3.p4.4
- glCopyImageSubData@VERSION 6.4.3.p4.4
- glCopyPixels@VERSION 6.4.3.p4.4
- glCopyTexImage1D@VERSION 6.4.3.p4.4
- glCopyTexImage2D@VERSION 6.4.3.p4.4
- glCopyTexSubImage1D@VERSION 6.4.3.p4.4
- glCopyTexSubImage2D@VERSION 6.4.3.p4.4
- glCopyTexSubImage3D@VERSION 6.4.3.p4.4
- glCreateProgram@VERSION 6.4.3.p4.4
- glCreateShader@VERSION 6.4.3.p4.4
- glCreateShaderProgramv@VERSION 6.4.3.p4.4
- glCullFace@VERSION 6.4.3.p4.4
- glDebugMessageCallback@VERSION 6.4.3.p4.4
- glDebugMessageControl@VERSION 6.4.3.p4.4
- glDebugMessageInsert@VERSION 6.4.3.p4.4
- glDeleteBuffers@VERSION 6.4.3.p4.4
- glDeleteFramebuffers@VERSION 6.4.3.p4.4
- glDeleteLists@VERSION 6.4.3.p4.4
- glDeleteObjectARB@VERSION 6.4.3.p4.4
- glDeleteProgram@VERSION 6.4.3.p4.4
- glDeleteProgramPipelines@VERSION 6.4.3.p4.4
- glDeleteQueries@VERSION 6.4.3.p4.4
- glDeleteRenderbuffers@VERSION 6.4.3.p4.4
- glDeleteSamplers@VERSION 6.4.3.p4.4
- glDeleteShader@VERSION 6.4.3.p4.4
- glDeleteSync@VERSION 6.4.3.p4.4
- glDeleteTextures@VERSION 6.4.3.p4.4
- glDeleteTransformFeedbacks@VERSION 6.4.3.p4.4
- glDeleteVertexArrays@VERSION 6.4.3.p4.4
- glDeleteVertexArraysOES@VERSION 6.4.3.p4.4
- glDepthFunc@VERSION 6.4.3.p4.4
- glDepthMask@VERSION 6.4.3.p4.4
- glDepthRange@VERSION 6.4.3.p4.4
- glDepthRangef@VERSION 6.4.3.p4.4
- glDetachShader@VERSION 6.4.3.p4.4
- glDisable@VERSION 6.4.3.p4.4
- glDisableClientState@VERSION 6.4.3.p4.4
- glDisableVertexAttribArray@VERSION 6.4.3.p4.4
- glDisablei@VERSION 6.4.3.p4.4
- glDiscardFramebufferEXT@VERSION 6.4.3.p4.4
- glDispatchCompute@VERSION 6.4.3.p4.4
- glDispatchComputeIndirect@VERSION 6.4.3.p4.4
- glDrawArrays@VERSION 6.4.3.p4.4
- glDrawArraysIndirect@VERSION 6.4.3.p4.4
- glDrawArraysInstanced@VERSION 6.4.3.p4.4
- glDrawBuffer@VERSION 6.4.3.p4.4
- glDrawBuffers@VERSION 6.4.3.p4.4
- glDrawElements@VERSION 6.4.3.p4.4
- glDrawElementsBaseVertex@VERSION 6.4.3.p4.4
- glDrawElementsIndirect@VERSION 6.4.3.p4.4
- glDrawElementsInstanced@VERSION 6.4.3.p4.4
- glDrawElementsInstancedBaseVertex@VERSION 6.4.3.p4.4
- glDrawPixels@VERSION 6.4.3.p4.4
- glDrawRangeElements@VERSION 6.4.3.p4.4
- glDrawRangeElementsBaseVertex@VERSION 6.4.3.p4.4
- glDrawTransformFeedback@VERSION 6.4.3.p4.4
- glDrawTransformFeedbackStream@VERSION 6.4.3.p4.4
- glEGLImageTargetRenderbufferStorageOES@VERSION 6.4.3.p4.4
- glEGLImageTargetTexture2DOES@VERSION 6.4.3.p4.4
- glEdgeFlag@VERSION 6.4.3.p4.4
- glEdgeFlagPointer@VERSION 6.4.3.p4.4
- glEdgeFlagv@VERSION 6.4.3.p4.4
- glEnable@VERSION 6.4.3.p4.4
- glEnableClientState@VERSION 6.4.3.p4.4
- glEnableVertexAttribArray@VERSION 6.4.3.p4.4
- glEnablei@VERSION 6.4.3.p4.4
- glEnd@VERSION 6.4.3.p4.4
- glEndConditionalRender@VERSION 6.4.3.p4.4
- glEndList@VERSION 6.4.3.p4.4
- glEndQuery@VERSION 6.4.3.p4.4
- glEndQueryIndexed@VERSION 6.4.3.p4.4
- glEndTransformFeedback@VERSION 6.4.3.p4.4
- glEvalCoord1d@VERSION 6.4.3.p4.4
- glEvalCoord1dv@VERSION 6.4.3.p4.4
- glEvalCoord1f@VERSION 6.4.3.p4.4
- glEvalCoord1fv@VERSION 6.4.3.p4.4
- glEvalCoord2d@VERSION 6.4.3.p4.4
- glEvalCoord2dv@VERSION 6.4.3.p4.4
- glEvalCoord2f@VERSION 6.4.3.p4.4
- glEvalCoord2fv@VERSION 6.4.3.p4.4
- glEvalMesh1@VERSION 6.4.3.p4.4
- glEvalMesh2@VERSION 6.4.3.p4.4
- glEvalPoint1@VERSION 6.4.3.p4.4
- glEvalPoint2@VERSION 6.4.3.p4.4
- glFeedbackBuffer@VERSION 6.4.3.p4.4
- glFenceSync@VERSION 6.4.3.p4.4
- glFinish@VERSION 6.4.3.p4.4
- glFlush@VERSION 6.4.3.p4.4
- glFlushMappedBufferRange@VERSION 6.4.3.p4.4
- glFogCoordPointer@VERSION 6.4.3.p4.4
- glFogCoordd@VERSION 6.4.3.p4.4
- glFogCoorddv@VERSION 6.4.3.p4.4
- glFogCoordf@VERSION 6.4.3.p4.4
- glFogCoordfv@VERSION 6.4.3.p4.4
- glFogf@VERSION 6.4.3.p4.4
- glFogfv@VERSION 6.4.3.p4.4
- glFogi@VERSION 6.4.3.p4.4
- glFogiv@VERSION 6.4.3.p4.4
- glFramebufferParameteri@VERSION 6.4.3.p4.4
- glFramebufferRenderbuffer@VERSION 6.4.3.p4.4
- glFramebufferTexture1D@VERSION 6.4.3.p4.4
- glFramebufferTexture2D@VERSION 6.4.3.p4.4
- glFramebufferTexture2DMultisampleEXT@VERSION 6.4.3.p4.4
- glFramebufferTexture3D@VERSION 6.4.3.p4.4
- glFramebufferTexture@VERSION 6.4.3.p4.4
- glFramebufferTextureLayer@VERSION 6.4.3.p4.4
- glFrontFace@VERSION 6.4.3.p4.4
- glFrustum@VERSION 6.4.3.p4.4
- glGenBuffers@VERSION 6.4.3.p4.4
- glGenFramebuffers@VERSION 6.4.3.p4.4
- glGenLists@VERSION 6.4.3.p4.4
- glGenProgramPipelines@VERSION 6.4.3.p4.4
- glGenQueries@VERSION 6.4.3.p4.4
- glGenRenderbuffers@VERSION 6.4.3.p4.4
- glGenSamplers@VERSION 6.4.3.p4.4
- glGenTextures@VERSION 6.4.3.p4.4
- glGenTransformFeedbacks@VERSION 6.4.3.p4.4
- glGenVertexArrays@VERSION 6.4.3.p4.4
- glGenVertexArraysOES@VERSION 6.4.3.p4.4
- glGenerateMipmap@VERSION 6.4.3.p4.4
- glGetActiveAttrib@VERSION 6.4.3.p4.4
- glGetActiveSubroutineName@VERSION 6.4.3.p4.4
- glGetActiveSubroutineUniformName@VERSION 6.4.3.p4.4
- glGetActiveSubroutineUniformiv@VERSION 6.4.3.p4.4
- glGetActiveUniform@VERSION 6.4.3.p4.4
- glGetActiveUniformBlockName@VERSION 6.4.3.p4.4
- glGetActiveUniformBlockiv@VERSION 6.4.3.p4.4
- glGetActiveUniformName@VERSION 6.4.3.p4.4
- glGetActiveUniformsiv@VERSION 6.4.3.p4.4
- glGetAttachedShaders@VERSION 6.4.3.p4.4
- glGetAttribLocation@VERSION 6.4.3.p4.4
- glGetBooleani_v@VERSION 6.4.3.p4.4
- glGetBooleanv@VERSION 6.4.3.p4.4
- glGetBufferParameteri64v@VERSION 6.4.3.p4.4
- glGetBufferParameteriv@VERSION 6.4.3.p4.4
- glGetBufferPointerv@VERSION 6.4.3.p4.4
- glGetBufferPointervOES@VERSION 6.4.3.p4.4
- glGetBufferSubData@VERSION 6.4.3.p4.4
- glGetClipPlane@VERSION 6.4.3.p4.4
- glGetColorTable@VERSION 6.4.3.p4.4
- glGetColorTableParameterfv@VERSION 6.4.3.p4.4
- glGetColorTableParameteriv@VERSION 6.4.3.p4.4
- glGetCompressedTexImage@VERSION 6.4.3.p4.4
- glGetConvolutionFilter@VERSION 6.4.3.p4.4
- glGetConvolutionParameterfv@VERSION 6.4.3.p4.4
- glGetConvolutionParameteriv@VERSION 6.4.3.p4.4
- glGetDebugMessageLog@VERSION 6.4.3.p4.4
- glGetDoublev@VERSION 6.4.3.p4.4
- glGetError@VERSION 6.4.3.p4.4
- glGetFloatv@VERSION 6.4.3.p4.4
- glGetFragDataIndex@VERSION 6.4.3.p4.4
- glGetFragDataLocation@VERSION 6.4.3.p4.4
- glGetFramebufferAttachmentParameteriv@VERSION 6.4.3.p4.4
- glGetFramebufferParameteriv@VERSION 6.4.3.p4.4
- glGetGraphicsResetStatus@VERSION 6.4.3.p4.4
- glGetGraphicsResetStatusEXT@VERSION 6.4.3.p4.4
- glGetHistogram@VERSION 6.4.3.p4.4
- glGetHistogramParameterfv@VERSION 6.4.3.p4.4
- glGetHistogramParameteriv@VERSION 6.4.3.p4.4
- glGetInfoLogARB@VERSION 6.4.3.p4.4
- glGetInteger64i_v@VERSION 6.4.3.p4.4
- glGetInteger64v@VERSION 6.4.3.p4.4
- glGetIntegeri_v@VERSION 6.4.3.p4.4
- glGetIntegerv@VERSION 6.4.3.p4.4
- glGetInternalformativ@VERSION 6.4.3.p4.4
- glGetLightfv@VERSION 6.4.3.p4.4
- glGetLightiv@VERSION 6.4.3.p4.4
- glGetMapdv@VERSION 6.4.3.p4.4
- glGetMapfv@VERSION 6.4.3.p4.4
- glGetMapiv@VERSION 6.4.3.p4.4
- glGetMaterialfv@VERSION 6.4.3.p4.4
- glGetMaterialiv@VERSION 6.4.3.p4.4
- glGetMinmax@VERSION 6.4.3.p4.4
- glGetMinmaxParameterfv@VERSION 6.4.3.p4.4
- glGetMinmaxParameteriv@VERSION 6.4.3.p4.4
- glGetMultisamplefv@VERSION 6.4.3.p4.4
- glGetObjectLabel@VERSION 6.4.3.p4.4
- glGetObjectParameterivARB@VERSION 6.4.3.p4.4
- glGetObjectPtrLabel@VERSION 6.4.3.p4.4
- glGetPixelMapfv@VERSION 6.4.3.p4.4
- glGetPixelMapuiv@VERSION 6.4.3.p4.4
- glGetPixelMapusv@VERSION 6.4.3.p4.4
- glGetPointerv@VERSION 6.4.3.p4.4
- glGetPolygonStipple@VERSION 6.4.3.p4.4
- glGetProgramBinary@VERSION 6.4.3.p4.4
- glGetProgramBinaryOES@VERSION 6.4.3.p4.4
- glGetProgramInfoLog@VERSION 6.4.3.p4.4
- glGetProgramInterfaceiv@VERSION 6.4.3.p4.4
- glGetProgramPipelineInfoLog@VERSION 6.4.3.p4.4
- glGetProgramPipelineiv@VERSION 6.4.3.p4.4
- glGetProgramResourceIndex@VERSION 6.4.3.p4.4
- glGetProgramResourceLocation@VERSION 6.4.3.p4.4
- glGetProgramResourceName@VERSION 6.4.3.p4.4
- glGetProgramResourceiv@VERSION 6.4.3.p4.4
- glGetProgramStageiv@VERSION 6.4.3.p4.4
- glGetProgramiv@VERSION 6.4.3.p4.4
- glGetQueryIndexediv@VERSION 6.4.3.p4.4
- glGetQueryObjecti64v@VERSION 6.4.3.p4.4
- glGetQueryObjectiv@VERSION 6.4.3.p4.4
- glGetQueryObjectui64v@VERSION 6.4.3.p4.4
- glGetQueryObjectuiv@VERSION 6.4.3.p4.4
- glGetQueryiv@VERSION 6.4.3.p4.4
- glGetRenderbufferParameteriv@VERSION 6.4.3.p4.4
- glGetSamplerParameterIiv@VERSION 6.4.3.p4.4
- glGetSamplerParameterIuiv@VERSION 6.4.3.p4.4
- glGetSamplerParameterfv@VERSION 6.4.3.p4.4
- glGetSamplerParameteriv@VERSION 6.4.3.p4.4
- glGetSeparableFilter@VERSION 6.4.3.p4.4
- glGetShaderInfoLog@VERSION 6.4.3.p4.4
- glGetShaderPrecisionFormat@VERSION 6.4.3.p4.4
- glGetShaderSource@VERSION 6.4.3.p4.4
- glGetShaderiv@VERSION 6.4.3.p4.4
- glGetString@VERSION 6.4.3.p4.4
- glGetStringi@VERSION 6.4.3.p4.4
- glGetSubroutineIndex@VERSION 6.4.3.p4.4
- glGetSubroutineUniformLocation@VERSION 6.4.3.p4.4
- glGetSynciv@VERSION 6.4.3.p4.4
- glGetTexEnvfv@VERSION 6.4.3.p4.4
- glGetTexEnviv@VERSION 6.4.3.p4.4
- glGetTexGendv@VERSION 6.4.3.p4.4
- glGetTexGenfv@VERSION 6.4.3.p4.4
- glGetTexGeniv@VERSION 6.4.3.p4.4
- glGetTexImage@VERSION 6.4.3.p4.4
- glGetTexLevelParameterfv@VERSION 6.4.3.p4.4
- glGetTexLevelParameteriv@VERSION 6.4.3.p4.4
- glGetTexParameterIiv@VERSION 6.4.3.p4.4
- glGetTexParameterIuiv@VERSION 6.4.3.p4.4
- glGetTexParameterfv@VERSION 6.4.3.p4.4
- glGetTexParameteriv@VERSION 6.4.3.p4.4
- glGetTransformFeedbackVarying@VERSION 6.4.3.p4.4
- glGetUniformBlockIndex@VERSION 6.4.3.p4.4
- glGetUniformIndices@VERSION 6.4.3.p4.4
- glGetUniformLocation@VERSION 6.4.3.p4.4
- glGetUniformSubroutineuiv@VERSION 6.4.3.p4.4
- glGetUniformdv@VERSION 6.4.3.p4.4
- glGetUniformfv@VERSION 6.4.3.p4.4
- glGetUniformiv@VERSION 6.4.3.p4.4
- glGetUniformuiv@VERSION 6.4.3.p4.4
- glGetVertexAttribIiv@VERSION 6.4.3.p4.4
- glGetVertexAttribIuiv@VERSION 6.4.3.p4.4
- glGetVertexAttribPointerv@VERSION 6.4.3.p4.4
- glGetVertexAttribdv@VERSION 6.4.3.p4.4
- glGetVertexAttribfv@VERSION 6.4.3.p4.4
- glGetVertexAttribiv@VERSION 6.4.3.p4.4
- glGetnUniformfv@VERSION 6.4.3.p4.4
- glGetnUniformfvEXT@VERSION 6.4.3.p4.4
- glGetnUniformiv@VERSION 6.4.3.p4.4
- glGetnUniformivEXT@VERSION 6.4.3.p4.4
- glGetnUniformuiv@VERSION 6.4.3.p4.4
- glHint@VERSION 6.4.3.p4.4
- glHistogram@VERSION 6.4.3.p4.4
- glIndexMask@VERSION 6.4.3.p4.4
- glIndexPointer@VERSION 6.4.3.p4.4
- glIndexd@VERSION 6.4.3.p4.4
- glIndexdv@VERSION 6.4.3.p4.4
- glIndexf@VERSION 6.4.3.p4.4
- glIndexfv@VERSION 6.4.3.p4.4
- glIndexi@VERSION 6.4.3.p4.4
- glIndexiv@VERSION 6.4.3.p4.4
- glIndexs@VERSION 6.4.3.p4.4
- glIndexsv@VERSION 6.4.3.p4.4
- glIndexub@VERSION 6.4.3.p4.4
- glIndexubv@VERSION 6.4.3.p4.4
- glInitNames@VERSION 6.4.3.p4.4
- glInterleavedArrays@VERSION 6.4.3.p4.4
- glInvalidateFramebuffer@VERSION 6.4.3.p4.4
- glInvalidateSubFramebuffer@VERSION 6.4.3.p4.4
- glIsBuffer@VERSION 6.4.3.p4.4
- glIsEnabled@VERSION 6.4.3.p4.4
- glIsEnabledi@VERSION 6.4.3.p4.4
- glIsFramebuffer@VERSION 6.4.3.p4.4
- glIsList@VERSION 6.4.3.p4.4
- glIsProgram@VERSION 6.4.3.p4.4
- glIsProgramPipeline@VERSION 6.4.3.p4.4
- glIsQuery@VERSION 6.4.3.p4.4
- glIsRenderbuffer@VERSION 6.4.3.p4.4
- glIsSampler@VERSION 6.4.3.p4.4
- glIsShader@VERSION 6.4.3.p4.4
- glIsSync@VERSION 6.4.3.p4.4
- glIsTexture@VERSION 6.4.3.p4.4
- glIsTransformFeedback@VERSION 6.4.3.p4.4
- glIsVertexArray@VERSION 6.4.3.p4.4
- glIsVertexArrayOES@VERSION 6.4.3.p4.4
- glLightModelf@VERSION 6.4.3.p4.4
- glLightModelfv@VERSION 6.4.3.p4.4
- glLightModeli@VERSION 6.4.3.p4.4
- glLightModeliv@VERSION 6.4.3.p4.4
- glLightf@VERSION 6.4.3.p4.4
- glLightfv@VERSION 6.4.3.p4.4
- glLighti@VERSION 6.4.3.p4.4
- glLightiv@VERSION 6.4.3.p4.4
- glLineStipple@VERSION 6.4.3.p4.4
- glLineWidth@VERSION 6.4.3.p4.4
- glLinkProgram@VERSION 6.4.3.p4.4
- glListBase@VERSION 6.4.3.p4.4
- glLoadIdentity@VERSION 6.4.3.p4.4
- glLoadMatrixd@VERSION 6.4.3.p4.4
- glLoadMatrixf@VERSION 6.4.3.p4.4
- glLoadName@VERSION 6.4.3.p4.4
- glLoadTransposeMatrixd@VERSION 6.4.3.p4.4
- glLoadTransposeMatrixf@VERSION 6.4.3.p4.4
- glLogicOp@VERSION 6.4.3.p4.4
- glMap1d@VERSION 6.4.3.p4.4
- glMap1f@VERSION 6.4.3.p4.4
- glMap2d@VERSION 6.4.3.p4.4
- glMap2f@VERSION 6.4.3.p4.4
- glMapBuffer@VERSION 6.4.3.p4.4
- glMapBufferOES@VERSION 6.4.3.p4.4
- glMapBufferRange@VERSION 6.4.3.p4.4
- glMapGrid1d@VERSION 6.4.3.p4.4
- glMapGrid1f@VERSION 6.4.3.p4.4
- glMapGrid2d@VERSION 6.4.3.p4.4
- glMapGrid2f@VERSION 6.4.3.p4.4
- glMaterialf@VERSION 6.4.3.p4.4
- glMaterialfv@VERSION 6.4.3.p4.4
- glMateriali@VERSION 6.4.3.p4.4
- glMaterialiv@VERSION 6.4.3.p4.4
- glMatrixMode@VERSION 6.4.3.p4.4
- glMemoryBarrier@VERSION 6.4.3.p4.4
- glMemoryBarrierByRegion@VERSION 6.4.3.p4.4
- glMinSampleShading@VERSION 6.4.3.p4.4
- glMinmax@VERSION 6.4.3.p4.4
- glMultMatrixd@VERSION 6.4.3.p4.4
- glMultMatrixf@VERSION 6.4.3.p4.4
- glMultTransposeMatrixd@VERSION 6.4.3.p4.4
- glMultTransposeMatrixf@VERSION 6.4.3.p4.4
- glMultiDrawArrays@VERSION 6.4.3.p4.4
- glMultiDrawArraysEXT@VERSION 6.4.3.p4.4
- glMultiDrawArraysIndirect@VERSION 6.4.3.p4.4
- glMultiDrawArraysIndirectEXT@VERSION 6.4.3.p4.4
- glMultiDrawElements@VERSION 6.4.3.p4.4
- glMultiDrawElementsBaseVertex@VERSION 6.4.3.p4.4
- glMultiDrawElementsBaseVertexEXT@VERSION 6.4.3.p4.4
- glMultiDrawElementsEXT@VERSION 6.4.3.p4.4
- glMultiDrawElementsIndirect@VERSION 6.4.3.p4.4
- glMultiDrawElementsIndirectEXT@VERSION 6.4.3.p4.4
- glMultiTexCoord1d@VERSION 6.4.3.p4.4
- glMultiTexCoord1dARB@VERSION 6.4.3.p4.4
- glMultiTexCoord1dv@VERSION 6.4.3.p4.4
- glMultiTexCoord1dvARB@VERSION 6.4.3.p4.4
- glMultiTexCoord1f@VERSION 6.4.3.p4.4
- glMultiTexCoord1fARB@VERSION 6.4.3.p4.4
- glMultiTexCoord1fv@VERSION 6.4.3.p4.4
- glMultiTexCoord1fvARB@VERSION 6.4.3.p4.4
- glMultiTexCoord1i@VERSION 6.4.3.p4.4
- glMultiTexCoord1iARB@VERSION 6.4.3.p4.4
- glMultiTexCoord1iv@VERSION 6.4.3.p4.4
- glMultiTexCoord1ivARB@VERSION 6.4.3.p4.4
- glMultiTexCoord1s@VERSION 6.4.3.p4.4
- glMultiTexCoord1sARB@VERSION 6.4.3.p4.4
- glMultiTexCoord1sv@VERSION 6.4.3.p4.4
- glMultiTexCoord1svARB@VERSION 6.4.3.p4.4
- glMultiTexCoord2d@VERSION 6.4.3.p4.4
- glMultiTexCoord2dARB@VERSION 6.4.3.p4.4
- glMultiTexCoord2dv@VERSION 6.4.3.p4.4
- glMultiTexCoord2dvARB@VERSION 6.4.3.p4.4
- glMultiTexCoord2f@VERSION 6.4.3.p4.4
- glMultiTexCoord2fARB@VERSION 6.4.3.p4.4
- glMultiTexCoord2fv@VERSION 6.4.3.p4.4
- glMultiTexCoord2fvARB@VERSION 6.4.3.p4.4
- glMultiTexCoord2i@VERSION 6.4.3.p4.4
- glMultiTexCoord2iARB@VERSION 6.4.3.p4.4
- glMultiTexCoord2iv@VERSION 6.4.3.p4.4
- glMultiTexCoord2ivARB@VERSION 6.4.3.p4.4
- glMultiTexCoord2s@VERSION 6.4.3.p4.4
- glMultiTexCoord2sARB@VERSION 6.4.3.p4.4
- glMultiTexCoord2sv@VERSION 6.4.3.p4.4
- glMultiTexCoord2svARB@VERSION 6.4.3.p4.4
- glMultiTexCoord3d@VERSION 6.4.3.p4.4
- glMultiTexCoord3dARB@VERSION 6.4.3.p4.4
- glMultiTexCoord3dv@VERSION 6.4.3.p4.4
- glMultiTexCoord3dvARB@VERSION 6.4.3.p4.4
- glMultiTexCoord3f@VERSION 6.4.3.p4.4
- glMultiTexCoord3fARB@VERSION 6.4.3.p4.4
- glMultiTexCoord3fv@VERSION 6.4.3.p4.4
- glMultiTexCoord3fvARB@VERSION 6.4.3.p4.4
- glMultiTexCoord3i@VERSION 6.4.3.p4.4
- glMultiTexCoord3iARB@VERSION 6.4.3.p4.4
- glMultiTexCoord3iv@VERSION 6.4.3.p4.4
- glMultiTexCoord3ivARB@VERSION 6.4.3.p4.4
- glMultiTexCoord3s@VERSION 6.4.3.p4.4
- glMultiTexCoord3sARB@VERSION 6.4.3.p4.4
- glMultiTexCoord3sv@VERSION 6.4.3.p4.4
- glMultiTexCoord3svARB@VERSION 6.4.3.p4.4
- glMultiTexCoord4d@VERSION 6.4.3.p4.4
- glMultiTexCoord4dARB@VERSION 6.4.3.p4.4
- glMultiTexCoord4dv@VERSION 6.4.3.p4.4
- glMultiTexCoord4dvARB@VERSION 6.4.3.p4.4
- glMultiTexCoord4f@VERSION 6.4.3.p4.4
- glMultiTexCoord4fARB@VERSION 6.4.3.p4.4
- glMultiTexCoord4fv@VERSION 6.4.3.p4.4
- glMultiTexCoord4fvARB@VERSION 6.4.3.p4.4
- glMultiTexCoord4i@VERSION 6.4.3.p4.4
- glMultiTexCoord4iARB@VERSION 6.4.3.p4.4
- glMultiTexCoord4iv@VERSION 6.4.3.p4.4
- glMultiTexCoord4ivARB@VERSION 6.4.3.p4.4
- glMultiTexCoord4s@VERSION 6.4.3.p4.4
- glMultiTexCoord4sARB@VERSION 6.4.3.p4.4
- glMultiTexCoord4sv@VERSION 6.4.3.p4.4
- glMultiTexCoord4svARB@VERSION 6.4.3.p4.4
- glMultiTexCoordP1ui@VERSION 6.4.3.p4.4
- glMultiTexCoordP1uiv@VERSION 6.4.3.p4.4
- glMultiTexCoordP2ui@VERSION 6.4.3.p4.4
- glMultiTexCoordP2uiv@VERSION 6.4.3.p4.4
- glMultiTexCoordP3ui@VERSION 6.4.3.p4.4
- glMultiTexCoordP3uiv@VERSION 6.4.3.p4.4
- glMultiTexCoordP4ui@VERSION 6.4.3.p4.4
- glMultiTexCoordP4uiv@VERSION 6.4.3.p4.4
- glNewList@VERSION 6.4.3.p4.4
- glNormal3b@VERSION 6.4.3.p4.4
- glNormal3bv@VERSION 6.4.3.p4.4
- glNormal3d@VERSION 6.4.3.p4.4
- glNormal3dv@VERSION 6.4.3.p4.4
- glNormal3f@VERSION 6.4.3.p4.4
- glNormal3fv@VERSION 6.4.3.p4.4
- glNormal3i@VERSION 6.4.3.p4.4
- glNormal3iv@VERSION 6.4.3.p4.4
- glNormal3s@VERSION 6.4.3.p4.4
- glNormal3sv@VERSION 6.4.3.p4.4
- glNormalP3ui@VERSION 6.4.3.p4.4
- glNormalP3uiv@VERSION 6.4.3.p4.4
- glNormalPointer@VERSION 6.4.3.p4.4
- glObjectLabel@VERSION 6.4.3.p4.4
- glObjectPtrLabel@VERSION 6.4.3.p4.4
- glOrtho@VERSION 6.4.3.p4.4
- glPassThrough@VERSION 6.4.3.p4.4
- glPatchParameterfv@VERSION 6.4.3.p4.4
- glPatchParameteri@VERSION 6.4.3.p4.4
- glPauseTransformFeedback@VERSION 6.4.3.p4.4
- glPixelMapfv@VERSION 6.4.3.p4.4
- glPixelMapuiv@VERSION 6.4.3.p4.4
- glPixelMapusv@VERSION 6.4.3.p4.4
- glPixelStoref@VERSION 6.4.3.p4.4
- glPixelStorei@VERSION 6.4.3.p4.4
- glPixelTransferf@VERSION 6.4.3.p4.4
- glPixelTransferi@VERSION 6.4.3.p4.4
- glPixelZoom@VERSION 6.4.3.p4.4
- glPointParameterf@VERSION 6.4.3.p4.4
- glPointParameterfv@VERSION 6.4.3.p4.4
- glPointParameteri@VERSION 6.4.3.p4.4
- glPointParameteriv@VERSION 6.4.3.p4.4
- glPointSize@VERSION 6.4.3.p4.4
- glPolygonMode@VERSION 6.4.3.p4.4
- glPolygonOffset@VERSION 6.4.3.p4.4
- glPolygonStipple@VERSION 6.4.3.p4.4
- glPopAttrib@VERSION 6.4.3.p4.4
- glPopClientAttrib@VERSION 6.4.3.p4.4
- glPopDebugGroup@VERSION 6.4.3.p4.4
- glPopMatrix@VERSION 6.4.3.p4.4
- glPopName@VERSION 6.4.3.p4.4
- glPrimitiveBoundingBox@VERSION 6.4.3.p4.4
- glPrimitiveRestartIndex@VERSION 6.4.3.p4.4
- glPrioritizeTextures@VERSION 6.4.3.p4.4
- glProgramBinary@VERSION 6.4.3.p4.4
- glProgramBinaryOES@VERSION 6.4.3.p4.4
- glProgramParameteri@VERSION 6.4.3.p4.4
- glProgramUniform1f@VERSION 6.4.3.p4.4
- glProgramUniform1fv@VERSION 6.4.3.p4.4
- glProgramUniform1i@VERSION 6.4.3.p4.4
- glProgramUniform1iv@VERSION 6.4.3.p4.4
- glProgramUniform1ui@VERSION 6.4.3.p4.4
- glProgramUniform1uiv@VERSION 6.4.3.p4.4
- glProgramUniform2f@VERSION 6.4.3.p4.4
- glProgramUniform2fv@VERSION 6.4.3.p4.4
- glProgramUniform2i@VERSION 6.4.3.p4.4
- glProgramUniform2iv@VERSION 6.4.3.p4.4
- glProgramUniform2ui@VERSION 6.4.3.p4.4
- glProgramUniform2uiv@VERSION 6.4.3.p4.4
- glProgramUniform3f@VERSION 6.4.3.p4.4
- glProgramUniform3fv@VERSION 6.4.3.p4.4
- glProgramUniform3i@VERSION 6.4.3.p4.4
- glProgramUniform3iv@VERSION 6.4.3.p4.4
- glProgramUniform3ui@VERSION 6.4.3.p4.4
- glProgramUniform3uiv@VERSION 6.4.3.p4.4
- glProgramUniform4f@VERSION 6.4.3.p4.4
- glProgramUniform4fv@VERSION 6.4.3.p4.4
- glProgramUniform4i@VERSION 6.4.3.p4.4
- glProgramUniform4iv@VERSION 6.4.3.p4.4
- glProgramUniform4ui@VERSION 6.4.3.p4.4
- glProgramUniform4uiv@VERSION 6.4.3.p4.4
- glProgramUniformMatrix2fv@VERSION 6.4.3.p4.4
- glProgramUniformMatrix2x3fv@VERSION 6.4.3.p4.4
- glProgramUniformMatrix2x4fv@VERSION 6.4.3.p4.4
- glProgramUniformMatrix3fv@VERSION 6.4.3.p4.4
- glProgramUniformMatrix3x2fv@VERSION 6.4.3.p4.4
- glProgramUniformMatrix3x4fv@VERSION 6.4.3.p4.4
- glProgramUniformMatrix4fv@VERSION 6.4.3.p4.4
- glProgramUniformMatrix4x2fv@VERSION 6.4.3.p4.4
- glProgramUniformMatrix4x3fv@VERSION 6.4.3.p4.4
- glProvokingVertex@VERSION 6.4.3.p4.4
- glPushAttrib@VERSION 6.4.3.p4.4
- glPushClientAttrib@VERSION 6.4.3.p4.4
- glPushDebugGroup@VERSION 6.4.3.p4.4
- glPushMatrix@VERSION 6.4.3.p4.4
- glPushName@VERSION 6.4.3.p4.4
- glQueryCounter@VERSION 6.4.3.p4.4
- glRasterPos2d@VERSION 6.4.3.p4.4
- glRasterPos2dv@VERSION 6.4.3.p4.4
- glRasterPos2f@VERSION 6.4.3.p4.4
- glRasterPos2fv@VERSION 6.4.3.p4.4
- glRasterPos2i@VERSION 6.4.3.p4.4
- glRasterPos2iv@VERSION 6.4.3.p4.4
- glRasterPos2s@VERSION 6.4.3.p4.4
- glRasterPos2sv@VERSION 6.4.3.p4.4
- glRasterPos3d@VERSION 6.4.3.p4.4
- glRasterPos3dv@VERSION 6.4.3.p4.4
- glRasterPos3f@VERSION 6.4.3.p4.4
- glRasterPos3fv@VERSION 6.4.3.p4.4
- glRasterPos3i@VERSION 6.4.3.p4.4
- glRasterPos3iv@VERSION 6.4.3.p4.4
- glRasterPos3s@VERSION 6.4.3.p4.4
- glRasterPos3sv@VERSION 6.4.3.p4.4
- glRasterPos4d@VERSION 6.4.3.p4.4
- glRasterPos4dv@VERSION 6.4.3.p4.4
- glRasterPos4f@VERSION 6.4.3.p4.4
- glRasterPos4fv@VERSION 6.4.3.p4.4
- glRasterPos4i@VERSION 6.4.3.p4.4
- glRasterPos4iv@VERSION 6.4.3.p4.4
- glRasterPos4s@VERSION 6.4.3.p4.4
- glRasterPos4sv@VERSION 6.4.3.p4.4
- glReadBuffer@VERSION 6.4.3.p4.4
- glReadPixels@VERSION 6.4.3.p4.4
- glReadnPixels@VERSION 6.4.3.p4.4
- glReadnPixelsEXT@VERSION 6.4.3.p4.4
- glRectd@VERSION 6.4.3.p4.4
- glRectdv@VERSION 6.4.3.p4.4
- glRectf@VERSION 6.4.3.p4.4
- glRectfv@VERSION 6.4.3.p4.4
- glRecti@VERSION 6.4.3.p4.4
- glRectiv@VERSION 6.4.3.p4.4
- glRects@VERSION 6.4.3.p4.4
- glRectsv@VERSION 6.4.3.p4.4
- glReleaseShaderCompiler@VERSION 6.4.3.p4.4
- glRenderMode@VERSION 6.4.3.p4.4
- glRenderbufferStorage@VERSION 6.4.3.p4.4
- glRenderbufferStorageMultisample@VERSION 6.4.3.p4.4
- glRenderbufferStorageMultisampleEXT@VERSION 6.4.3.p4.4
- glResetHistogram@VERSION 6.4.3.p4.4
- glResetMinmax@VERSION 6.4.3.p4.4
- glResumeTransformFeedback@VERSION 6.4.3.p4.4
- glRotated@VERSION 6.4.3.p4.4
- glRotatef@VERSION 6.4.3.p4.4
- glSampleCoverage@VERSION 6.4.3.p4.4
- glSampleMaski@VERSION 6.4.3.p4.4
- glSamplerParameterIiv@VERSION 6.4.3.p4.4
- glSamplerParameterIuiv@VERSION 6.4.3.p4.4
- glSamplerParameterf@VERSION 6.4.3.p4.4
- glSamplerParameterfv@VERSION 6.4.3.p4.4
- glSamplerParameteri@VERSION 6.4.3.p4.4
- glSamplerParameteriv@VERSION 6.4.3.p4.4
- glScaled@VERSION 6.4.3.p4.4
- glScalef@VERSION 6.4.3.p4.4
- glScissor@VERSION 6.4.3.p4.4
- glSecondaryColor3b@VERSION 6.4.3.p4.4
- glSecondaryColor3bv@VERSION 6.4.3.p4.4
- glSecondaryColor3d@VERSION 6.4.3.p4.4
- glSecondaryColor3dv@VERSION 6.4.3.p4.4
- glSecondaryColor3f@VERSION 6.4.3.p4.4
- glSecondaryColor3fv@VERSION 6.4.3.p4.4
- glSecondaryColor3i@VERSION 6.4.3.p4.4
- glSecondaryColor3iv@VERSION 6.4.3.p4.4
- glSecondaryColor3s@VERSION 6.4.3.p4.4
- glSecondaryColor3sv@VERSION 6.4.3.p4.4
- glSecondaryColor3ub@VERSION 6.4.3.p4.4
- glSecondaryColor3ubv@VERSION 6.4.3.p4.4
- glSecondaryColor3ui@VERSION 6.4.3.p4.4
- glSecondaryColor3uiv@VERSION 6.4.3.p4.4
- glSecondaryColor3us@VERSION 6.4.3.p4.4
- glSecondaryColor3usv@VERSION 6.4.3.p4.4
- glSecondaryColorP3ui@VERSION 6.4.3.p4.4
- glSecondaryColorP3uiv@VERSION 6.4.3.p4.4
- glSecondaryColorPointer@VERSION 6.4.3.p4.4
- glSelectBuffer@VERSION 6.4.3.p4.4
- glSeparableFilter2D@VERSION 6.4.3.p4.4
- glShadeModel@VERSION 6.4.3.p4.4
- glShaderBinary@VERSION 6.4.3.p4.4
- glShaderSource@VERSION 6.4.3.p4.4
- glStencilFunc@VERSION 6.4.3.p4.4
- glStencilFuncSeparate@VERSION 6.4.3.p4.4
- glStencilMask@VERSION 6.4.3.p4.4
- glStencilMaskSeparate@VERSION 6.4.3.p4.4
- glStencilOp@VERSION 6.4.3.p4.4
- glStencilOpSeparate@VERSION 6.4.3.p4.4
- glTexBuffer@VERSION 6.4.3.p4.4
- glTexBufferRange@VERSION 6.4.3.p4.4
- glTexCoord1d@VERSION 6.4.3.p4.4
- glTexCoord1dv@VERSION 6.4.3.p4.4
- glTexCoord1f@VERSION 6.4.3.p4.4
- glTexCoord1fv@VERSION 6.4.3.p4.4
- glTexCoord1i@VERSION 6.4.3.p4.4
- glTexCoord1iv@VERSION 6.4.3.p4.4
- glTexCoord1s@VERSION 6.4.3.p4.4
- glTexCoord1sv@VERSION 6.4.3.p4.4
- glTexCoord2d@VERSION 6.4.3.p4.4
- glTexCoord2dv@VERSION 6.4.3.p4.4
- glTexCoord2f@VERSION 6.4.3.p4.4
- glTexCoord2fv@VERSION 6.4.3.p4.4
- glTexCoord2i@VERSION 6.4.3.p4.4
- glTexCoord2iv@VERSION 6.4.3.p4.4
- glTexCoord2s@VERSION 6.4.3.p4.4
- glTexCoord2sv@VERSION 6.4.3.p4.4
- glTexCoord3d@VERSION 6.4.3.p4.4
- glTexCoord3dv@VERSION 6.4.3.p4.4
- glTexCoord3f@VERSION 6.4.3.p4.4
- glTexCoord3fv@VERSION 6.4.3.p4.4
- glTexCoord3i@VERSION 6.4.3.p4.4
- glTexCoord3iv@VERSION 6.4.3.p4.4
- glTexCoord3s@VERSION 6.4.3.p4.4
- glTexCoord3sv@VERSION 6.4.3.p4.4
- glTexCoord4d@VERSION 6.4.3.p4.4
- glTexCoord4dv@VERSION 6.4.3.p4.4
- glTexCoord4f@VERSION 6.4.3.p4.4
- glTexCoord4fv@VERSION 6.4.3.p4.4
- glTexCoord4i@VERSION 6.4.3.p4.4
- glTexCoord4iv@VERSION 6.4.3.p4.4
- glTexCoord4s@VERSION 6.4.3.p4.4
- glTexCoord4sv@VERSION 6.4.3.p4.4
- glTexCoordP1ui@VERSION 6.4.3.p4.4
- glTexCoordP1uiv@VERSION 6.4.3.p4.4
- glTexCoordP2ui@VERSION 6.4.3.p4.4
- glTexCoordP2uiv@VERSION 6.4.3.p4.4
- glTexCoordP3ui@VERSION 6.4.3.p4.4
- glTexCoordP3uiv@VERSION 6.4.3.p4.4
- glTexCoordP4ui@VERSION 6.4.3.p4.4
- glTexCoordP4uiv@VERSION 6.4.3.p4.4
- glTexCoordPointer@VERSION 6.4.3.p4.4
- glTexDirectInvalidateVIV@VERSION 6.4.3.p4.4
- glTexDirectTiledMapVIV@VERSION 6.4.3.p4.4
- glTexDirectVIV@VERSION 6.4.3.p4.4
- glTexDirectVIVMap@VERSION 6.4.3.p4.4
- glTexEnvf@VERSION 6.4.3.p4.4
- glTexEnvfv@VERSION 6.4.3.p4.4
- glTexEnvi@VERSION 6.4.3.p4.4
- glTexEnviv@VERSION 6.4.3.p4.4
- glTexGend@VERSION 6.4.3.p4.4
- glTexGendv@VERSION 6.4.3.p4.4
- glTexGenf@VERSION 6.4.3.p4.4
- glTexGenfv@VERSION 6.4.3.p4.4
- glTexGeni@VERSION 6.4.3.p4.4
- glTexGeniv@VERSION 6.4.3.p4.4
- glTexImage1D@VERSION 6.4.3.p4.4
- glTexImage2D@VERSION 6.4.3.p4.4
- glTexImage2DMultisample@VERSION 6.4.3.p4.4
- glTexImage3D@VERSION 6.4.3.p4.4
- glTexImage3DMultisample@VERSION 6.4.3.p4.4
- glTexParameterIiv@VERSION 6.4.3.p4.4
- glTexParameterIuiv@VERSION 6.4.3.p4.4
- glTexParameterf@VERSION 6.4.3.p4.4
- glTexParameterfv@VERSION 6.4.3.p4.4
- glTexParameteri@VERSION 6.4.3.p4.4
- glTexParameteriv@VERSION 6.4.3.p4.4
- glTexStorage2D@VERSION 6.4.3.p4.4
- glTexStorage2DMultisample@VERSION 6.4.3.p4.4
- glTexStorage3D@VERSION 6.4.3.p4.4
- glTexStorage3DMultisample@VERSION 6.4.3.p4.4
- glTexSubImage1D@VERSION 6.4.3.p4.4
- glTexSubImage2D@VERSION 6.4.3.p4.4
- glTexSubImage3D@VERSION 6.4.3.p4.4
- glTransformFeedbackVaryings@VERSION 6.4.3.p4.4
- glTranslated@VERSION 6.4.3.p4.4
- glTranslatef@VERSION 6.4.3.p4.4
- glUniform1d@VERSION 6.4.3.p4.4
- glUniform1dv@VERSION 6.4.3.p4.4
- glUniform1f@VERSION 6.4.3.p4.4
- glUniform1fv@VERSION 6.4.3.p4.4
- glUniform1i@VERSION 6.4.3.p4.4
- glUniform1iv@VERSION 6.4.3.p4.4
- glUniform1ui@VERSION 6.4.3.p4.4
- glUniform1uiv@VERSION 6.4.3.p4.4
- glUniform2d@VERSION 6.4.3.p4.4
- glUniform2dv@VERSION 6.4.3.p4.4
- glUniform2f@VERSION 6.4.3.p4.4
- glUniform2fv@VERSION 6.4.3.p4.4
- glUniform2i@VERSION 6.4.3.p4.4
- glUniform2iv@VERSION 6.4.3.p4.4
- glUniform2ui@VERSION 6.4.3.p4.4
- glUniform2uiv@VERSION 6.4.3.p4.4
- glUniform3d@VERSION 6.4.3.p4.4
- glUniform3dv@VERSION 6.4.3.p4.4
- glUniform3f@VERSION 6.4.3.p4.4
- glUniform3fv@VERSION 6.4.3.p4.4
- glUniform3i@VERSION 6.4.3.p4.4
- glUniform3iv@VERSION 6.4.3.p4.4
- glUniform3ui@VERSION 6.4.3.p4.4
- glUniform3uiv@VERSION 6.4.3.p4.4
- glUniform4d@VERSION 6.4.3.p4.4
- glUniform4dv@VERSION 6.4.3.p4.4
- glUniform4f@VERSION 6.4.3.p4.4
- glUniform4fv@VERSION 6.4.3.p4.4
- glUniform4i@VERSION 6.4.3.p4.4
- glUniform4iv@VERSION 6.4.3.p4.4
- glUniform4ui@VERSION 6.4.3.p4.4
- glUniform4uiv@VERSION 6.4.3.p4.4
- glUniformBlockBinding@VERSION 6.4.3.p4.4
- glUniformMatrix2dv@VERSION 6.4.3.p4.4
- glUniformMatrix2fv@VERSION 6.4.3.p4.4
- glUniformMatrix2x3dv@VERSION 6.4.3.p4.4
- glUniformMatrix2x3fv@VERSION 6.4.3.p4.4
- glUniformMatrix2x4dv@VERSION 6.4.3.p4.4
- glUniformMatrix2x4fv@VERSION 6.4.3.p4.4
- glUniformMatrix3dv@VERSION 6.4.3.p4.4
- glUniformMatrix3fv@VERSION 6.4.3.p4.4
- glUniformMatrix3x2dv@VERSION 6.4.3.p4.4
- glUniformMatrix3x2fv@VERSION 6.4.3.p4.4
- glUniformMatrix3x4dv@VERSION 6.4.3.p4.4
- glUniformMatrix3x4fv@VERSION 6.4.3.p4.4
- glUniformMatrix4dv@VERSION 6.4.3.p4.4
- glUniformMatrix4fv@VERSION 6.4.3.p4.4
- glUniformMatrix4x2dv@VERSION 6.4.3.p4.4
- glUniformMatrix4x2fv@VERSION 6.4.3.p4.4
- glUniformMatrix4x3dv@VERSION 6.4.3.p4.4
- glUniformMatrix4x3fv@VERSION 6.4.3.p4.4
- glUniformSubroutinesuiv@VERSION 6.4.3.p4.4
- glUnmapBuffer@VERSION 6.4.3.p4.4
- glUnmapBufferOES@VERSION 6.4.3.p4.4
- glUseProgram@VERSION 6.4.3.p4.4
- glUseProgramStages@VERSION 6.4.3.p4.4
- glValidateProgram@VERSION 6.4.3.p4.4
- glValidateProgramPipeline@VERSION 6.4.3.p4.4
- glVertex2d@VERSION 6.4.3.p4.4
- glVertex2dv@VERSION 6.4.3.p4.4
- glVertex2f@VERSION 6.4.3.p4.4
- glVertex2fv@VERSION 6.4.3.p4.4
- glVertex2i@VERSION 6.4.3.p4.4
- glVertex2iv@VERSION 6.4.3.p4.4
- glVertex2s@VERSION 6.4.3.p4.4
- glVertex2sv@VERSION 6.4.3.p4.4
- glVertex3d@VERSION 6.4.3.p4.4
- glVertex3dv@VERSION 6.4.3.p4.4
- glVertex3f@VERSION 6.4.3.p4.4
- glVertex3fv@VERSION 6.4.3.p4.4
- glVertex3i@VERSION 6.4.3.p4.4
- glVertex3iv@VERSION 6.4.3.p4.4
- glVertex3s@VERSION 6.4.3.p4.4
- glVertex3sv@VERSION 6.4.3.p4.4
- glVertex4d@VERSION 6.4.3.p4.4
- glVertex4dv@VERSION 6.4.3.p4.4
- glVertex4f@VERSION 6.4.3.p4.4
- glVertex4fv@VERSION 6.4.3.p4.4
- glVertex4i@VERSION 6.4.3.p4.4
- glVertex4iv@VERSION 6.4.3.p4.4
- glVertex4s@VERSION 6.4.3.p4.4
- glVertex4sv@VERSION 6.4.3.p4.4
- glVertexAttrib1d@VERSION 6.4.3.p4.4
- glVertexAttrib1dv@VERSION 6.4.3.p4.4
- glVertexAttrib1f@VERSION 6.4.3.p4.4
- glVertexAttrib1fv@VERSION 6.4.3.p4.4
- glVertexAttrib1s@VERSION 6.4.3.p4.4
- glVertexAttrib1sv@VERSION 6.4.3.p4.4
- glVertexAttrib2d@VERSION 6.4.3.p4.4
- glVertexAttrib2dv@VERSION 6.4.3.p4.4
- glVertexAttrib2f@VERSION 6.4.3.p4.4
- glVertexAttrib2fv@VERSION 6.4.3.p4.4
- glVertexAttrib2s@VERSION 6.4.3.p4.4
- glVertexAttrib2sv@VERSION 6.4.3.p4.4
- glVertexAttrib3d@VERSION 6.4.3.p4.4
- glVertexAttrib3dv@VERSION 6.4.3.p4.4
- glVertexAttrib3f@VERSION 6.4.3.p4.4
- glVertexAttrib3fv@VERSION 6.4.3.p4.4
- glVertexAttrib3s@VERSION 6.4.3.p4.4
- glVertexAttrib3sv@VERSION 6.4.3.p4.4
- glVertexAttrib4Nbv@VERSION 6.4.3.p4.4
- glVertexAttrib4Niv@VERSION 6.4.3.p4.4
- glVertexAttrib4Nsv@VERSION 6.4.3.p4.4
- glVertexAttrib4Nub@VERSION 6.4.3.p4.4
- glVertexAttrib4Nubv@VERSION 6.4.3.p4.4
- glVertexAttrib4Nuiv@VERSION 6.4.3.p4.4
- glVertexAttrib4Nusv@VERSION 6.4.3.p4.4
- glVertexAttrib4bv@VERSION 6.4.3.p4.4
- glVertexAttrib4d@VERSION 6.4.3.p4.4
- glVertexAttrib4dv@VERSION 6.4.3.p4.4
- glVertexAttrib4f@VERSION 6.4.3.p4.4
- glVertexAttrib4fv@VERSION 6.4.3.p4.4
- glVertexAttrib4iv@VERSION 6.4.3.p4.4
- glVertexAttrib4s@VERSION 6.4.3.p4.4
- glVertexAttrib4sv@VERSION 6.4.3.p4.4
- glVertexAttrib4ubv@VERSION 6.4.3.p4.4
- glVertexAttrib4uiv@VERSION 6.4.3.p4.4
- glVertexAttrib4usv@VERSION 6.4.3.p4.4
- glVertexAttribBinding@VERSION 6.4.3.p4.4
- glVertexAttribDivisor@VERSION 6.4.3.p4.4
- glVertexAttribFormat@VERSION 6.4.3.p4.4
- glVertexAttribI1i@VERSION 6.4.3.p4.4
- glVertexAttribI1iv@VERSION 6.4.3.p4.4
- glVertexAttribI1ui@VERSION 6.4.3.p4.4
- glVertexAttribI1uiv@VERSION 6.4.3.p4.4
- glVertexAttribI2i@VERSION 6.4.3.p4.4
- glVertexAttribI2iv@VERSION 6.4.3.p4.4
- glVertexAttribI2ui@VERSION 6.4.3.p4.4
- glVertexAttribI2uiv@VERSION 6.4.3.p4.4
- glVertexAttribI3i@VERSION 6.4.3.p4.4
- glVertexAttribI3iv@VERSION 6.4.3.p4.4
- glVertexAttribI3ui@VERSION 6.4.3.p4.4
- glVertexAttribI3uiv@VERSION 6.4.3.p4.4
- glVertexAttribI4bv@VERSION 6.4.3.p4.4
- glVertexAttribI4i@VERSION 6.4.3.p4.4
- glVertexAttribI4iv@VERSION 6.4.3.p4.4
- glVertexAttribI4sv@VERSION 6.4.3.p4.4
- glVertexAttribI4ubv@VERSION 6.4.3.p4.4
- glVertexAttribI4ui@VERSION 6.4.3.p4.4
- glVertexAttribI4uiv@VERSION 6.4.3.p4.4
- glVertexAttribI4usv@VERSION 6.4.3.p4.4
- glVertexAttribIFormat@VERSION 6.4.3.p4.4
- glVertexAttribIPointer@VERSION 6.4.3.p4.4
- glVertexAttribP1ui@VERSION 6.4.3.p4.4
- glVertexAttribP1uiv@VERSION 6.4.3.p4.4
- glVertexAttribP2ui@VERSION 6.4.3.p4.4
- glVertexAttribP2uiv@VERSION 6.4.3.p4.4
- glVertexAttribP3ui@VERSION 6.4.3.p4.4
- glVertexAttribP3uiv@VERSION 6.4.3.p4.4
- glVertexAttribP4ui@VERSION 6.4.3.p4.4
- glVertexAttribP4uiv@VERSION 6.4.3.p4.4
- glVertexAttribPointer@VERSION 6.4.3.p4.4
- glVertexBindingDivisor@VERSION 6.4.3.p4.4
- glVertexP2ui@VERSION 6.4.3.p4.4
- glVertexP2uiv@VERSION 6.4.3.p4.4
- glVertexP3ui@VERSION 6.4.3.p4.4
- glVertexP3uiv@VERSION 6.4.3.p4.4
- glVertexP4ui@VERSION 6.4.3.p4.4
- glVertexP4uiv@VERSION 6.4.3.p4.4
- glVertexPointer@VERSION 6.4.3.p4.4
- glViewport@VERSION 6.4.3.p4.4
- glWaitSync@VERSION 6.4.3.p4.4
- glWindowPos2d@VERSION 6.4.3.p4.4
- glWindowPos2dv@VERSION 6.4.3.p4.4
- glWindowPos2f@VERSION 6.4.3.p4.4
- glWindowPos2fv@VERSION 6.4.3.p4.4
- glWindowPos2i@VERSION 6.4.3.p4.4
- glWindowPos2iv@VERSION 6.4.3.p4.4
- glWindowPos2s@VERSION 6.4.3.p4.4
- glWindowPos2sv@VERSION 6.4.3.p4.4
- glWindowPos3d@VERSION 6.4.3.p4.4
- glWindowPos3dv@VERSION 6.4.3.p4.4
- glWindowPos3f@VERSION 6.4.3.p4.4
- glWindowPos3fv@VERSION 6.4.3.p4.4
- glWindowPos3i@VERSION 6.4.3.p4.4
- glWindowPos3iv@VERSION 6.4.3.p4.4
- glWindowPos3s@VERSION 6.4.3.p4.4
- glWindowPos3sv@VERSION 6.4.3.p4.4
 libGLES_CL.so.1 imx-gpu-viv-wayland #MINVER#
  GLES_CL_DISPATCH_TABLE@Base 6.4.3.p4.4
  eglBindAPI@Base 6.4.3.p4.4
@@ -3391,6 +2551,8 @@ libGLESv2.so.2 imx-gpu-viv-wayland #MINVER#
  glGetProgramResourceName@Base 6.4.3.p4.4
  glGetProgramResourceiv@Base 6.4.3.p4.4
  glGetProgramiv@Base 6.4.3.p4.4
+ glGetQueryObjecti64vEXT@Base 6.4.3.p4.6-1
+ glGetQueryObjectui64vEXT@Base 6.4.3.p4.6-1
  glGetQueryObjectuiv@Base 6.4.3.p4.4
  glGetQueryiv@Base 6.4.3.p4.4
  glGetRenderbufferParameteriv@Base 6.4.3.p4.4
@@ -3532,10 +2694,13 @@ libGLESv2.so.2 imx-gpu-viv-wayland #MINVER#
  glStencilOpSeparate@Base 6.4.3.p4.4
  glTexBuffer@Base 6.4.3.p4.4
  glTexBufferRange@Base 6.4.3.p4.4
+ glTexDirectCacheOperationVIV@Base 6.4.3.p4.6-1
  glTexDirectInvalidateVIV@Base 6.4.3.p4.4
  glTexDirectTiledMapVIV@Base 6.4.3.p4.4
  glTexDirectVIV@Base 6.4.3.p4.4
  glTexDirectVIVMap@Base 6.4.3.p4.4
+ glTexDirectWithTileStatusMapVIV@Base 6.4.3.p4.6-1
+ glTexDirectWithTileStatusVIV@Base 6.4.3.p4.6-1
  glTexImage2D@Base 6.4.3.p4.4
  glTexImage3D@Base 6.4.3.p4.4
  glTexParameterIiv@Base 6.4.3.p4.4
@@ -3624,10 +2789,18 @@ libNNArchPerf.so imx-gpu-viv-wayland #MINVER#
  APMCalcKernelCachePercentage@Base 6.4.3.p4.4
  APMCalcNNCycleCountBandWidth@Base 6.4.3.p4.4
  APMCalcNumOfKernel@Base 6.4.3.p4.4
+ APMCalcSHCycleCountBandWidth@Base 6.4.3.p4.6-1
  APMCalcTPCycleCountCore@Base 6.4.3.p4.4
+ APMGetBugFeatures@Base 6.4.3.p4.6-1
+ APMNNTransposeCycleCountBandWidth@Base 6.4.3.p4.6-1
  APMSetManualFeatures@Base 6.4.3.p4.4
  CreateAPModel@Base 6.4.3.p4.4
  DestroyAPModel@Base 6.4.3.p4.4
+ archGetFlagBits@Base 6.4.3.p4.6-1
+ archPRINT@Base 6.4.3.p4.6-1
+ archPerfFastXDP3@Base 6.4.3.p4.6-1
+ archSetFlagBits@Base 6.4.3.p4.6-1
+ isInterleavedMode@Base 6.4.3.p4.6-1
 libNNGPUBinary-evis.so imx-gpu-viv-wayland #MINVER#
  GetGPUNNVXCBinaryPtr@Base 6.4.3.p4.4
 libNNGPUBinary-evis2.so imx-gpu-viv-wayland #MINVER#
@@ -3976,26 +3149,48 @@ libOpenVG.so.1 imx-gpu-viv-wayland #MINVER#
  vguRect@Base 6.4.3.p4.4
  vguRoundRect@Base 6.4.3.p4.4
 libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
+ AllocatePatch@Base 6.4.3.p4.6-1
  BF16toFp32@Base 6.4.3.p4.4
  BatchPipelined@Base 6.4.3.p4.4
  CPUTensorReverse@Base 6.4.3.p4.4
+ CalcKernelReorderOffsetFP16BF16@Base 6.4.3.p4.6-1
+ CalcKernelReorderOffsetI8U8@Base 6.4.3.p4.6-1
+ CalculateCoefSum@Base 6.4.3.p4.6-1
+ CalculateHuffmanConfig@Base 6.4.3.p4.6-1
+ CalculateNewBiasForBF16FP16@Base 6.4.3.p4.6-1
+ CalculateReorderBuffSize@Base 6.4.3.p4.6-1
+ CalculateReorderOffset@Base 6.4.3.p4.6-1
+ ComputeGlobalPositionsFromIndex@Base 6.4.3.p4.6-1
  ComputeInputSize@Base 6.4.3.p4.4
  ComputeInputSizeEx@Base 6.4.3.p4.4
  Convolve@Base 6.4.3.p4.4
  DetectInImageNonZeroRatioFromConfig@Base 6.4.3.p4.4
  DoAlignForM@Base 6.4.3.p4.4
+ FillinHuffmanConfig@Base 6.4.3.p4.6-1
  FindBest2PlusRunSets@Base 6.4.3.p4.4
  FindBestSubset@Base 6.4.3.p4.4
+ FindBestSubsetPre@Base 6.4.3.p4.6-1
  Fp16toFp32@Base 6.4.3.p4.4
+ Fp21toFp32@Base 6.4.3.p4.6-1
+ Fp32ToSE4M9@Base 6.4.3.p4.6-1
  Fp32toAInt8@Base 6.4.3.p4.4
  Fp32toBF16@Base 6.4.3.p4.4
  Fp32toFp16@Base 6.4.3.p4.4
+ Fp32toFp21@Base 6.4.3.p4.6-1
+ Fp32toI4@Base 6.4.3.p4.6-1
  Fp32toInt16@Base 6.4.3.p4.4
+ Fp32toInt16_asym@Base 6.4.3.p4.6-1
  Fp32toInt32@Base 6.4.3.p4.4
+ Fp32toInt4@Base 6.4.3.p4.6-1
+ Fp32toInt64@Base 6.4.3.p4.6-1
  Fp32toInt8@Base 6.4.3.p4.4
  Fp32toInt8_asym@Base 6.4.3.p4.4
  Fp32toInt8_fc@Base 6.4.3.p4.4
+ Fp32toSE8M12@Base 6.4.3.p4.6-1
+ Fp32toU4@Base 6.4.3.p4.6-1
  Fp32toUchar@Base 6.4.3.p4.4
+ Fp32toUint16@Base 6.4.3.p4.6-1
+ Fp32toUint4@Base 6.4.3.p4.6-1
  Fp32toUint8@Base 6.4.3.p4.4
  FreeMemoryRequestList@Base 6.4.3.p4.4
  GetEsitimateWBSize@Base 6.4.3.p4.4
@@ -4005,26 +3200,43 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  Int32toFp32@Base 6.4.3.p4.4
  Int32toFp32Quant@Base 6.4.3.p4.4
  Int64toFp32@Base 6.4.3.p4.4
+ Int64toFp32Quant@Base 6.4.3.p4.6-1
+ Int8AsymtoFp32@Base 6.4.3.p4.6-1
  Int8toFp32@Base 6.4.3.p4.4
  IsTPSupport_CheckOutPixel@Base 6.4.3.p4.4
+ MAX_KERNEL_OUTPUT_CHANNEL@Base 6.4.3.p4.6-1
  MemPoolTypeToPerfType@Base 6.4.3.p4.4
  OutputAt@Base 6.4.3.p4.4
+ Pad2Tensor@Base 6.4.3.p4.6-1
+ ReleasePatch@Base 6.4.3.p4.6-1
+ ReorderOutputReallocateMem@Base 6.4.3.p4.6-1
  ReplaceOperationCmmd1xN@Base 6.4.3.p4.4
  ReplaceOperationCmmdZdpOpt@Base 6.4.3.p4.4
+ SE8M12toFp32@Base 6.4.3.p4.6-1
+ SE8M15toFp32@Base 6.4.3.p4.6-1
  SetBLOutputMetaFormat@Base 6.4.3.p4.4
+ TensorConvertDepthKernelImpl@Base 6.4.3.p4.6-1
  UInt16toFp32@Base 6.4.3.p4.4
  UchartoFp32@Base 6.4.3.p4.4
+ Uint16toFp32Quant@Base 6.4.3.p4.6-1
+ Uint4toFp32@Base 6.4.3.p4.6-1
  Uint8toFp32@Base 6.4.3.p4.4
- _AllocateTPLUTorListBuffer@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# _AllocateTPLUTorListBuffer@Base 6.4.3.p4.4
  _ConcatTensors@Base 6.4.3.p4.4
+ _CreateTensorAddressing@Base 6.4.3.p4.6-1
+ _CreateTensorFromHandle2@Base 6.4.3.p4.6-1
  _CreateTensorFromViewEx@Base 6.4.3.p4.4
  _CreateTensorView@Base 6.4.3.p4.4
  _DataGeneralConvert@Base 6.4.3.p4.4
  _FCOperationSW@Base 6.4.3.p4.4
  _IsSameDataType@Base 6.4.3.p4.4
+ _IsSamePerm@Base 6.4.3.p4.6-1
  _IsSameQuantType@Base 6.4.3.p4.4
  _IsSameType@Base 6.4.3.p4.4
  _TransposeTensor@Base 6.4.3.p4.4
+ _TransposeTensorEx@Base 6.4.3.p4.6-1
+ __GetTensorDataTypeName@Base 6.4.3.p4.6-1
+ _calculateOutPutPaddingForDeconv@Base 6.4.3.p4.6-1
  _calculateSizeAfterNNAnalysis@Base 6.4.3.p4.4
  _calculateSizeAfterTPAnalysis@Base 6.4.3.p4.4
  _compare@Base 6.4.3.p4.4
@@ -4032,6 +3244,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  _createInteranlTensor@Base 6.4.3.p4.4
  _createSimilarTensor@Base 6.4.3.p4.4
  _createTensor@Base 6.4.3.p4.4
+ _fillPerfInfo@Base 6.4.3.p4.6-1
  _fill_TP_ACTIVATION_Command@Base 6.4.3.p4.4
  _fill_TP_ADD_Command@Base 6.4.3.p4.4
  _fill_TP_DILATE_RESHUFFLE_Command@Base 6.4.3.p4.4
@@ -4052,26 +3265,39 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  _fill_TP_RNN_INTERLEAVE_Command@Base 6.4.3.p4.4
  _fill_TP_ROI_POOLING_Command@Base 6.4.3.p4.4
  _fill_TP_SINGLE_FC_Command@Base 6.4.3.p4.4
+ _fill_TP_SOFTMAX_Command@Base 6.4.3.p4.6-1
  _fill_TP_TENSOR_COPY4CONCAT_Command@Base 6.4.3.p4.4
  _fill_TP_TENSOR_COPY_Command@Base 6.4.3.p4.4
  _fill_TP_TENSOR_PAD_Command@Base 6.4.3.p4.4
  _fill_TP_TENSOR_SQUEEZE_Command@Base 6.4.3.p4.4
  _fill_TP_TENSOR_STRIDED_SLICE_Command@Base 6.4.3.p4.4
  _fill_TP_TENSOR_SVDF_MAP_Command@Base 6.4.3.p4.4
+ _fill_TP_TENSOR_TABLE_LOOKUP_Command@Base 6.4.3.p4.6-1
  _fill_TP_TRANSPOSE_Command@Base 6.4.3.p4.4
+ _fill_TP_TRANSPOSE_SPLITXY_Command@Base 6.4.3.p4.6-1
  _fill_TP_UPSAMPLE_CLIP_Command@Base 6.4.3.p4.4
  _fill_TP_UPSAMPLE_Command@Base 6.4.3.p4.4
+ _gcfVX_AddSubOpration@Base 6.4.3.p4.6-1
  _gcfVX_BitwiseOpration@Base 6.4.3.p4.4
  _gcfVX_Filter@Base 6.4.3.p4.4
  _gcfVX_Filter_Halfevis@Base 6.4.3.p4.4
  _gcfVX_Median3x3_Cpu@Base 6.4.3.p4.4
  _gcfVX_Morphology@Base 6.4.3.p4.4
  _getConvolutionLocalWorkGroupSize@Base 6.4.3.p4.4
+ _getCurrentHeaderType@Base 6.4.3.p4.6-1
+ _getHeaderLogicalPointerFromWB@Base 6.4.3.p4.6-1
+ _getHeaderPhysicalAddressFromWB@Base 6.4.3.p4.6-1
+ _getWeightFixedPointPosForAVGPooling@Base 6.4.3.p4.6-1
+ _vxoWeightBias_AllocateMemory@Base 6.4.3.p4.6-1
+ _vxoWeightBias_RemoveWBPool@Base 6.4.3.p4.6-1
  addDummy@Base 6.4.3.p4.4
  alignTensorChannelToTransposeChannel@Base 6.4.3.p4.4
  analysisKernelStreamForHuffman@Base 6.4.3.p4.4
+ analysisKernelStreamForV8Huffman@Base 6.4.3.p4.6-1
  analysisTPStreamForHuffman@Base 6.4.3.p4.4
  appendToIndexList@Base 6.4.3.p4.4
+ archCalculateArchPerfForShader@Base 6.4.3.p4.6-1
+ archCalculateArchPerfFromCommand@Base 6.4.3.p4.6-1
  archCalculateArchPerfFromTiling@Base 6.4.3.p4.4
  archCalculateArchPerfFromWB@Base 6.4.3.p4.4
  archGetLayerType@Base 6.4.3.p4.4
@@ -4137,19 +3363,28 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  basekernel_warp_perspective@Base 6.4.3.p4.4
  basekernel_weightedaverage@Base 6.4.3.p4.4
  basekernel_xor@Base 6.4.3.p4.4
+ caculBankPadSize@Base 6.4.3.p4.6-1
  caculate3DTileSize@Base 6.4.3.p4.4
+ caculateBranchAccumCircularHeight@Base 6.4.3.p4.6-1
+ caculateExtratorParameter@Base 6.4.3.p4.6-1
+ caculateFillerParameter@Base 6.4.3.p4.6-1
  caculateInputTransposeBufferSize@Base 6.4.3.p4.4
+ caculateNNAccumBits@Base 6.4.3.p4.6-1
+ caculateOpStreamModeSize@Base 6.4.3.p4.6-1
  caculateOutTransposeBufferSize@Base 6.4.3.p4.4
+ caculateTrsp2BufferSize@Base 6.4.3.p4.6-1
  calcFit1xN@Base 6.4.3.p4.4
  calcFitZdp3N@Base 6.4.3.p4.4
  calcKernelSizeV8Huffman@Base 6.4.3.p4.4
  calcKernelStreamSizeHuffman@Base 6.4.3.p4.4
  calcNonZeroCountV8Huffman@Base 6.4.3.p4.4
  calcTPKernelBufferSizeHuffman@Base 6.4.3.p4.4
+ calcuDataTransferRatio@Base 6.4.3.p4.6-1
  calculateActivationRangeFloat16@Base 6.4.3.p4.4
  calculateActivationRangeInt16@Base 6.4.3.p4.4
  calculateActivationRangeInt8@Base 6.4.3.p4.4
  calculateActivationRangeUInt8@Base 6.4.3.p4.4
+ calculateNNTrsp2SplitSize@Base 6.4.3.p4.6-1
  calculatePostMultiAndPostShift@Base 6.4.3.p4.4
  calculateSplitSize@Base 6.4.3.p4.4
  calculateTPWeightStreamSizeForZeroRunLen@Base 6.4.3.p4.4
@@ -4165,13 +3400,34 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  checkImageCacheMode@Base 6.4.3.p4.4
  checkOutputTensorDoAlu@Base 6.4.3.p4.4
  checkWeightZp@Base 6.4.3.p4.4
+ choose_pivot@Base 6.4.3.p4.6-1
+ clampLookUpTable@Base 6.4.3.p4.6-1
+ clockGating@Base 6.4.3.p4.6-1
+ commandDetection@Base 6.4.3.p4.6-1
  convertWBFormatFromI8ToU8@Base 6.4.3.p4.4
+ doNNTrsp2Reshape@Base 6.4.3.p4.6-1
  dummy0S0@Base 6.4.3.p4.4
  dummy1S0@Base 6.4.3.p4.4
  dummyS1@Base 6.4.3.p4.4
+ dynamicWeightConvDeinitailization@Base 6.4.3.p4.6-1
  eltwise@Base 6.4.3.p4.4
  estimateNNTransposeSize@Base 6.4.3.p4.4
  extensions@Base 6.4.3.p4.4
+ fillBF16ActivateHswishLUT@Base 6.4.3.p4.6-1
+ fillBF16ActivateHyperbolicTanLUT@Base 6.4.3.p4.6-1
+ fillBF16ActivateLogisticLUT@Base 6.4.3.p4.6-1
+ fillBF16ActivateRelu1LUT@Base 6.4.3.p4.6-1
+ fillBF16ActivateRelu6LUT@Base 6.4.3.p4.6-1
+ fillBF16ActivateReluLUT@Base 6.4.3.p4.6-1
+ fillBF16ActivateRsqrtLUT@Base 6.4.3.p4.6-1
+ fillBF16ActivateSoftReluLUT@Base 6.4.3.p4.6-1
+ fillBF16ActivateSqrtLUT@Base 6.4.3.p4.6-1
+ fillBF16ActivateSquareLUT@Base 6.4.3.p4.6-1
+ fillBF16ActivateSwishLUT@Base 6.4.3.p4.6-1
+ fillBF16LRNLUT@Base 6.4.3.p4.6-1
+ fillBF16LeakyReluLUT@Base 6.4.3.p4.6-1
+ fillLUT@Base 6.4.3.p4.6-1
+ fillTensorLookupTable@Base 6.4.3.p4.6-1
  fillinDepthWiseKernelBuffer@Base 6.4.3.p4.4
  fillinKernelBuffer@Base 6.4.3.p4.4
  fillinKernelBufferBalance@Base 6.4.3.p4.4
@@ -4190,12 +3446,21 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  gcfVX_AdjustLocalWorkSize@Base 6.4.3.p4.4
  gcfVX_AllocateKernelArgs@Base 6.4.3.p4.4
  gcfVX_AllocateMemForImageFromHandle@Base 6.4.3.p4.4
+ gcfVX_AllocateVIRKernelArgs@Base 6.4.3.p4.6-1
+ gcfVX_AllocateVIRPrvKernelArgs@Base 6.4.3.p4.6-1
  gcfVX_CaptureState@Base 6.4.3.p4.4
  gcfVX_Commit@Base 6.4.3.p4.4
  gcfVX_CreateShader@Base 6.4.3.p4.4
+ gcfVX_CreateVIRShader@Base 6.4.3.p4.6-1
+ gcfVX_EndCAPBUF@Base 6.4.3.p4.6-1
  gcfVX_ExecuteKernel@Base 6.4.3.p4.4
+ gcfVX_ExecuteVIRKernel@Base 6.4.3.p4.6-1
  gcfVX_Flush@Base 6.4.3.p4.4
+ gcfVX_FreeCAPBUFMetaQueryBuffer@Base 6.4.3.p4.6-1
  gcfVX_FreeKernelArgs@Base 6.4.3.p4.4
+ gcfVX_FreeVIRKernelArgs@Base 6.4.3.p4.6-1
+ gcfVX_FreeVIRKernelPrvArgs@Base 6.4.3.p4.6-1
+ gcfVX_GetCaptureBufferInfo@Base 6.4.3.p4.6-1
  gcfVX_GetImageInfo@Base 6.4.3.p4.4
  gcfVX_GetImageInfoFromTensor@Base 6.4.3.p4.4
  gcfVX_GetSingleFormat@Base 6.4.3.p4.4
@@ -4209,20 +3474,42 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  gcfVX_PrintData@Base 6.4.3.p4.4
  gcfVX_PrintParseData@Base 6.4.3.p4.4
  gcfVX_PrintfFmt@Base 6.4.3.p4.4
+ gcfVX_QueryCAPBUFMetaData@Base 6.4.3.p4.6-1
  gcfVX_SetKernelArg@Base 6.4.3.p4.4
+ gcfVX_SetVIRKernelArg@Base 6.4.3.p4.6-1
+ gcfVX_StartCAPBUF@Base 6.4.3.p4.6-1
  gcfVX_UnloadCompiler@Base 6.4.3.p4.4
  gcoVX_AddObject@Base 6.4.3.p4.4
  gcoVX_ForceTpCoreCount@Base 6.4.3.p4.4
+ generateRootOpInputCircular@Base 6.4.3.p4.6-1
+ getArrayMaxMin@Base 6.4.3.p4.6-1
+ getBankPadSize@Base 6.4.3.p4.6-1
+ getBaseF32@Base 6.4.3.p4.6-1
+ getBestExpBits@Base 6.4.3.p4.6-1
+ getBranchAccumCircularHeight@Base 6.4.3.p4.6-1
  getClampMaxAndMin@Base 6.4.3.p4.4
+ getExtrartorBoderConst@Base 6.4.3.p4.6-1
  getFP32M0AndN@Base 6.4.3.p4.4
  getFilePath@Base 6.4.3.p4.4
+ getFlatByteOffset@Base 6.4.3.p4.6-1
+ getFlatByteOffsetWithBroadcast@Base 6.4.3.p4.6-1
+ getFp32DataFromScalar@Base 6.4.3.p4.6-1
+ getHWBoderConst@Base 6.4.3.p4.6-1
  getHWBorderMode@Base 6.4.3.p4.4
  getHWRoundingMode@Base 6.4.3.p4.4
+ getHWcompressionMode@Base 6.4.3.p4.6-1
  getHwPoolingType@Base 6.4.3.p4.4
+ getInitYsize@Base 6.4.3.p4.6-1
+ getLookUpTableOut@Base 6.4.3.p4.6-1
+ getMaxMinWithDataType@Base 6.4.3.p4.6-1
+ getNNConvPadSize@Base 6.4.3.p4.6-1
+ getNNTrsp2TilingParam@Base 6.4.3.p4.6-1
  getPatchLocation@Base 6.4.3.p4.4
  getSHKernelType@Base 6.4.3.p4.4
  getSHPoolType@Base 6.4.3.p4.4
  getTPCoreCount@Base 6.4.3.p4.4
+ getTrsp2SramStride@Base 6.4.3.p4.6-1
+ getTrsp2TileSizeInBytes@Base 6.4.3.p4.6-1
  getUserIDFromOutputTensor@Base 6.4.3.p4.4
  getbaseF24@Base 6.4.3.p4.4
  huffCode@Base 6.4.3.p4.4
@@ -4231,7 +3518,11 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  initArchModelConfig@Base 6.4.3.p4.4
  initIndexList@Base 6.4.3.p4.4
  initUndefinedHardwareConfig@Base 6.4.3.p4.4
- int8toFp32@Base 6.4.3.p4.4
+ int16toFp32Quant@Base 6.4.3.p4.6-1
+ int4toFp32@Base 6.4.3.p4.6-1
+#MISSING: 6.4.3.p4.6-1# int8toFp32@Base 6.4.3.p4.4
+ internalKernel_ChannelCombine@Base 6.4.3.p4.6-1
+ internalKernel_ColorConvert@Base 6.4.3.p4.6-1
  internalKernel_CreateLister@Base 6.4.3.p4.4
  internalKernel_EdgeTraceClamp@Base 6.4.3.p4.4
  internalKernel_EdgeTraceHysteresis@Base 6.4.3.p4.4
@@ -4241,7 +3532,10 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  internalKernel_EqualizeHistogramHist@Base 6.4.3.p4.4
  internalKernel_EqualizeHistogramLut@Base 6.4.3.p4.4
  internalKernel_Fast9Corners_NonMax@Base 6.4.3.p4.4
+ internalKernel_IntegralImageHorz@Base 6.4.3.p4.6-1
  internalKernel_IntegralImageStep@Base 6.4.3.p4.4
+ internalKernel_IntegralImageVert@Base 6.4.3.p4.6-1
+ internalKernel_LKTracker@Base 6.4.3.p4.6-1
  internalKernel_Laplacian3x3@Base 6.4.3.p4.4
  internalKernel_MinMacLocPackArrays@Base 6.4.3.p4.4
  internalKernel_MinMaxGetLocation@Base 6.4.3.p4.4
@@ -4251,16 +3545,20 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  internalKernel_VLKTracker@Base 6.4.3.p4.4
  internalKernel_census3x3@Base 6.4.3.p4.4
  internalkernel_Conv3dLayer@Base 6.4.3.p4.4
+ internalkernel_DeConv3dLayer@Base 6.4.3.p4.6-1
  internalkernel_Fast9Corners_Strength@Base 6.4.3.p4.4
  internalkernel_NNActivationLayer@Base 6.4.3.p4.4
- internalkernel_NNAdapter@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# internalkernel_NNAdapter@Base 6.4.3.p4.4
+ internalkernel_NNBatchGemmLayer@Base 6.4.3.p4.6-1
  internalkernel_NNBatchNormLayer@Base 6.4.3.p4.4
  internalkernel_NNConcat2Layer@Base 6.4.3.p4.4
  internalkernel_NNConcatIndefiniteLayer@Base 6.4.3.p4.4
  internalkernel_NNConvolutionLayer@Base 6.4.3.p4.4
  internalkernel_NNConvolutionReluCnnLayer@Base 6.4.3.p4.4
+ internalkernel_NNConvolutionReluPoolingAddCnnLayer2@Base 6.4.3.p4.6-1
  internalkernel_NNConvolutionReluPoolingCnnLayer2@Base 6.4.3.p4.4
  internalkernel_NNConvolutionReluPoolingCnnLayer@Base 6.4.3.p4.4
+ internalkernel_NNConvolutionReluPoolingMultiplyCnnLayer2@Base 6.4.3.p4.6-1
  internalkernel_NNDeConvolutionLayer@Base 6.4.3.p4.4
  internalkernel_NNFullyConnectedLayer11@Base 6.4.3.p4.4
  internalkernel_NNFullyConnectedLayer@Base 6.4.3.p4.4
@@ -4270,6 +3568,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  internalkernel_NNL2NormalizeLayer@Base 6.4.3.p4.4
  internalkernel_NNLSHProjection@Base 6.4.3.p4.4
  internalkernel_NNLUT2@Base 6.4.3.p4.4
+ internalkernel_NNLUT@Base 6.4.3.p4.6-1
  internalkernel_NNLeakyReluLayer@Base 6.4.3.p4.4
  internalkernel_NNNormalization@Base 6.4.3.p4.4
  internalkernel_NNNormalizationLayer2@Base 6.4.3.p4.4
@@ -4308,6 +3607,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  internalkernel_NN_LSTMLayer@Base 6.4.3.p4.4
  internalkernel_NN_LSTMUnit@Base 6.4.3.p4.4
  internalkernel_PReluLayer@Base 6.4.3.p4.4
+ internalkernel_StreamProcessor@Base 6.4.3.p4.6-1
  internalkernel_array_copy@Base 6.4.3.p4.4
  internalkernel_bilateral_filter@Base 6.4.3.p4.4
  internalkernel_convolution_copy@Base 6.4.3.p4.4
@@ -4316,6 +3616,8 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  internalkernel_distributtion_copy@Base 6.4.3.p4.4
  internalkernel_edge_trace@Base 6.4.3.p4.4
  internalkernel_euclidian_nonmax@Base 6.4.3.p4.4
+ internalkernel_final_nonmax@Base 6.4.3.p4.6-1
+ internalkernel_gaussian5x5_scale@Base 6.4.3.p4.6-1
  internalkernel_harris_score@Base 6.4.3.p4.4
  internalkernel_hough_fillaccum@Base 6.4.3.p4.4
  internalkernel_hough_getlines@Base 6.4.3.p4.4
@@ -4333,6 +3635,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  internalkernel_norm@Base 6.4.3.p4.4
  internalkernel_norm_f16@Base 6.4.3.p4.4
  internalkernel_phase_f16@Base 6.4.3.p4.4
+ internalkernel_pre_nonmax@Base 6.4.3.p4.6-1
  internalkernel_pyramid_copy_image@Base 6.4.3.p4.4
  internalkernel_remap_copy@Base 6.4.3.p4.4
  internalkernel_scalar_copy@Base 6.4.3.p4.4
@@ -4355,35 +3658,74 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  isBuildInKernel@Base 6.4.3.p4.4
  isFullModuleName@Base 6.4.3.p4.4
  isInt64BiasOverflow@Base 6.4.3.p4.4
+ isNNConv@Base 6.4.3.p4.6-1
+ isNNLUTSupportedActivation@Base 6.4.3.p4.6-1
+ isNNTrspPhase2@Base 6.4.3.p4.6-1
+ isSameBlockRange@Base 6.4.3.p4.6-1
+ isSameShape@Base 6.4.3.p4.6-1
+ listInitHead@Base 6.4.3.p4.6-1
+ listInsertNode@Base 6.4.3.p4.6-1
+ listInsertNodeTail@Base 6.4.3.p4.6-1
+ listRemoveNode@Base 6.4.3.p4.6-1
  loadSources@Base 6.4.3.p4.4
+ maxErrorLUT2@Base 6.4.3.p4.6-1
+ maxErrorLUT@Base 6.4.3.p4.6-1
+ minus8bitUint@Base 6.4.3.p4.6-1
  nnGetNCHWStreamFromTanspose@Base 6.4.3.p4.4
  nnTransposeChannel@Base 6.4.3.p4.4
  num_target_kernels@Base 6.4.3.p4.4
  packZeros@Base 6.4.3.p4.4
  patchNodeParamLocation@Base 6.4.3.p4.4
+ patternGenerator@Base 6.4.3.p4.6-1
  printf_aA@Base 6.4.3.p4.4
+ processLimitationCommand@Base 6.4.3.p4.6-1
+ queryNNCoreCount@Base 6.4.3.p4.6-1
+ queryNNCoreCountAvailable@Base 6.4.3.p4.6-1
+ quicksort@Base 6.4.3.p4.6-1
  readBinEntry@Base 6.4.3.p4.4
  readBits@Base 6.4.3.p4.4
+ readBitsFromIthWord@Base 6.4.3.p4.6-1
+ reorderDepthWiseKernelBufferV7@Base 6.4.3.p4.6-1
  reorderDepthWiseKernelBufferV8Huffman@Base 6.4.3.p4.4
+ reorderDepthWiseKernelBufferV8HuffmanFP16BF16@Base 6.4.3.p4.6-1
+ reorderDepthWiseKernelBufferV8HuffmanI8U8@Base 6.4.3.p4.6-1
+ reorderDepthWiseKernelBufferV8HuffmanInt16@Base 6.4.3.p4.6-1
  reorderKernelBufferV7HuffmanBalance@Base 6.4.3.p4.4
- reorderKernelBufferV8Huffman@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# reorderKernelBufferV8Huffman@Base 6.4.3.p4.4
  reorderKernelBufferV8HuffmanBalance@Base 6.4.3.p4.4
+ reorderKernelBufferV8HuffmanBalanceFP16BF16@Base 6.4.3.p4.6-1
+ reorderKernelBufferV8HuffmanBalanceI8U8@Base 6.4.3.p4.6-1
+ reorderKernelBufferV8HuffmanBalanceInt16@Base 6.4.3.p4.6-1
+ reorderKernelBufferV8HuffmanFP16BF16@Base 6.4.3.p4.6-1
+ reorderKernelBufferV8HuffmanI8U8@Base 6.4.3.p4.6-1
+ reorderKernelBufferV8HuffmanInt16@Base 6.4.3.p4.6-1
  reorderTPKernelBufferHuffman@Base 6.4.3.p4.4
  reorderWeightBiasBufferForHuffman@Base 6.4.3.p4.4
  replaceBits@Base 6.4.3.p4.4
  replaceKernelBufferZOffset@Base 6.4.3.p4.4
  reshuffleData@Base 6.4.3.p4.4
  reshuffleKernelTensor@Base 6.4.3.p4.4
+ revertWb1xN@Base 6.4.3.p4.6-1
  roundRTNE@Base 6.4.3.p4.4
  roundRTNI@Base 6.4.3.p4.4
  roundRTZ@Base 6.4.3.p4.4
  roundSimpleRounding@Base 6.4.3.p4.4
  saveIndexFromListToArray@Base 6.4.3.p4.4
- setAxiSramToCArch@Base 6.4.3.p4.4
+ se8M23FromI32@Base 6.4.3.p4.6-1
+ se8M23FromI64@Base 6.4.3.p4.6-1
+#MISSING: 6.4.3.p4.6-1# setAxiSramToCArch@Base 6.4.3.p4.4
+ setCustomizedConfigsToCArch@Base 6.4.3.p4.6-1
+ setDMACfgableCommand@Base 6.4.3.p4.6-1
+ setLut2WeightBias@Base 6.4.3.p4.6-1
  shaderCopyLayer@Base 6.4.3.p4.4
  showDriverPerformance@Base 6.4.3.p4.4
  sizeCodeLen@Base 6.4.3.p4.4
+ splitKernelOnOutputChannel_CreateConv2dNode@Base 6.4.3.p4.6-1
+ splitKernelOnOutputChannel_GetTensorDatatypeSize@Base 6.4.3.p4.6-1
+ splitKernelOnOutputChannel_PrepareViewTensor@Base 6.4.3.p4.6-1
+ splitKernelOnOutputChannel_PrepareWeightTensor@Base 6.4.3.p4.6-1
  swap@Base 6.4.3.p4.4
+ swap_sort@Base 6.4.3.p4.6-1
  target_kernels@Base 6.4.3.p4.4
  updateZPForInputData@Base 6.4.3.p4.4
  updateZPForOutData@Base 6.4.3.p4.4
@@ -4403,17 +3745,19 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxAcquireMutex@Base 6.4.3.p4.4
  vxActivationLayer@Base 6.4.3.p4.4
  vxActivationLayer_11@Base 6.4.3.p4.4
- vxAdapterLayer@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# vxAdapterLayer@Base 6.4.3.p4.4
  vxAddArrayItems@Base 6.4.3.p4.4
  vxAddKernel@Base 6.4.3.p4.4
  vxAddKernelInProgram@Base 6.4.3.p4.4
  vxAddKernelInProgramEx@Base 6.4.3.p4.4
  vxAddLogEntry@Base 6.4.3.p4.4
  vxAddNode@Base 6.4.3.p4.4
+ vxAddOneInstToSPINST@Base 6.4.3.p4.6-1
  vxAddParameterToGraph@Base 6.4.3.p4.4
  vxAddParameterToKernel@Base 6.4.3.p4.4
  vxAddTilingKernel@Base 6.4.3.p4.4
  vxAddUserKernel@Base 6.4.3.p4.4
+ vxAddition@Base 6.4.3.p4.6-1
  vxAgeDelay@Base 6.4.3.p4.4
  vxAllocate@Base 6.4.3.p4.4
  vxAllocateAndZeroMemory@Base 6.4.3.p4.4
@@ -4424,6 +3768,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxAndNode@Base 6.4.3.p4.4
  vxAssignNodeAffinity@Base 6.4.3.p4.4
  vxAssignNodeCallback@Base 6.4.3.p4.4
+ vxBatchGemmNode@Base 6.4.3.p4.6-1
  vxBatchNormalizationLayer@Base 6.4.3.p4.4
  vxBilateralFilterNode@Base 6.4.3.p4.4
  vxBox3x3@Base 6.4.3.p4.4
@@ -4458,8 +3803,10 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxConvertPerfCountToMS@Base 6.4.3.p4.4
  vxConvolutionLayer@Base 6.4.3.p4.4
  vxConvolutionReluLayer@Base 6.4.3.p4.4
+ vxConvolutionReluPoolingAddLayer2@Base 6.4.3.p4.6-1
  vxConvolutionReluPoolingLayer2@Base 6.4.3.p4.4
  vxConvolutionReluPoolingLayer@Base 6.4.3.p4.4
+ vxConvolutionReluPoolingMultiplyLayer2@Base 6.4.3.p4.6-1
  vxConvolve5x5Node@Base 6.4.3.p4.4
  vxConvolve@Base 6.4.3.p4.4
  vxConvolveNode@Base 6.4.3.p4.4
@@ -4475,6 +3822,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxCopyRemapPatch@Base 6.4.3.p4.4
  vxCopyScalar@Base 6.4.3.p4.4
  vxCopyScalarWithSize@Base 6.4.3.p4.4
+ vxCopyTensorPatch2@Base 6.4.3.p4.6-1
  vxCopyTensorPatch@Base 6.4.3.p4.4
  vxCopyTensorPatchForNN11@Base 6.4.3.p4.4
  vxCopyTensorPatch_11@Base 6.4.3.p4.4
@@ -4486,12 +3834,15 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxCreateConvolution@Base 6.4.3.p4.4
  vxCreateDelay@Base 6.4.3.p4.4
  vxCreateDistribution@Base 6.4.3.p4.4
+ vxCreateDummyTensor@Base 6.4.3.p4.6-1
  vxCreateEvent@Base 6.4.3.p4.4
  vxCreateGenericNode@Base 6.4.3.p4.4
  vxCreateGraph@Base 6.4.3.p4.4
+ vxCreateGraphThreadRoutine@Base 6.4.3.p4.6-1
  vxCreateImage@Base 6.4.3.p4.4
  vxCreateImageFromChannel@Base 6.4.3.p4.4
  vxCreateImageFromHandle@Base 6.4.3.p4.4
+ vxCreateImageFromHandleEx@Base 6.4.3.p4.6-1
  vxCreateImageFromROI@Base 6.4.3.p4.4
  vxCreateImageObjectArrayFromTensor@Base 6.4.3.p4.4
  vxCreateImageObjectArrayFromTensor_11@Base 6.4.3.p4.4
@@ -4507,6 +3858,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxCreateProgramWithSource@Base 6.4.3.p4.4
  vxCreatePyramid@Base 6.4.3.p4.4
  vxCreateRemap@Base 6.4.3.p4.4
+ vxCreateSPINST@Base 6.4.3.p4.6-1
  vxCreateScalar@Base 6.4.3.p4.4
  vxCreateScalarWithSize@Base 6.4.3.p4.4
  vxCreateTensor2@Base 6.4.3.p4.4
@@ -4542,16 +3894,19 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxCreateWeightsBiasesParameterFromTensors2@Base 6.4.3.p4.4
  vxCreateWeightsBiasesParameterFromTensors3@Base 6.4.3.p4.4
  vxCreateWeightsBiasesParameterFromTensors@Base 6.4.3.p4.4
+ vxDataType_GetBitSize@Base 6.4.3.p4.6-1
  vxDataType_GetDestructor@Base 6.4.3.p4.4
  vxDataType_GetSize@Base 6.4.3.p4.4
  vxDataType_IsStatic@Base 6.4.3.p4.4
  vxDataType_IsValid@Base 6.4.3.p4.4
+ vxDeconv3dLayer@Base 6.4.3.p4.6-1
  vxDeconvolutionLayer@Base 6.4.3.p4.4
  vxDestroyEvent@Base 6.4.3.p4.4
  vxDestroyMutex@Base 6.4.3.p4.4
  vxDilate3x3@Base 6.4.3.p4.4
  vxDilate3x3Node@Base 6.4.3.p4.4
  vxDirective@Base 6.4.3.p4.4
+ vxDivFloor@Base 6.4.3.p4.6-1
  vxEdgeTraceClamp@Base 6.4.3.p4.4
  vxEdgeTraceClampNode@Base 6.4.3.p4.4
  vxEdgeTraceHysteresis@Base 6.4.3.p4.4
@@ -4581,10 +3936,101 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxEuclideanNonMaxSuppression_NonMax@Base 6.4.3.p4.4
  vxEuclideanNonMax_Max@Base 6.4.3.p4.4
  vxEuclideanNonMax_Sort@Base 6.4.3.p4.4
+ vxExecuteSWAbsDiff@Base 6.4.3.p4.6-1
+ vxExecuteSWAccumulate@Base 6.4.3.p4.6-1
+ vxExecuteSWAccumulateSquare@Base 6.4.3.p4.6-1
+ vxExecuteSWAccumulateWeighted@Base 6.4.3.p4.6-1
+ vxExecuteSWAddition@Base 6.4.3.p4.6-1
+ vxExecuteSWAnd@Base 6.4.3.p4.6-1
+ vxExecuteSWArrayCopy@Base 6.4.3.p4.6-1
+ vxExecuteSWBox3x3@Base 6.4.3.p4.6-1
+ vxExecuteSWChannelExtract@Base 6.4.3.p4.6-1
+ vxExecuteSWConvertDepth@Base 6.4.3.p4.6-1
+ vxExecuteSWConvolution3x3@Base 6.4.3.p4.6-1
+ vxExecuteSWConvolutionCopy@Base 6.4.3.p4.6-1
+ vxExecuteSWConvolve5x5@Base 6.4.3.p4.6-1
+ vxExecuteSWConvolve@Base 6.4.3.p4.6-1
+ vxExecuteSWCopyImage@Base 6.4.3.p4.6-1
+ vxExecuteSWCreateLister@Base 6.4.3.p4.6-1
+ vxExecuteSWDilate3x3@Base 6.4.3.p4.6-1
+ vxExecuteSWDistributionCopy@Base 6.4.3.p4.6-1
+ vxExecuteSWEdgeTraceClamp@Base 6.4.3.p4.6-1
+ vxExecuteSWEdgeTraceHysteresis@Base 6.4.3.p4.6-1
+ vxExecuteSWEdgeTraceThreshold@Base 6.4.3.p4.6-1
+ vxExecuteSWErode3x3@Base 6.4.3.p4.6-1
+ vxExecuteSWEuclideanNonMax@Base 6.4.3.p4.6-1
+ vxExecuteSWFast9CornersNonMax@Base 6.4.3.p4.6-1
+ vxExecuteSWFast9CornersStrength@Base 6.4.3.p4.6-1
+ vxExecuteSWGaussian3x3@Base 6.4.3.p4.6-1
+ vxExecuteSWGaussian5x5_Scale@Base 6.4.3.p4.6-1
+ vxExecuteSWHarrisScore@Base 6.4.3.p4.6-1
+ vxExecuteSWHistogram@Base 6.4.3.p4.6-1
+ vxExecuteSWHog_cells@Base 6.4.3.p4.6-1
+ vxExecuteSWHog_features@Base 6.4.3.p4.6-1
+ vxExecuteSWHoughFillaccum@Base 6.4.3.p4.6-1
+ vxExecuteSWHoughGetlines@Base 6.4.3.p4.6-1
+ vxExecuteSWHoughMakepoints@Base 6.4.3.p4.6-1
+ vxExecuteSWImageCopy@Base 6.4.3.p4.6-1
+ vxExecuteSWImageCrop@Base 6.4.3.p4.6-1
+ vxExecuteSWInternalBilateral_filter@Base 6.4.3.p4.6-1
+ vxExecuteSWInternalChannelCombine@Base 6.4.3.p4.6-1
+ vxExecuteSWInternalColorConvert@Base 6.4.3.p4.6-1
+ vxExecuteSWInternalEqualizeHistHist@Base 6.4.3.p4.6-1
+ vxExecuteSWInternalEqualizeHistogramCdf@Base 6.4.3.p4.6-1
+ vxExecuteSWInternalEqualizeHistogramLut@Base 6.4.3.p4.6-1
+ vxExecuteSWInternalIntegralHorz@Base 6.4.3.p4.6-1
+ vxExecuteSWInternalIntegralVert@Base 6.4.3.p4.6-1
+ vxExecuteSWInternalMeanStdDev@Base 6.4.3.p4.6-1
+ vxExecuteSWInternalNorm@Base 6.4.3.p4.6-1
+ vxExecuteSWInternalNormF16@Base 6.4.3.p4.6-1
+ vxExecuteSWInternalSobelMxN@Base 6.4.3.p4.6-1
+ vxExecuteSWInternalSobelMxNF16@Base 6.4.3.p4.6-1
+ vxExecuteSWInternalWarpAffine@Base 6.4.3.p4.6-1
+ vxExecuteSWLBP@Base 6.4.3.p4.6-1
+ vxExecuteSWLutCopy@Base 6.4.3.p4.6-1
+ vxExecuteSWMagnitude@Base 6.4.3.p4.6-1
+ vxExecuteSWMatchTemplate@Base 6.4.3.p4.6-1
+ vxExecuteSWMatrixCopy@Base 6.4.3.p4.6-1
+ vxExecuteSWMax@Base 6.4.3.p4.6-1
+ vxExecuteSWMedian3x3@Base 6.4.3.p4.6-1
+ vxExecuteSWMin@Base 6.4.3.p4.6-1
+ vxExecuteSWMinMaxGetLocation@Base 6.4.3.p4.6-1
+ vxExecuteSWMinMaxLocFilter@Base 6.4.3.p4.6-1
+ vxExecuteSWMultiply2DMatrixes@Base 6.4.3.p4.6-1
+ vxExecuteSWMultiply@Base 6.4.3.p4.6-1
+ vxExecuteSWNonLinearFilter@Base 6.4.3.p4.6-1
+ vxExecuteSWNonMaxSuppression@Base 6.4.3.p4.6-1
+ vxExecuteSWNonMaxSuppressionCanny@Base 6.4.3.p4.6-1
+ vxExecuteSWNot@Base 6.4.3.p4.6-1
+ vxExecuteSWOr@Base 6.4.3.p4.6-1
+ vxExecuteSWPackArrays@Base 6.4.3.p4.6-1
+ vxExecuteSWPhase@Base 6.4.3.p4.6-1
+ vxExecuteSWPhaseF16@Base 6.4.3.p4.6-1
+ vxExecuteSWPyramidCopyImage@Base 6.4.3.p4.6-1
+ vxExecuteSWRemap@Base 6.4.3.p4.6-1
+ vxExecuteSWRemapCopy@Base 6.4.3.p4.6-1
+ vxExecuteSWScalarCopy@Base 6.4.3.p4.6-1
+ vxExecuteSWScaleImage@Base 6.4.3.p4.6-1
+ vxExecuteSWScharr3x3@Base 6.4.3.p4.6-1
+ vxExecuteSWSobel3x3@Base 6.4.3.p4.6-1
+ vxExecuteSWSubtraction@Base 6.4.3.p4.6-1
+ vxExecuteSWTableLookup@Base 6.4.3.p4.6-1
+ vxExecuteSWTensorCopy@Base 6.4.3.p4.6-1
+ vxExecuteSWTensorLUT@Base 6.4.3.p4.6-1
+ vxExecuteSWTensor_convert_depth@Base 6.4.3.p4.6-1
+ vxExecuteSWThreshold@Base 6.4.3.p4.6-1
+ vxExecuteSWTransPose2DTensor@Base 6.4.3.p4.6-1
+ vxExecuteSWUpSampleConvert@Base 6.4.3.p4.6-1
+ vxExecuteSWUpSamplePadding@Base 6.4.3.p4.6-1
+ vxExecuteSWVLKTracker@Base 6.4.3.p4.6-1
+ vxExecuteSWWarpPerspective@Base 6.4.3.p4.6-1
+ vxExecuteSWWeightedAverage@Base 6.4.3.p4.6-1
+ vxExecuteSWXor@Base 6.4.3.p4.6-1
  vxFast9CornersNonMaxNode@Base 6.4.3.p4.4
  vxFast9CornersStrengthNode@Base 6.4.3.p4.4
  vxFastCornersNode@Base 6.4.3.p4.4
  vxFinalizeKernel@Base 6.4.3.p4.4
+ vxFindOverlapRectangle@Base 6.4.3.p4.6-1
  vxFlushHandle@Base 6.4.3.p4.4
  vxFormatImagePatchAddress1d@Base 6.4.3.p4.4
  vxFormatImagePatchAddress2d@Base 6.4.3.p4.4
@@ -4596,8 +4042,10 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxGRUUnitLayer@Base 6.4.3.p4.4
  vxGaussian3x3@Base 6.4.3.p4.4
  vxGaussian3x3Node@Base 6.4.3.p4.4
+ vxGaussian5x5ScaleNode@Base 6.4.3.p4.6-1
  vxGaussianPyramidNode@Base 6.4.3.p4.4
  vxGenerateNBG@Base 6.4.3.p4.4
+ vxGetArgSize@Base 6.4.3.p4.6-1
  vxGetChildGraphOfNode@Base 6.4.3.p4.4
  vxGetContext@Base 6.4.3.p4.4
  vxGetGraphParameterByIndex@Base 6.4.3.p4.4
@@ -4605,6 +4053,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxGetKernelByName@Base 6.4.3.p4.4
  vxGetKernelParameterByIndex@Base 6.4.3.p4.4
  vxGetLocationNode@Base 6.4.3.p4.4
+ vxGetNodeSpeciaslUsage@Base 6.4.3.p4.6-1
  vxGetObjectArrayItem@Base 6.4.3.p4.4
  vxGetParameterByIndex@Base 6.4.3.p4.4
  vxGetPyramidLevel@Base 6.4.3.p4.4
@@ -4618,6 +4067,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxGetUserStructEnumByName@Base 6.4.3.p4.4
  vxGetUserStructNameByEnum@Base 6.4.3.p4.4
  vxGetValidRegionImage@Base 6.4.3.p4.4
+ vxGetValueFromScalarWithInputInfo@Base 6.4.3.p4.6-1
  vxHOGCellsNode@Base 6.4.3.p4.4
  vxHOGFeaturesNode@Base 6.4.3.p4.4
  vxHalfScaleGaussianNode@Base 6.4.3.p4.4
@@ -4637,8 +4087,12 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxImportKernelFromURL@Base 6.4.3.p4.4
  vxInRuntimeDebugMode@Base 6.4.3.p4.4
  vxIntegralImage@Base 6.4.3.p4.4
+ vxIntegralImageHorzNode@Base 6.4.3.p4.6-1
  vxIntegralImageNode@Base 6.4.3.p4.4
  vxIntegralImageStepNode@Base 6.4.3.p4.4
+ vxIntegralImageVertNode@Base 6.4.3.p4.6-1
+ vxInternalChannelCombineNode@Base 6.4.3.p4.6-1
+ vxInternalColorConvertNode@Base 6.4.3.p4.6-1
  vxIsGraphVerified@Base 6.4.3.p4.4
  vxIsSameString@Base 6.4.3.p4.4
  vxIsValidBorderMode@Base 6.4.3.p4.4
@@ -4772,6 +4226,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxReleasePyramid@Base 6.4.3.p4.4
  vxReleaseReference@Base 6.4.3.p4.4
  vxReleaseRemap@Base 6.4.3.p4.4
+ vxReleaseSPINST@Base 6.4.3.p4.6-1
  vxReleaseScalar@Base 6.4.3.p4.4
  vxReleaseTarget@Base 6.4.3.p4.4
  vxReleaseTensor@Base 6.4.3.p4.4
@@ -4790,6 +4245,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxReshapeTensor@Base 6.4.3.p4.4
  vxRetainReference@Base 6.4.3.p4.4
  vxRetrieveNodeCallback@Base 6.4.3.p4.4
+ vxRound@Base 6.4.3.p4.6-1
  vxSGMCost@Base 6.4.3.p4.4
  vxSVDFLayer@Base 6.4.3.p4.4
  vxScalarOperationNode@Base 6.4.3.p4.4
@@ -4801,6 +4257,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxSelectKernelSubname@Base 6.4.3.p4.4
  vxSelectNode@Base 6.4.3.p4.4
  vxSetArrayAttribute@Base 6.4.3.p4.4
+ vxSetAttributeToSPINST@Base 6.4.3.p4.6-1
  vxSetChildGraphOfNode@Base 6.4.3.p4.4
  vxSetContextAttribute@Base 6.4.3.p4.4
  vxSetConvolutionAttribute@Base 6.4.3.p4.4
@@ -4815,6 +4272,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxSetMetaFormatAttribute@Base 6.4.3.p4.4
  vxSetMetaFormatFromReference@Base 6.4.3.p4.4
  vxSetNodeAttribute@Base 6.4.3.p4.4
+ vxSetNodeSpeciaslUsage@Base 6.4.3.p4.6-1
  vxSetNodeTarget@Base 6.4.3.p4.4
  vxSetNodeUniform@Base 6.4.3.p4.4
  vxSetParameterByIndex@Base 6.4.3.p4.4
@@ -4842,11 +4300,14 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxStrCopySafe@Base 6.4.3.p4.4
  vxStrDup@Base 6.4.3.p4.4
  vxStrToLower@Base 6.4.3.p4.4
+ vxStreamProcessorNode@Base 6.4.3.p4.6-1
  vxSubtractNode@Base 6.4.3.p4.4
+ vxSubtraction@Base 6.4.3.p4.6-1
  vxSwapImage@Base 6.4.3.p4.4
  vxSwapImageHandle@Base 6.4.3.p4.4
  vxSwapTensor@Base 6.4.3.p4.4
  vxSwapTensorHandle@Base 6.4.3.p4.4
+ vxSysCancelJob@Base 6.4.3.p4.6-1
  vxSysSetVipFrequency@Base 6.4.3.p4.4
  vxTableLookup@Base 6.4.3.p4.4
  vxTableLookupNode@Base 6.4.3.p4.4
@@ -4867,6 +4328,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxTensorSqueezeNode@Base 6.4.3.p4.4
  vxTensorStrideSliceNode@Base 6.4.3.p4.4
  vxTensorSubtractNode@Base 6.4.3.p4.4
+ vxTensorTableLookupLayer@Base 6.4.3.p4.6-1
  vxTensorTableLookupNode2@Base 6.4.3.p4.4
  vxTensorTableLookupNode@Base 6.4.3.p4.4
  vxTensorTransposeNode2@Base 6.4.3.p4.4
@@ -4906,11 +4368,19 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxYUV2RGBScaleNode@Base 6.4.3.p4.4
  vxZeroMemory@Base 6.4.3.p4.4
  vx_nn_check_image_width_lt16@Base 6.4.3.p4.4
+ vx_nn_float32_to_dtype@Base 6.4.3.p4.6-1
  vx_nn_get_tensor_scale@Base 6.4.3.p4.4
  vx_nn_get_tensor_zero_point@Base 6.4.3.p4.4
+ vx_nn_gpu_quantize_multiplier_postshift_limitation@Base 6.4.3.p4.6-1
  vx_nn_is_shader_fast_mode@Base 6.4.3.p4.4
  vx_nn_kernel_optimize_element_shape@Base 6.4.3.p4.4
+ vx_nn_kernel_optimize_element_shape_keep_dim0@Base 6.4.3.p4.6-1
+ vx_nn_kernel_optimize_eltwise_shape@Base 6.4.3.p4.6-1
+ vx_nn_kernel_optimize_permute_shape@Base 6.4.3.p4.6-1
+ vx_nn_kernel_optimize_reduce_shape@Base 6.4.3.p4.6-1
+ vx_nn_kernel_optimize_reverse_shape@Base 6.4.3.p4.6-1
  vx_nn_kernel_optimize_softmax_shape@Base 6.4.3.p4.4
+ vx_nn_modify_multiplier_postshift@Base 6.4.3.p4.6-1
  vx_nn_rpn_iou_cpu1@Base 6.4.3.p4.4
  vx_nn_rpn_iou_cpu@Base 6.4.3.p4.4
  vx_nn_rpn_iou_cpu_f16@Base 6.4.3.p4.4
@@ -4919,31 +4389,43 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vx_nn_rpn_qsort_box@Base 6.4.3.p4.4
  vx_nn_rpn_qsort_box_fp16@Base 6.4.3.p4.4
  vx_nn_rpn_transform_box@Base 6.4.3.p4.4
+ vx_rng@Base 6.4.3.p4.6-1
+ vx_rng_next@Base 6.4.3.p4.6-1
+ vx_rng_uniform@Base 6.4.3.p4.6-1
  vx_vivPeferGraph@Base 6.4.3.p4.4
+ vxnneAccess@Base 6.4.3.p4.6-1
  vxnneActivation@Base 6.4.3.p4.4
- vxnneAdapter_CWHN2WHCN@Base 6.4.3.p4.4
- vxnneAdapter_SWCWHN2WHCN@Base 6.4.3.p4.4
- vxnneAdapter_Tensor_CWHN2WHCN@Base 6.4.3.p4.4
- vxnneAdapter_Tensor_FormatConvert@Base 6.4.3.p4.4
- vxnneAdapter_WHCN2CWHN@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# vxnneAdapter_CWHN2WHCN@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# vxnneAdapter_SWCWHN2WHCN@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# vxnneAdapter_Tensor_CWHN2WHCN@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# vxnneAdapter_Tensor_FormatConvert@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# vxnneAdapter_WHCN2CWHN@Base 6.4.3.p4.4
  vxnneAddKernelShadersInProgram@Base 6.4.3.p4.4
  vxnneAlignWithStride@Base 6.4.3.p4.4
- vxnneAllocateTPLUTBuffer@Base 6.4.3.p4.4
+ vxnneAllocateLUTBuffer@Base 6.4.3.p4.6-1
+ vxnneAllocateLUTBufferDefault@Base 6.4.3.p4.6-1
+#MISSING: 6.4.3.p4.6-1# vxnneAllocateTPLUTBuffer@Base 6.4.3.p4.4
  vxnneBatch_SetCurrentBatchArray@Base 6.4.3.p4.4
  vxnneCalculateConvTilingParam@Base 6.4.3.p4.4
- vxnneCommandBuffer_ExecuteCommands@Base 6.4.3.p4.4
+ vxnneCheckFilePath@Base 6.4.3.p4.6-1
+#MISSING: 6.4.3.p4.6-1# vxnneCommandBuffer_ExecuteCommands@Base 6.4.3.p4.4
  vxnneCommandBuffer_GenerateCommands@Base 6.4.3.p4.4
  vxnneComputeYUV2RGBInputParameter@Base 6.4.3.p4.4
  vxnneConcatIndefiniteLayer_Deinitialize@Base 6.4.3.p4.4
  vxnneConvertDynamicFixPointValueToFloat32@Base 6.4.3.p4.4
+ vxnneConvolutionReluPoolingExInitializer@Base 6.4.3.p4.6-1
  vxnneConvolutionReluPoolingInitializer@Base 6.4.3.p4.4
+ vxnneConvolutionReluPoolingSPInitializer@Base 6.4.3.p4.6-1
  vxnneDeConvolutionShaderExecutable@Base 6.4.3.p4.4
  vxnneDeconv1DShaderExecutable@Base 6.4.3.p4.4
+ vxnneDepthwiseConv1DShaderExecutable@Base 6.4.3.p4.6-1
+ vxnneDilationDepthwiseConv2DShaderExecutable@Base 6.4.3.p4.6-1
+ vxnneDmaCommand_GenerateCommands@Base 6.4.3.p4.6-1
  vxnneExecuteCopy@Base 6.4.3.p4.4
  vxnneExecuteLSTM_NN_TP_LAYER@Base 6.4.3.p4.4
  vxnneExecuteSCYUV2RGBScale@Base 6.4.3.p4.4
  vxnneExecuteSWActivation@Base 6.4.3.p4.4
- vxnneExecuteSWAdapter@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# vxnneExecuteSWAdapter@Base 6.4.3.p4.4
  vxnneExecuteSWBatchNormPreProcess@Base 6.4.3.p4.4
  vxnneExecuteSWBatchNormalization@Base 6.4.3.p4.4
  vxnneExecuteSWBrickMode@Base 6.4.3.p4.4
@@ -4962,6 +4444,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxnneExecuteSWL2Normalize@Base 6.4.3.p4.4
  vxnneExecuteSWLSHProjection@Base 6.4.3.p4.4
  vxnneExecuteSWLUT2@Base 6.4.3.p4.4
+ vxnneExecuteSWLUT@Base 6.4.3.p4.6-1
  vxnneExecuteSWLeakyRelu@Base 6.4.3.p4.4
  vxnneExecuteSWLstmPreProcessConcat@Base 6.4.3.p4.4
  vxnneExecuteSWNormalization@Base 6.4.3.p4.4
@@ -4971,6 +4454,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxnneExecuteSWRNNReshuffleInput@Base 6.4.3.p4.4
  vxnneExecuteSWRNNReshuffleWeightsBiases@Base 6.4.3.p4.4
  vxnneExecuteSWROIPooling@Base 6.4.3.p4.4
+ vxnneExecuteSWROIRect2ROIList@Base 6.4.3.p4.6-1
  vxnneExecuteSWRPN@Base 6.4.3.p4.4
  vxnneExecuteSWRPN_NMS@Base 6.4.3.p4.4
  vxnneExecuteSWRPN_Regression@Base 6.4.3.p4.4
@@ -4978,6 +4462,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxnneExecuteSWRPN_Softmax@Base 6.4.3.p4.4
  vxnneExecuteSWRPN_Sort@Base 6.4.3.p4.4
  vxnneExecuteSWRPN_SortNMS@Base 6.4.3.p4.4
+ vxnneExecuteSWRPN_SortNMS_Deinitialize@Base 6.4.3.p4.6-1
  vxnneExecuteSWReorg2@Base 6.4.3.p4.4
  vxnneExecuteSWReorg@Base 6.4.3.p4.4
  vxnneExecuteSWReshape@Base 6.4.3.p4.4
@@ -4998,6 +4483,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxnneExecuteSWTensorScale@Base 6.4.3.p4.4
  vxnneExecuteSWTensorSub@Base 6.4.3.p4.4
  vxnneExecuteSWTensorTranspose@Base 6.4.3.p4.4
+ vxnneExecuteSWTensorTranspose_DeInitialize@Base 6.4.3.p4.6-1
  vxnneExecuteSWYUV2RGBScale@Base 6.4.3.p4.4
  vxnneExecuteSW_GetInputSize@Base 6.4.3.p4.4
  vxnneExecuteSW_LSTMLayer@Base 6.4.3.p4.4
@@ -5011,6 +4497,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxnneGPUGemm_noBiasShaderExecutable@Base 6.4.3.p4.4
  vxnneGPULSTMUnitShaderExecutable@Base 6.4.3.p4.4
  vxnneGPUROIPoolShaderExecutable@Base 6.4.3.p4.4
+ vxnneGPUROIRect2ROIListShaderExecutable@Base 6.4.3.p4.6-1
  vxnneGPUTensor2RowShaderExecutable@Base 6.4.3.p4.4
  vxnneGPUTensorCopyROIShaderExecutable@Base 6.4.3.p4.4
  vxnneGPUTensorCopyShaderExecutable@Base 6.4.3.p4.4
@@ -5070,11 +4557,15 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxnneGetGPUSpace2DepthShaderExecutable@Base 6.4.3.p4.4
  vxnneGetGPUSvdfShaderExecutable@Base 6.4.3.p4.4
  vxnneGetGPUSwishShaderExecutable@Base 6.4.3.p4.4
+ vxnneGetGPUTensorAddShaderExecutable@Base 6.4.3.p4.6-1
  vxnneGetGPUTensorCropShaderExecutable@Base 6.4.3.p4.4
  vxnneGetGPUTensorEltwiseShaderExecutable@Base 6.4.3.p4.4
  vxnneGetGPUTensorLinearShaderExecutable@Base 6.4.3.p4.4
  vxnneGetGPUTensorMeanAxisShaderExecutable@Base 6.4.3.p4.4
+ vxnneGetGPUTensorMulShaderExecutable@Base 6.4.3.p4.6-1
+ vxnneGetGPUTensorPad2RefShaderExecutable@Base 6.4.3.p4.6-1
  vxnneGetGPUTensorPad2ShaderExecutable@Base 6.4.3.p4.4
+ vxnneGetGPUTensorPad2SymShaderExecutable@Base 6.4.3.p4.6-1
  vxnneGetGPUTensorPadShaderExecutable@Base 6.4.3.p4.4
  vxnneGetGPUTensorRoundingShaderExecutable@Base 6.4.3.p4.4
  vxnneGetGPUTensorScaleShaderExecutable@Base 6.4.3.p4.4
@@ -5096,6 +4587,8 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxnneGetLSTMUnitStateOutExtShaderExecutable@Base 6.4.3.p4.4
  vxnneGetLeakyReluShaderExecutable@Base 6.4.3.p4.4
  vxnneGetMaxPoolingShaderExecutable@Base 6.4.3.p4.4
+ vxnneGetNodeOutputNum@Base 6.4.3.p4.6-1
+ vxnneGetNodeOutputParameter@Base 6.4.3.p4.6-1
  vxnneGetNormalizationAxis0ShaderExecutable@Base 6.4.3.p4.4
  vxnneGetNormalizationAxis1ShaderExecutable@Base 6.4.3.p4.4
  vxnneGetNormalizationShaderExecutable@Base 6.4.3.p4.4
@@ -5106,6 +4599,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxnneGetPReluShaderExecutable@Base 6.4.3.p4.4
  vxnneGetPatternBitAndVipSramSizeNeed@Base 6.4.3.p4.4
  vxnneGetPatternBitAndVipSramSizeNeedFromOneZeroNum@Base 6.4.3.p4.4
+ vxnneGetReorderWeightShaderExecutable@Base 6.4.3.p4.6-1
  vxnneGetReorgShaderExecutable@Base 6.4.3.p4.4
  vxnneGetResizeNearestNeighborShaderExecutable@Base 6.4.3.p4.4
  vxnneGetReverseShaderExecutable@Base 6.4.3.p4.4
@@ -5137,10 +4631,13 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxnneGetTensorScaleShaderExecutable@Base 6.4.3.p4.4
  vxnneGetTensorStridedSliceShaderExecutable@Base 6.4.3.p4.4
  vxnneGetTensorTRShaderExecutable@Base 6.4.3.p4.4
+ vxnneGetTypeBitSize@Base 6.4.3.p4.6-1
  vxnneGetTypeSize@Base 6.4.3.p4.4
  vxnneGetUserShaderExecutable@Base 6.4.3.p4.4
  vxnneHorzMaxPoolShaderExecutable@Base 6.4.3.p4.4
  vxnneIsNNSupportFormat@Base 6.4.3.p4.4
+ vxnneIsOutputSupportFp32@Base 6.4.3.p4.6-1
+ vxnneIsTPSupportElementWise@Base 6.4.3.p4.6-1
  vxnneIsTPSupportFormat@Base 6.4.3.p4.4
  vxnneKernelShaders_CreateShaderExecutable@Base 6.4.3.p4.4
  vxnneLSTMLayerNNOperation_Deinitialize@Base 6.4.3.p4.4
@@ -5166,6 +4663,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxnneLayer_Initialize@Base 6.4.3.p4.4
  vxnneLayer_Ops_Initialize@Base 6.4.3.p4.4
  vxnneLayer_SetOperation@Base 6.4.3.p4.4
+ vxnneMkdir@Base 6.4.3.p4.6-1
  vxnneModifyNNLastNoflushBit@Base 6.4.3.p4.4
  vxnneModifyTPLastNoflushBit@Base 6.4.3.p4.4
  vxnneMultiChannel_ApplySyncMode@Base 6.4.3.p4.4
@@ -5175,22 +4673,27 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxnneOpDebug_DumpOperation@Base 6.4.3.p4.4
  vxnneOpDebug_DumpOperatoinInfos@Base 6.4.3.p4.4
  vxnneOperationCommand_GenerateCommands@Base 6.4.3.p4.4
+ vxnneOperationCommand_dependance@Base 6.4.3.p4.6-1
+ vxnneOperationCommand_verifyCommands@Base 6.4.3.p4.6-1
  vxnneOperation_AddReference@Base 6.4.3.p4.4
  vxnneOperation_CalculateDimSize@Base 6.4.3.p4.4
- vxnneOperation_ConvolutionReluPooling_Deinitialize@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# vxnneOperation_ConvolutionReluPooling_Deinitialize@Base 6.4.3.p4.4
  vxnneOperation_DeConvoulutionNNE_Deinitialize@Base 6.4.3.p4.4
  vxnneOperation_Deinitialize@Base 6.4.3.p4.4
  vxnneOperation_ExecuteCommands@Base 6.4.3.p4.4
  vxnneOperation_GetInfo@Base 6.4.3.p4.4
  vxnneOperation_Initialize@Base 6.4.3.p4.4
  vxnneOperation_InitializeCommand@Base 6.4.3.p4.4
+ vxnneOperation_NN_Deinitialize@Base 6.4.3.p4.6-1
  vxnneOperation_NodeDump@Base 6.4.3.p4.4
+ vxnneOperation_SP_Deinitialize@Base 6.4.3.p4.6-1
  vxnneOperation_TP_Deinitialize@Base 6.4.3.p4.4
  vxnneOperation_WBDump@Base 6.4.3.p4.4
  vxnneOperation_commandBufferDump@Base 6.4.3.p4.4
- vxnnePAD@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# vxnnePAD@Base 6.4.3.p4.4
  vxnnePoolingAvg@Base 6.4.3.p4.4
  vxnnePoolingCpu@Base 6.4.3.p4.4
+ vxnnePoolingL2@Base 6.4.3.p4.6-1
  vxnnePoolingMax@Base 6.4.3.p4.4
  vxnnePoolingOperation_Deinitialize@Base 6.4.3.p4.4
  vxnnePreLoadWeightsBiases@Base 6.4.3.p4.4
@@ -5233,9 +4736,19 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxnneTensorCopyShaderExecutable@Base 6.4.3.p4.4
  vxnneTensorExpandShaderExecutable@Base 6.4.3.p4.4
  vxnneTensorTransposeShaderExecutable@Base 6.4.3.p4.4
+ vxnneTriggerCommand_paramter@Base 6.4.3.p4.6-1
+ vxnneUseNNRingBuffer@Base 6.4.3.p4.6-1
  vxnneVertMaxPoolShaderExecutable@Base 6.4.3.p4.4
  vxnneWarp@Base 6.4.3.p4.4
  vxnneWrapUserNode@Base 6.4.3.p4.4
+ vxnode_Kernel_Funcs_Initialize@Base 6.4.3.p4.6-1
+ vxoAbsDiff_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoAccumulateSquare_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoAccumulateWeighted_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoAccumulate_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoAdd_SH_GPU_Initializer@Base 6.4.3.p4.6-1
+ vxoAnd_SH_GPU_Initializer@Base 6.4.3.p4.6-1
+ vxoArrayCopy_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoArray_AccessRange@Base 6.4.3.p4.4
  vxoArray_AllocateMemory@Base 6.4.3.p4.4
  vxoArray_AllocateMemoryEx@Base 6.4.3.p4.4
@@ -5252,40 +4765,75 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoArray_MapArrayRangeInt@Base 6.4.3.p4.4
  vxoArray_UnmapArrayRangeInt@Base 6.4.3.p4.4
  vxoBinaryGraph_CacheOrImport@Base 6.4.3.p4.4
+ vxoBinaryGraph_ChangeAddressToOffsetMask@Base 6.4.3.p4.6-1
+ vxoBinaryGraph_ConvertToOVXDataFormat@Base 6.4.3.p4.6-1
  vxoBinaryGraph_ConvertToOVXDataType@Base 6.4.3.p4.4
+ vxoBinaryGraph_ConvertToOVXQuantFormat@Base 6.4.3.p4.6-1
  vxoBinaryGraph_GenerateStatesBuffer@Base 6.4.3.p4.4
+ vxoBinaryGraph_GetBinaryNNCommandSize@Base 6.4.3.p4.6-1
+ vxoBinaryGraph_GetBinaryTPCommandSize@Base 6.4.3.p4.6-1
  vxoBinaryGraph_GetBlockBufferTotalSize@Base 6.4.3.p4.4
  vxoBinaryGraph_GetGraphInputOutput@Base 6.4.3.p4.4
  vxoBinaryGraph_GetLayerInfoPtrByIndex@Base 6.4.3.p4.4
- vxoBinaryGraph_GetPatchPtrByIndex@Base 6.4.3.p4.4
+ vxoBinaryGraph_GetMaskValue@Base 6.4.3.p4.6-1
+ vxoBinaryGraph_GetNNCommandSize@Base 6.4.3.p4.6-1
+ vxoBinaryGraph_GetNNOpPtrByIndex@Base 6.4.3.p4.6-1
+ vxoBinaryGraph_GetOperationPtrByIndex@Base 6.4.3.p4.6-1
+#MISSING: 6.4.3.p4.6-1# vxoBinaryGraph_GetPatchPtrByIndex@Base 6.4.3.p4.4
+ vxoBinaryGraph_GetSaveNBGInfo@Base 6.4.3.p4.6-1
+ vxoBinaryGraph_GetSearchPattenValue@Base 6.4.3.p4.6-1
  vxoBinaryGraph_GetSoftOpPtrByIndex@Base 6.4.3.p4.4
+ vxoBinaryGraph_GetTPCommandSize@Base 6.4.3.p4.6-1
+ vxoBinaryGraph_GetTPOpPtrByIndex@Base 6.4.3.p4.6-1
  vxoBinaryGraph_HasBinaryInGraph@Base 6.4.3.p4.4
+ vxoBinaryGraph_Is40bitVASupport@Base 6.4.3.p4.6-1
+ vxoBinaryGraph_IsBinary40bitVA@Base 6.4.3.p4.6-1
+ vxoBinaryGraph_IsPatchData40bitVA@Base 6.4.3.p4.6-1
  vxoBinaryGraph_LoadNBG@Base 6.4.3.p4.4
+ vxoBinaryGraph_Patch40bitVa@Base 6.4.3.p4.6-1
+ vxoBinaryGraph_PrintOperationInfo@Base 6.4.3.p4.6-1
  vxoBinaryGraph_QueryInputOutputParamByIndex@Base 6.4.3.p4.4
  vxoBinaryGraph_ReSaveInputAndPatchTable@Base 6.4.3.p4.4
  vxoBinaryGraph_ReSaveNNTPCommand@Base 6.4.3.p4.4
+ vxoBinaryGraph_ReSaveOperation@Base 6.4.3.p4.6-1
  vxoBinaryGraph_ReleaseCache@Base 6.4.3.p4.4
  vxoBinaryGraph_ReleaseNBG@Base 6.4.3.p4.4
  vxoBinaryGraph_ReleaseStatesBuffer@Base 6.4.3.p4.4
  vxoBinaryGraph_Run@Base 6.4.3.p4.4
  vxoBinaryGraph_SaveBinaryEntrance@Base 6.4.3.p4.4
+ vxoBinaryGraph_SaveBinaryEntranceBefore@Base 6.4.3.p4.6-1
+ vxoBinaryGraph_SaveBinaryNNTP@Base 6.4.3.p4.6-1
+ vxoBinaryGraph_SaveDynamicTPNNInfo@Base 6.4.3.p4.6-1
  vxoBinaryGraph_SaveEndOperation@Base 6.4.3.p4.4
+ vxoBinaryGraph_SaveFixedTPNNInfo@Base 6.4.3.p4.6-1
+ vxoBinaryGraph_SaveNNInputTwo@Base 6.4.3.p4.6-1
  vxoBinaryGraph_SaveNNTPStates@Base 6.4.3.p4.4
+ vxoBinaryGraph_SaveNetworkBinaryGraph@Base 6.4.3.p4.6-1
  vxoBinaryGraph_SaveSWOperation@Base 6.4.3.p4.4
  vxoBinaryGraph_SaveScalerLayer@Base 6.4.3.p4.4
  vxoBinaryGraph_SaveScalerOperation@Base 6.4.3.p4.4
+ vxoBinaryGraph_SaveSecInImageCircularBufEndAddr@Base 6.4.3.p4.6-1
+ vxoBinaryGraph_SaveSecInImageInputAddr@Base 6.4.3.p4.6-1
  vxoBinaryGraph_SaveShaderOperation@Base 6.4.3.p4.4
+ vxoBinaryGraph_SaveTPNNInputOutput@Base 6.4.3.p4.6-1
  vxoBinaryGraph_SaveTPNNOperation@Base 6.4.3.p4.4
  vxoBinaryGraph_SearchPattern@Base 6.4.3.p4.4
  vxoBinaryGraph_SearchPatternEx@Base 6.4.3.p4.4
+ vxoBinaryGraph_SearchPatternMask@Base 6.4.3.p4.6-1
+ vxoBinaryGraph_SetMaskValue@Base 6.4.3.p4.6-1
  vxoBinaryGraph_SetParameter@Base 6.4.3.p4.4
  vxoBinaryGraph_SpecifyDeviceID@Base 6.4.3.p4.4
  vxoBinaryGraph_StoreOperationPtr@Base 6.4.3.p4.4
  vxoBinaryGraph_UpdataIOPhsicalTable@Base 6.4.3.p4.4
- vxoBinaryGraph_UpdateInputOuput@Base 6.4.3.p4.4
+ vxoBinaryGraph_UpdateGraphInputOutput@Base 6.4.3.p4.6-1
+#MISSING: 6.4.3.p4.6-1# vxoBinaryGraph_UpdateInputOuput@Base 6.4.3.p4.4
  vxoBinaryGraph_UpdateInputOutputPhysicalTable@Base 6.4.3.p4.4
+ vxoBinaryGraph_UpdateTempTensorPhysicalTable@Base 6.4.3.p4.6-1
  vxoBinaryGraph_WrapNBGKernel@Base 6.4.3.p4.4
+ vxoBinaryGraph_isNNConvOperateType@Base 6.4.3.p4.6-1
+ vxoBox3x3_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoCalculateNNCompressionFirstTime@Base 6.4.3.p4.4
+ vxoChannelExtract_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoContext_AddAccessor@Base 6.4.3.p4.4
  vxoContext_AddObject@Base 6.4.3.p4.4
  vxoContext_FindMemoryMap@Base 6.4.3.p4.4
@@ -5296,24 +4844,43 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoContext_IsValid@Base 6.4.3.p4.4
  vxoContext_MemoryMap@Base 6.4.3.p4.4
  vxoContext_MemoryUnmap@Base 6.4.3.p4.4
+ vxoContext_Release@Base 6.4.3.p4.6-1
  vxoContext_RemoveAccessor@Base 6.4.3.p4.4
  vxoContext_RemoveObject@Base 6.4.3.p4.4
  vxoContext_SearchAccessor@Base 6.4.3.p4.4
- vxoContext_initializeSRAM@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# vxoContext_initializeSRAM@Base 6.4.3.p4.4
+ vxoConvertDepth_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoConvolutionCopy_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoConvolution_Destructor@Base 6.4.3.p4.4
+ vxoConvolve5x5_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoConvolve_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoCopyData2tensor@Base 6.4.3.p4.6-1
  vxoCopyImage@Base 6.4.3.p4.4
+ vxoCopyImage_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoCopyTensorPatch@Base 6.4.3.p4.4
+ vxoCreate2x2WeightsBiasesForTensorAdd@Base 6.4.3.p4.6-1
+ vxoCreateLister_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoCreateWeight@Base 6.4.3.p4.6-1
+ vxoCreateWeightsBiasesForDummyConv@Base 6.4.3.p4.6-1
  vxoCreateWeightsBiasesFromWeightBias@Base 6.4.3.p4.4
  vxoCreateWeightsBiasesParameterFromParams@Base 6.4.3.p4.4
  vxoCreateWeightsBiasesParameterFromTensors@Base 6.4.3.p4.4
- vxoCreateWeightsBiasesParameterFromTensorsLeakyRelu@Base 6.4.3.p4.4
- vxoCreateWeightsBiasesParameterFromTensorsPRelu@Base 6.4.3.p4.4
+ vxoCreateWeightsBiasesParameterFromTensorsEx@Base 6.4.3.p4.6-1
+#MISSING: 6.4.3.p4.6-1# vxoCreateWeightsBiasesParameterFromTensorsLeakyRelu@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# vxoCreateWeightsBiasesParameterFromTensorsPRelu@Base 6.4.3.p4.4
  vxoDelay_Create@Base 6.4.3.p4.4
  vxoDelay_Destructor@Base 6.4.3.p4.4
+ vxoDilate3x3_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoDistributionCopy_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoDistribution_Destructor@Base 6.4.3.p4.4
+ vxoEdgeTraceClamp_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoEdgeTraceHysteresis_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoEdgeTraceThreshold_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoElementOptimization_GetTensorShape@Base 6.4.3.p4.4
+ vxoErode3x3_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoError_Create@Base 6.4.3.p4.4
  vxoError_GetErrorObject@Base 6.4.3.p4.4
+ vxoEuclideanNonMax_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoFCOperationNN_Initialize@Base 6.4.3.p4.4
  vxoFCOperationSH_Initialize@Base 6.4.3.p4.4
  vxoFCOperationSW_Initialize@Base 6.4.3.p4.4
@@ -5324,21 +4891,46 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoFCOperation_TransposeTensor@Base 6.4.3.p4.4
  vxoFC_GetConfigFromEnv@Base 6.4.3.p4.4
  vxoFC_NN_Trans_Initialize@Base 6.4.3.p4.4
+ vxoFast9CornersNonMax_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoFast9CornersStrength_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoFillMetaData@Base 6.4.3.p4.4
  vxoFillMetaDataObj@Base 6.4.3.p4.4
+ vxoFinalNonMax_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoFlushTensorImage@Base 6.4.3.p4.4
+ vxoFreeAlignedBuffer@Base 6.4.3.p4.6-1
+ vxoGaussian3x3_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoGaussian5x5_Scale_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoGetDataDivisors@Base 6.4.3.p4.4
+ vxoGetDummyWeight_DataTypeFromInput@Base 6.4.3.p4.6-1
  vxoGetObjAttributeByNodeIndex@Base 6.4.3.p4.4
  vxoGlobalData_InitShaderLocalMemory@Base 6.4.3.p4.4
  vxoGlobalData_IsFeatureAvailable@Base 6.4.3.p4.4
+ vxoGlobalData_IsTPorTPLiteSupport@Base 6.4.3.p4.6-1
+ vxoGraphOpt_ConvertAvgPool2Conv_delete1x1pooling@Base 6.4.3.p4.6-1
  vxoGraphOptimization@Base 6.4.3.p4.4
+ vxoGraphOptimization_CalculateMaxDistance@Base 6.4.3.p4.6-1
  vxoGraphOptimization_ConcatTensors@Base 6.4.3.p4.4
+ vxoGraphOptimization_ConvertActivation2Conv@Base 6.4.3.p4.6-1
  vxoGraphOptimization_ConvertAvgPool2Conv@Base 6.4.3.p4.4
+ vxoGraphOptimization_ConvertAvgPool2Conv_Support@Base 6.4.3.p4.6-1
  vxoGraphOptimization_ConvertAvgPool2Conv_createWeight@Base 6.4.3.p4.4
+ vxoGraphOptimization_ConvertBatchFCAndTranspose@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ConvertBatchFCAndTranspose_createGroupDyanmicWeightConv@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ConvertBatchFCAndTranspose_createGroupMatrixB@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ConvertBatchFCAndTranspose_createGroupOut@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ConvertBatchFCAndTranspose_findPattern@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ConvertBatchFCAndTranspose_putBiastoAdd@Base 6.4.3.p4.6-1
  vxoGraphOptimization_ConvertBatchFCtoConv@Base 6.4.3.p4.4
+ vxoGraphOptimization_ConvertBatchFCtoConv_toTransposeAndNN@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ConvertBatchFCtoConv_todynamicWegihtConv@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ConvertBatchGemmtoFC@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ConvertMaxPool2Conv@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ConvertMaxPool2Conv_createWeight@Base 6.4.3.p4.6-1
  vxoGraphOptimization_CreateWBParameter@Base 6.4.3.p4.4
  vxoGraphOptimization_DeleteReshape@Base 6.4.3.p4.4
  vxoGraphOptimization_DispelConcat@Base 6.4.3.p4.4
+ vxoGraphOptimization_GetTensorBaseMemory@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_IsWithinMaxDistance@Base 6.4.3.p4.6-1
  vxoGraphOptimization_LayerMerge@Base 6.4.3.p4.4
  vxoGraphOptimization_LayerSwaping@Base 6.4.3.p4.4
  vxoGraphOptimization_MergeConvolutionNodes@Base 6.4.3.p4.4
@@ -5346,8 +4938,24 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoGraphOptimization_MergeROIPoolmodes@Base 6.4.3.p4.4
  vxoGraphOptimization_MergeWithChildNodes@Base 6.4.3.p4.4
  vxoGraphOptimization_MulAdd2BN@Base 6.4.3.p4.4
+ vxoGraphOptimization_ResizeBilinear@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ResizeBilinear_CreateConv2dNode@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ResizeBilinear_CreateDepthToSpaceNode@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ResizeBilinear_PrepareKernelData@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ResizeBilinear_magnification@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ResizeBilinear_minification@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ResizeBilinear_optConditions@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ResizeNearest@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ResizeNearest_CreateConv2dNode@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ResizeNearest_CreateDepthToSpaceNode@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ResizeNearest_Downscale@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ResizeNearest_PrepareKernelData@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ResizeNearest_PrepareKernelDataWithAlignCorner@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ResizeNearest_Upscale@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_ResizeNearest_optConditions@Base 6.4.3.p4.6-1
  vxoGraphOptimization_TensorAdd2Conv@Base 6.4.3.p4.4
  vxoGraphOptimization_TensorAdd2Conv_createWeight_fp16@Base 6.4.3.p4.4
+ vxoGraphOptimization_TensorAdd2Conv_isValid@Base 6.4.3.p4.6-1
  vxoGraphOptimization_TransferFC2FCRelu@Base 6.4.3.p4.4
  vxoGraphOptimization_WAR7@Base 6.4.3.p4.4
  vxoGraphOptimization_WAR7_getAlignedTensor@Base 6.4.3.p4.4
@@ -5360,7 +4968,10 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoGraphOptimization_avgPoolAnd1x1Conv_prepareNewWeight@Base 6.4.3.p4.4
  vxoGraphOptimization_avgPoolAnd1x1Conv_resetBiasQuantAttribute@Base 6.4.3.p4.4
  vxoGraphOptimization_computeFinalKernelSize@Base 6.4.3.p4.4
+ vxoGraphOptimization_computePadSize@Base 6.4.3.p4.6-1
  vxoGraphOptimization_computeQuantAttribute@Base 6.4.3.p4.4
+ vxoGraphOptimization_concat5d2concat4d@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_conv2d@Base 6.4.3.p4.6-1
  vxoGraphOptimization_conv2fc@Base 6.4.3.p4.4
  vxoGraphOptimization_conv3d2conv2d@Base 6.4.3.p4.4
  vxoGraphOptimization_conv3d2conv2d_createGroupsOfConv2ds@Base 6.4.3.p4.4
@@ -5369,33 +4980,99 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoGraphOptimization_conv3d2conv2d_prepare2dInputs@Base 6.4.3.p4.4
  vxoGraphOptimization_conv3d2conv2d_prepare2dOutputs@Base 6.4.3.p4.4
  vxoGraphOptimization_conv3d2conv2d_reshapeWeightDepth2channel@Base 6.4.3.p4.4
+ vxoGraphOptimization_conv3dto2d_transferKernel_whdcn2whcdn@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_convertAdd2ConvAdd@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_convertBN2dwconv@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_convertBatchGemmtoFC_createGroupTensors@Base 6.4.3.p4.6-1
  vxoGraphOptimization_convertFc2conv@Base 6.4.3.p4.4
+ vxoGraphOptimization_convertGlobalAvgPool2BatchGemm@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_convertGlobalAvgPool2BatchGemm_createMatrixB@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_convertGlobalAvgPool2FC@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_convertGlobalAvgPool2FC_createWeight@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_convertMatrixMul2NNconv@Base 6.4.3.p4.6-1
  vxoGraphOptimization_convertMean2dwconv@Base 6.4.3.p4.4
+ vxoGraphOptimization_convertMul2conv@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_convertMultiAvgPool2BatchGemm@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_convertMultiAvgPool2FC@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_convertSub2ConvAdd@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_convertWeightFromFP32ToBF16@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_deconv3dTo2d_createGroupsOfDeconv2ds@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_deconv3dTo2d_getInputEnd@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_deconv3dTo2d_getInputStart@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_deconv3dTo2d_prepare2dInputs@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_deconv3dTo2d_prepareWeight2d@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_deconv3dto2d@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_deconv3dto2d_getScalarParm@Base 6.4.3.p4.6-1
  vxoGraphOptimization_deleteRelu@Base 6.4.3.p4.4
+ vxoGraphOptimization_deleteSameNode@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_deleteSameNode_isSameMaxPool@Base 6.4.3.p4.6-1
  vxoGraphOptimization_deleteSqueeze@Base 6.4.3.p4.4
  vxoGraphOptimization_dispelConcatNode@Base 6.4.3.p4.4
+ vxoGraphOptimization_dumpAdd@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_dumpConvAdd@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_dumpDebugHint@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_dumpLeakyrelu@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_dumpOptimFunc@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_dumpPrelu@Base 6.4.3.p4.6-1
  vxoGraphOptimization_dumpTopology@Base 6.4.3.p4.4
  vxoGraphOptimization_dwConvHalSupport@Base 6.4.3.p4.4
  vxoGraphOptimization_eltwiseOp@Base 6.4.3.p4.4
  vxoGraphOptimization_fillDims2paramters@Base 6.4.3.p4.4
+ vxoGraphOptimization_fuseBN2conv@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_fuseMul2Conv@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_fuseMul2Conv_findSinglePixelTensor@Base 6.4.3.p4.6-1
  vxoGraphOptimization_fusePad@Base 6.4.3.p4.4
+ vxoGraphOptimization_getInputParameter@Base 6.4.3.p4.6-1
  vxoGraphOptimization_getJsonStyleInfo@Base 6.4.3.p4.4
  vxoGraphOptimization_getKernelType@Base 6.4.3.p4.4
+ vxoGraphOptimization_getMaxAndMin_dfl@Base 6.4.3.p4.6-1
  vxoGraphOptimization_getMaxKernelSize@Base 6.4.3.p4.4
  vxoGraphOptimization_getMaxKernelSizeX@Base 6.4.3.p4.4
  vxoGraphOptimization_getMaxKernelSizeY@Base 6.4.3.p4.4
  vxoGraphOptimization_getMaxKernelSizeZ@Base 6.4.3.p4.4
+ vxoGraphOptimization_getMaxOrMinValue@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_getNodeAllInputs@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_getNodeSpecifiedInput@Base 6.4.3.p4.6-1
  vxoGraphOptimization_getOutputIndex@Base 6.4.3.p4.4
  vxoGraphOptimization_getOutputParameter@Base 6.4.3.p4.4
  vxoGraphOptimization_getTensorMaxOrMinValue@Base 6.4.3.p4.4
+ vxoGraphOptimization_glbAvgPooltoReduce@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_glbAvgPooltoReduce_isGlbAvgPool@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_insertDummyConvBeforConvwithPad@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_insertDummyConvBeforNode@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_insertDummyConvBeforNode_isSupport@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_insertNegConvBeforNode@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_isBatchFc@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_isBatchGemmSupport@Base 6.4.3.p4.6-1
  vxoGraphOptimization_isDepthWiseConv@Base 6.4.3.p4.4
+ vxoGraphOptimization_isMatchPadDataconvert@Base 6.4.3.p4.6-1
  vxoGraphOptimization_isSameShapeTensor@Base 6.4.3.p4.4
+ vxoGraphOptimization_isShareChild@Base 6.4.3.p4.6-1
  vxoGraphOptimization_isSupportTPfc@Base 6.4.3.p4.4
+ vxoGraphOptimization_isV7@Base 6.4.3.p4.6-1
  vxoGraphOptimization_isV8@Base 6.4.3.p4.4
  vxoGraphOptimization_kernelSize@Base 6.4.3.p4.4
+ vxoGraphOptimization_mergeAdd2bias@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_mergeConstMulwithConv@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_mergeConvAdd@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_mergeConvAndSP@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_mergeConvDataConvert@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_mergeConvMul@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_mergeDataConvertWithNNTrans2OPs@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_mergeHeadDataconvertwithConv@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_mergeHeadTranposewithConv@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_mergeMultiDataConvert@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_mergeMultiDataConvert_mergeSiblingDataConvert@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_mergeMultiDataConvert_mergeVerticalDataConvert@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_mergeSiblingDataConvert_gatherSiblingDC@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_mergeSliceWithView@Base 6.4.3.p4.6-1
  vxoGraphOptimization_mergeTensorDims@Base 6.4.3.p4.4
  vxoGraphOptimization_multiTranspose@Base 6.4.3.p4.4
- vxoGraphOptimization_nnHalSupport@Base 6.4.3.p4.4
+ vxoGraphOptimization_multiTranspose_checkTransposeCnt@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_multiTranspose_findSameTransposes@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_multiTranspose_mergeSameTranspose@Base 6.4.3.p4.6-1
+#MISSING: 6.4.3.p4.6-1# vxoGraphOptimization_nnHalSupport@Base 6.4.3.p4.4
+ vxoGraphOptimization_pad1x3MaxPoolto3x3@Base 6.4.3.p4.6-1
  vxoGraphOptimization_padConv@Base 6.4.3.p4.4
  vxoGraphOptimization_padDilationConv@Base 6.4.3.p4.4
  vxoGraphOptimization_padDilationConv_canPad@Base 6.4.3.p4.4
@@ -5408,35 +5085,62 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoGraphOptimization_pcq_splitPerChannel@Base 6.4.3.p4.4
  vxoGraphOptimization_printTensorData@Base 6.4.3.p4.4
  vxoGraphOptimization_quickSort@Base 6.4.3.p4.4
+ vxoGraphOptimization_recoveryNodes@Base 6.4.3.p4.6-1
  vxoGraphOptimization_reshape5dTransposeTo4d@Base 6.4.3.p4.4
+ vxoGraphOptimization_resize2nn@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_resize2nn_convert@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_resize2nn_convert_createDeconvNode@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_siblingDC_CanTwoSiblingsMerge@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_siblingDC_Grouping@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_siblingDC_addCapacityForGroupInfo@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_siblingDC_addCapacityForGroups@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_siblingDC_addNewItermToGroups@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_siblingDC_addNodeToGroup@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_siblingDC_doesMatchTheGroup@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_siblingDC_findGroup@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_siblingDC_newSiblingGroupInfor@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_siblingDC_newSiblingGroups@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_siblingDC_releaseSiblingGroupInfor@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_siblingDC_releaseSiblingGroups@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_splitMaxPool@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_splitMaxPool_createNode@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_splitMaxPool_split@Base 6.4.3.p4.6-1
  vxoGraphOptimization_splitMaxpFromCRL2@Base 6.4.3.p4.4
  vxoGraphOptimization_storeNodeInfo@Base 6.4.3.p4.4
  vxoGraphOptimization_stroeNodeDetail2json@Base 6.4.3.p4.4
  vxoGraphOptimization_stroeNodeDims2paramter@Base 6.4.3.p4.4
  vxoGraphOptimization_transformConv@Base 6.4.3.p4.4
+ vxoGraphOptimization_transformConvAdd@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_transformConvMul@Base 6.4.3.p4.6-1
  vxoGraphOptimization_transformConvNxM@Base 6.4.3.p4.4
  vxoGraphOptimization_transformConvNxM_padData@Base 6.4.3.p4.4
  vxoGraphOptimization_transformConvNxM_padTensor@Base 6.4.3.p4.4
+ vxoGraphOptimization_unrollBatchGemm2Conv@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_unrollBatchGemm2Conv_createGroupTensors@Base 6.4.3.p4.6-1
+ vxoGraphOptimization_unrollBatchGemm2Conv_insertTranspose@Base 6.4.3.p4.6-1
  vxoGraphOptimization_unrollDWConv@Base 6.4.3.p4.4
  vxoGraphOptimization_unrollDWConv_multC21@Base 6.4.3.p4.4
  vxoGraphOptimization_unrollDWConv_multC21_unroll4DTensor@Base 6.4.3.p4.4
  vxoGraphOptimization_unrollDWConv_multC21_unrollBias@Base 6.4.3.p4.4
+ vxoGraphOptimization_verticalDC_DoesDcHaveOutput@Base 6.4.3.p4.6-1
  vxoGraphOptimization_war1x1x1weight@Base 6.4.3.p4.4
  vxoGraphParallel_PostAnalyzeOperations@Base 6.4.3.p4.4
  vxoGraphParallel_PreAnalyzeOperations@Base 6.4.3.p4.4
- vxoGraph_Adapter@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# vxoGraph_Adapter@Base 6.4.3.p4.4
  vxoGraph_AllocateAllMemoryObjects@Base 6.4.3.p4.4
  vxoGraph_AllocateContiguousMemory@Base 6.4.3.p4.4
  vxoGraph_CaculateCostFactors@Base 6.4.3.p4.4
  vxoGraph_ClearAllExecutedFlags@Base 6.4.3.p4.4
  vxoGraph_ClearAllVisitedFlags@Base 6.4.3.p4.4
  vxoGraph_Destructor@Base 6.4.3.p4.4
- vxoGraph_DetectAllHeadNodes@Base 6.4.3.p4.4
- vxoGraph_DetectAllTailNodes@Base 6.4.3.p4.4
+ vxoGraph_DetectAllHeadAndTailNodes@Base 6.4.3.p4.6-1
+#MISSING: 6.4.3.p4.6-1# vxoGraph_DetectAllHeadNodes@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# vxoGraph_DetectAllTailNodes@Base 6.4.3.p4.4
  vxoGraph_DetectCycle@Base 6.4.3.p4.4
  vxoGraph_DetectUnvisitedNodes@Base 6.4.3.p4.4
  vxoGraph_Dump@Base 6.4.3.p4.4
  vxoGraph_FindAllRelatedNodes@Base 6.4.3.p4.4
+ vxoGraph_FreeResourceForReverify@Base 6.4.3.p4.6-1
  vxoGraph_GenerateAllNodeIndexTable@Base 6.4.3.p4.4
  vxoGraph_GenerateNextNodeTable@Base 6.4.3.p4.4
  vxoGraph_GenerateOpParentChild@Base 6.4.3.p4.4
@@ -5445,14 +5149,17 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoGraph_IdentifyInputsAndOutputs@Base 6.4.3.p4.4
  vxoGraph_InitializeAllNodeKernels@Base 6.4.3.p4.4
  vxoGraph_IsInTailNodesTable@Base 6.4.3.p4.4
+ vxoGraph_OptimizeRootOperationOrder@Base 6.4.3.p4.6-1
  vxoGraph_PolluteIfInput@Base 6.4.3.p4.4
  vxoGraph_PrepareParamMemory@Base 6.4.3.p4.4
  vxoGraph_Process@Base 6.4.3.p4.4
  vxoGraph_QueryCoreCount@Base 6.4.3.p4.4
+ vxoGraph_QueryRingCount@Base 6.4.3.p4.6-1
  vxoGraph_QueryShaderLocalMemory@Base 6.4.3.p4.4
  vxoGraph_RetrieveTopology@Base 6.4.3.p4.4
  vxoGraph_SetParameter@Base 6.4.3.p4.4
  vxoGraph_Submit@Base 6.4.3.p4.4
+ vxoGraph_UnwrapNodeLayer@Base 6.4.3.p4.6-1
  vxoGraph_UserKernelPreprocess@Base 6.4.3.p4.4
  vxoGraph_VerifyAllNodeParameters@Base 6.4.3.p4.4
  vxoGraph_VerifyAllNodeWriteDependencies@Base 6.4.3.p4.4
@@ -5460,14 +5167,33 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoGraph_VerifyNNTranspose@Base 6.4.3.p4.4
  vxoGraph_VerifyOperationSync@Base 6.4.3.p4.4
  vxoGraph_VerifyTiling@Base 6.4.3.p4.4
+ vxoGraph_VerifyTilingPostPrint@Base 6.4.3.p4.6-1
  vxoGraph_VerifyVirtualBuffer@Base 6.4.3.p4.4
  vxoGraph_addShaderCopyKernelOperation@Base 6.4.3.p4.4
  vxoGraph_addShaderCopyTensorOperation@Base 6.4.3.p4.4
+ vxoGraph_addSpecialNode@Base 6.4.3.p4.6-1
  vxoGraph_caculateKernelSize@Base 6.4.3.p4.4
+ vxoGraph_dumpOperationTopology@Base 6.4.3.p4.6-1
+ vxoGraph_findConvOp@Base 6.4.3.p4.6-1
+ vxoGraph_findDumplicateReorderWeightOp@Base 6.4.3.p4.6-1
  vxoGraph_getChildNodes@Base 6.4.3.p4.4
+ vxoGraph_getOperationJsonStyleInfo@Base 6.4.3.p4.6-1
  vxoGraph_getParentNodes@Base 6.4.3.p4.4
+ vxoGraph_optimizateOps@Base 6.4.3.p4.6-1
  vxoGraph_releaseShaderCopyOperation@Base 6.4.3.p4.4
+ vxoGraph_storeOperationInfo@Base 6.4.3.p4.6-1
+ vxoGraph_storeTensorInfo@Base 6.4.3.p4.6-1
+ vxoHarrisScore_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoHistogram_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoHog_cells_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoHog_features_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoHoughFillaccum_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoHoughGetlines_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoHoughMakepoints_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoImageCopy_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoImageCrop_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoImage_AllocateMemory@Base 6.4.3.p4.4
+ vxoImage_CreateImageFromHandle@Base 6.4.3.p4.6-1
  vxoImage_CreateImageFromInternalHandle@Base 6.4.3.p4.4
  vxoImage_Destructor@Base 6.4.3.p4.4
  vxoImage_Dump@Base 6.4.3.p4.4
@@ -5478,6 +5204,21 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoImage_IsVirtualImage@Base 6.4.3.p4.4
  vxoImage_LocateROI@Base 6.4.3.p4.4
  vxoImage_WrapUserMemory@Base 6.4.3.p4.4
+ vxoInitializePreLoadSRAM@Base 6.4.3.p4.6-1
+ vxoInternalBilateral_filter_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoInternalChannelCombine_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoInternalColorConvert_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoInternalEqualizeHistogramCdf_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoInternalEqualizeHistogramHist_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoInternalEqualizeHistogramLut_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoInternalIntegralHorz_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoInternalIntegralVert_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoInternalMeanStdDev_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoInternalNormF16_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoInternalNorm_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoInternalSobelMxNF16_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoInternalSobelMxN_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoInternalWarpAffine_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoJson_AddArrayToObject@Base 6.4.3.p4.4
  vxoJson_AddBoolToObject@Base 6.4.3.p4.4
  vxoJson_AddFalseToObject@Base 6.4.3.p4.4
@@ -5562,6 +5303,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoKernel_InternalRelease@Base 6.4.3.p4.4
  vxoKernel_IsUnique@Base 6.4.3.p4.4
  vxoKernel_ProcessKernelShaderPrint@Base 6.4.3.p4.4
+ vxoLKTracker_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoLSTMLayer_Create@Base 6.4.3.p4.4
  vxoLSTMLayer_Deinitialize@Base 6.4.3.p4.4
  vxoLSTMLayer_Destroy@Base 6.4.3.p4.4
@@ -5570,11 +5312,19 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoLayer_CheckSupport@Base 6.4.3.p4.4
  vxoLayer_InitializeFoot@Base 6.4.3.p4.4
  vxoLayer_InitializeHead@Base 6.4.3.p4.4
- vxoLayer_IsInputTensorInHeadNode@Base 6.4.3.p4.4
- vxoLayer_IsOutputTensorInTailNode@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# vxoLayer_IsInputTensorInHeadNode@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# vxoLayer_IsOutputTensorInTailNode@Base 6.4.3.p4.4
  vxoLayer_VerificationFoot@Base 6.4.3.p4.4
  vxoLayer_VerificationHead@Base 6.4.3.p4.4
+ vxoLbp_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoLutCopy_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoMagnitude_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoMallocAlignedBuffer@Base 6.4.3.p4.6-1
+ vxoMatch_template_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoMatrixCopy_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoMatrix_Destructor@Base 6.4.3.p4.4
+ vxoMax_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoMedian3x3_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoMemoryPool_Deinitialize@Base 6.4.3.p4.4
  vxoMemoryPool_GetBase@Base 6.4.3.p4.4
  vxoMemoryPool_Initialize@Base 6.4.3.p4.4
@@ -5582,26 +5332,44 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoMemoryPool_RequestList@Base 6.4.3.p4.4
  vxoMemoryPool_Reset@Base 6.4.3.p4.4
  vxoMemory_Allocate@Base 6.4.3.p4.4
+ vxoMemory_AllocateEx2@Base 6.4.3.p4.6-1
  vxoMemory_AllocateEx@Base 6.4.3.p4.4
  vxoMemory_AllocateSize@Base 6.4.3.p4.4
- vxoMemory_ComputeElementCount@Base 6.4.3.p4.4
+ vxoMemory_Clear@Base 6.4.3.p4.6-1
+ vxoMemory_ClearMultiGPU@Base 6.4.3.p4.6-1
+ vxoMemory_ClearViewAndMultiGPU@Base 6.4.3.p4.6-1
+ vxoMemory_ClearViewArrary@Base 6.4.3.p4.6-1
+#MISSING: 6.4.3.p4.6-1# vxoMemory_ComputeElementCount@Base 6.4.3.p4.4
  vxoMemory_ComputeSize@Base 6.4.3.p4.4
+ vxoMemory_Copy@Base 6.4.3.p4.6-1
  vxoMemory_Dump@Base 6.4.3.p4.4
+ vxoMemory_DumpByPlane@Base 6.4.3.p4.6-1
  vxoMemory_Free@Base 6.4.3.p4.4
  vxoMemory_FreeEx@Base 6.4.3.p4.4
  vxoMemory_FreeWrappedMemory@Base 6.4.3.p4.4
+ vxoMemory_GetMultiGPUMemoryAddressAndSize@Base 6.4.3.p4.6-1
+ vxoMemory_GetMultiGPUMemoryViewOffset@Base 6.4.3.p4.6-1
  vxoMemory_GetSize@Base 6.4.3.p4.4
  vxoMemory_GetType@Base 6.4.3.p4.4
- vxoMemory_ResetOffset@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# vxoMemory_ResetOffset@Base 6.4.3.p4.4
  vxoMemory_SetAddress@Base 6.4.3.p4.4
+ vxoMemory_SetMemoryViewSizeAndOffset@Base 6.4.3.p4.6-1
+ vxoMemory_SetMultiGPUMemoryView@Base 6.4.3.p4.6-1
+ vxoMemory_SetMultiGPUMemoryViewWithAdjust@Base 6.4.3.p4.6-1
  vxoMemory_SetSize@Base 6.4.3.p4.4
  vxoMemory_SetType@Base 6.4.3.p4.4
  vxoMemory_WrapUserMemory@Base 6.4.3.p4.4
  vxoMetaFormat_Create@Base 6.4.3.p4.4
  vxoMetaFormat_Release@Base 6.4.3.p4.4
  vxoMetaFormat_SetAttribute@Base 6.4.3.p4.4
+ vxoMinMaxGetLocation_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoMinMaxLocFilter_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoMin_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoMultiGPU_SplitOperation@Base 6.4.3.p4.4
  vxoMultiGpu_FreeMemory@Base 6.4.3.p4.4
+ vxoMultiply2DMatrixes_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoMultiply_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoNNBatchGemm_SW_Initialize@Base 6.4.3.p4.6-1
  vxoNNCommon_Deinitialize@Base 6.4.3.p4.4
  vxoNNCommon_NotSupport@Base 6.4.3.p4.4
  vxoNNCommon_Support@Base 6.4.3.p4.4
@@ -5612,10 +5380,14 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoNNExternsionDoReshuffle@Base 6.4.3.p4.4
  vxoNNFullyConnectedLayerInitializer@Base 6.4.3.p4.4
  vxoNNLayer_NotSupport_Initializer@Base 6.4.3.p4.4
+ vxoNNPooling_NN_AVG_Deinitialize@Base 6.4.3.p4.6-1
  vxoNN_LSTMNNLayer_DeInitializer@Base 6.4.3.p4.4
- vxoNode_Adapter@Base 6.4.3.p4.4
+ vxoNodeCommon_NotSupport@Base 6.4.3.p4.6-1
+ vxoNodeCommon_SW_Support@Base 6.4.3.p4.6-1
+#MISSING: 6.4.3.p4.6-1# vxoNode_Adapter@Base 6.4.3.p4.4
  vxoNode_CheckF32Support@Base 6.4.3.p4.4
- vxoNode_ConvertDims@Base 6.4.3.p4.4
+ vxoNode_CommonSupport_Initializer@Base 6.4.3.p4.6-1
+#MISSING: 6.4.3.p4.6-1# vxoNode_ConvertDims@Base 6.4.3.p4.4
  vxoNode_CreateSpecific@Base 6.4.3.p4.4
  vxoNode_Destructor@Base 6.4.3.p4.4
  vxoNode_DisableVirtualAccessible@Base 6.4.3.p4.4
@@ -5630,10 +5402,12 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoNode_IsGPUNode@Base 6.4.3.p4.4
  vxoNode_IsLeakyReluNode@Base 6.4.3.p4.4
  vxoNode_IsMaxPoolingNode@Base 6.4.3.p4.4
+ vxoNode_NotSupport_Initializer@Base 6.4.3.p4.6-1
  vxoNode_Record@Base 6.4.3.p4.4
  vxoNode_Release@Base 6.4.3.p4.4
  vxoNode_RemoveFromGraph@Base 6.4.3.p4.4
  vxoNode_Replay@Base 6.4.3.p4.4
+ vxoNode_SW_Initializer@Base 6.4.3.p4.6-1
  vxoNode_SetChildGraph@Base 6.4.3.p4.4
  vxoNode_SetParameter@Base 6.4.3.p4.4
  vxoNode_SetWaitCNNEventID0@Base 6.4.3.p4.4
@@ -5641,6 +5415,11 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoNode_getInfoFromFCNode@Base 6.4.3.p4.4
  vxoNode_resetTensorVxcOptimize@Base 6.4.3.p4.4
  vxoNode_setTensorVxcOptimize@Base 6.4.3.p4.4
+ vxoNonLinearFilterU1_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoNonLinearFilter_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoNonMaxSuppressionCanny_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoNon_max_suppression_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoNot_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoOA_CreateObjectArrayEmpty@Base 6.4.3.p4.4
  vxoOA_CreateObjectArrayInt@Base 6.4.3.p4.4
  vxoOA_DestructObjectArray@Base 6.4.3.p4.4
@@ -5648,6 +5427,8 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoOA_IsValidObjectArray@Base 6.4.3.p4.4
  vxoOA_SetObjectArrayItem@Base 6.4.3.p4.4
  vxoOA_ValidateObjectArray@Base 6.4.3.p4.4
+ vxoOr_SH_GPU_Initializer@Base 6.4.3.p4.6-1
+ vxoPackArrays_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoParameterValue_BindToDelay@Base 6.4.3.p4.4
  vxoParameterValue_UnbindFromDelay@Base 6.4.3.p4.4
  vxoParameter_Destructor@Base 6.4.3.p4.4
@@ -5655,13 +5436,18 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoPerf_Dump@Base 6.4.3.p4.4
  vxoPerf_End@Base 6.4.3.p4.4
  vxoPerf_Initialize@Base 6.4.3.p4.4
+ vxoPhaseF16_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoPhase_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoPreNonMax_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoProfiler_Begin@Base 6.4.3.p4.4
  vxoProfiler_Destroy@Base 6.4.3.p4.4
  vxoProfiler_End@Base 6.4.3.p4.4
  vxoProfiler_Initialize@Base 6.4.3.p4.4
  vxoProgramKernel_FunctionVX@Base 6.4.3.p4.4
+ vxoProgramKernel_GetCurrentGpuShaderID@Base 6.4.3.p4.6-1
  vxoProgramKernel_GetCurrentShaderID@Base 6.4.3.p4.4
  vxoProgram_Destructor@Base 6.4.3.p4.4
+ vxoPyramidCopyImage_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoPyramid_Destructor@Base 6.4.3.p4.4
  vxoPyramid_Initialize@Base 6.4.3.p4.4
  vxoQueue_Deinitialize@Base 6.4.3.p4.4
@@ -5669,6 +5455,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoQueue_ReadData@Base 6.4.3.p4.4
  vxoQueue_Stop@Base 6.4.3.p4.4
  vxoQueue_WriteData@Base 6.4.3.p4.4
+ vxoReOrg2NN_Deinitializer@Base 6.4.3.p4.6-1
  vxoReference_Create@Base 6.4.3.p4.4
  vxoReference_Decrement@Base 6.4.3.p4.4
  vxoReference_Dump@Base 6.4.3.p4.4
@@ -5678,6 +5465,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoReference_GetStatus@Base 6.4.3.p4.4
  vxoReference_GetTotalCount@Base 6.4.3.p4.4
  vxoReference_GetType@Base 6.4.3.p4.4
+ vxoReference_GetTypeName@Base 6.4.3.p4.6-1
  vxoReference_HasWriteDependency@Base 6.4.3.p4.4
  vxoReference_Increment@Base 6.4.3.p4.4
  vxoReference_IncrementReadCount@Base 6.4.3.p4.4
@@ -5689,19 +5477,38 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoReference_IsValidAndSpecific@Base 6.4.3.p4.4
  vxoReference_Release@Base 6.4.3.p4.4
  vxoReference_ReleaseEx@Base 6.4.3.p4.4
+ vxoRegisterReshuffleWeightOp_deintializer@Base 6.4.3.p4.6-1
  vxoReleaseWeightsBiases@Base 6.4.3.p4.4
+ vxoRemapCopy_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoRemap_Destructor@Base 6.4.3.p4.4
+ vxoRemap_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoReordweWeight_SW_Deinitializer@Base 6.4.3.p4.6-1
+ vxoRestore1xNWeightBiasDims@Base 6.4.3.p4.6-1
+ vxoSPINST_Destructor@Base 6.4.3.p4.6-1
+ vxoSPINST_IsValid@Base 6.4.3.p4.6-1
+ vxoSPINST_Verify@Base 6.4.3.p4.6-1
+ vxoScalarCopy_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoScalar_Create@Base 6.4.3.p4.4
  vxoScalar_Destructor@Base 6.4.3.p4.4
  vxoScalar_Dump@Base 6.4.3.p4.4
  vxoScalar_GetDataType@Base 6.4.3.p4.4
  vxoScalar_GetTypeSize@Base 6.4.3.p4.4
+ vxoScaleImage_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoScharr3x3_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoSetCompressByPass@Base 6.4.3.p4.6-1
  vxoShader_Execute@Base 6.4.3.p4.4
  vxoShader_Free@Base 6.4.3.p4.4
  vxoShader_GetUniformSize@Base 6.4.3.p4.4
+ vxoShader_GetVIRUniformSize@Base 6.4.3.p4.6-1
  vxoShader_SetCLParameters@Base 6.4.3.p4.4
  vxoShader_SetParameters@Base 6.4.3.p4.4
  vxoShader_SetUniform@Base 6.4.3.p4.4
+ vxoShader_SetVIRCLParameters@Base 6.4.3.p4.6-1
+ vxoShader_SetVIRParameters@Base 6.4.3.p4.6-1
+ vxoShader_SetVIRUniform@Base 6.4.3.p4.6-1
+ vxoSobel3x3_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoSubtract_SH_GPU_Initializer@Base 6.4.3.p4.6-1
+ vxoTableLookup_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoTarget_Dump@Base 6.4.3.p4.4
  vxoTarget_Load@Base 6.4.3.p4.4
  vxoTarget_MatchTargetNameWithString@Base 6.4.3.p4.4
@@ -5711,14 +5518,18 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoTensorCopyOperationTP_Initialize@Base 6.4.3.p4.4
  vxoTensorCopyOperation_Deinitialize@Base 6.4.3.p4.4
  vxoTensorCopyOperation_Initialize@Base 6.4.3.p4.4
+ vxoTensorCopy_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoTensorLUT_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoTensor_AllocateMemory@Base 6.4.3.p4.4
  vxoTensor_CheckTensorViewSizes@Base 6.4.3.p4.4
  vxoTensor_CopyTensorPatchEx@Base 6.4.3.p4.4
  vxoTensor_CreateImageFromTensor@Base 6.4.3.p4.4
  vxoTensor_CreateTensor2@Base 6.4.3.p4.4
  vxoTensor_CreateTensor@Base 6.4.3.p4.4
+ vxoTensor_CreateTensorAddressing@Base 6.4.3.p4.6-1
  vxoTensor_CreateTensorEx@Base 6.4.3.p4.4
  vxoTensor_CreateTensorFromCache@Base 6.4.3.p4.4
+ vxoTensor_CreateTensorFromHandle2@Base 6.4.3.p4.6-1
  vxoTensor_CreateTensorFromView@Base 6.4.3.p4.4
  vxoTensor_CreateTensorFromViewEx@Base 6.4.3.p4.4
  vxoTensor_CreateTensorFromWB@Base 6.4.3.p4.4
@@ -5735,11 +5546,14 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoTensor_GetTensorViewMemory@Base 6.4.3.p4.4
  vxoTensor_GetTensorViewOffset@Base 6.4.3.p4.4
  vxoTensor_GetTensorViewRegion@Base 6.4.3.p4.4
- vxoTensor_GetTensorWholeElementCount@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# vxoTensor_GetTensorWholeElementCount@Base 6.4.3.p4.4
  vxoTensor_GetTensorWholeSize@Base 6.4.3.p4.4
  vxoTensor_IsAllocated@Base 6.4.3.p4.4
  vxoTensor_IsOverlap@Base 6.4.3.p4.4
+ vxoTensor_IsSameDataType@Base 6.4.3.p4.6-1
+ vxoTensor_IsSameQuantType@Base 6.4.3.p4.6-1
  vxoTensor_IsSameTensor@Base 6.4.3.p4.4
+ vxoTensor_IsSameType@Base 6.4.3.p4.6-1
  vxoTensor_IsShared@Base 6.4.3.p4.4
  vxoTensor_IsValidAddressing@Base 6.4.3.p4.4
  vxoTensor_IsValidTensor@Base 6.4.3.p4.4
@@ -5751,6 +5565,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoTensor_ReformatTensor@Base 6.4.3.p4.4
  vxoTensor_ReleaseMemory@Base 6.4.3.p4.4
  vxoTensor_ReleaseTensor@Base 6.4.3.p4.4
+ vxoTensor_ReleaseTensorAddressing@Base 6.4.3.p4.6-1
  vxoTensor_ReleaseTensorEx@Base 6.4.3.p4.4
  vxoTensor_ReleaseTensorView@Base 6.4.3.p4.4
  vxoTensor_ReshapeTensor@Base 6.4.3.p4.4
@@ -5758,13 +5573,34 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoTensor_WrapUserMemory@Base 6.4.3.p4.4
  vxoTensor_cloneParamsFromTensor@Base 6.4.3.p4.4
  vxoTensor_cloneTensor@Base 6.4.3.p4.4
+ vxoTensor_convert_depth_SH_GPU_Initialize@Base 6.4.3.p4.6-1
  vxoTensor_createParamsForPerChannelTensor@Base 6.4.3.p4.4
  vxoTensor_createParamsForTensor@Base 6.4.3.p4.4
+ vxoTensor_getTensorPadStride@Base 6.4.3.p4.6-1
+ vxoTensor_isSharedByNodes@Base 6.4.3.p4.6-1
+ vxoTensor_isStatic@Base 6.4.3.p4.6-1
+ vxoTensor_updateTensorBuffer@Base 6.4.3.p4.6-1
+ vxoTensor_updateTensorBufferFromNewT@Base 6.4.3.p4.6-1
+ vxoThresholdCopy_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoThreshold_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoTransPose2DTensor_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoUpSampleConvert_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoUpSamplePadding_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoVLKTracker_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoWarpPerspective_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoWeightBias_CreateWeightsBiasesParameter@Base 6.4.3.p4.6-1
+ vxoWeightBias_CreateWeightsBiasesParameterFromTensors2@Base 6.4.3.p4.6-1
+ vxoWeightBias_CreateWeightsBiasesParameterFromTensors3@Base 6.4.3.p4.6-1
+ vxoWeightBias_CreateWeightsBiasesParameterFromTensors@Base 6.4.3.p4.6-1
  vxoWeightBias_Destructor@Base 6.4.3.p4.4
+ vxoWeightedAverage_SH_GPU_Initialize@Base 6.4.3.p4.6-1
+ vxoXor_SH_GPU_Initializer@Base 6.4.3.p4.6-1
  vxo_getMaxShaderCopyTensorCount@Base 6.4.3.p4.4
  vxo_insertHandle@Base 6.4.3.p4.4
  vxo_updateSwapHandle@Base 6.4.3.p4.4
+ vxvxoGraphOptimization_isShapeMetElementWiseOpt@Base 6.4.3.p4.6-1
  writeBits@Base 6.4.3.p4.4
+ writeBitsToIthWord@Base 6.4.3.p4.6-1
 libOpenVXU.so imx-gpu-viv-wayland #MINVER#
  vxuAbsDiff@Base 6.4.3.p4.4
  vxuAccumulateImage@Base 6.4.3.p4.4
@@ -5832,12 +5668,23 @@ libOvx12VXCBinary-evis.so imx-gpu-viv-wayland #MINVER#
  GetOvx12KernelBinaryPtr@Base 6.4.3.p4.4
 libOvx12VXCBinary-evis2.so imx-gpu-viv-wayland #MINVER#
  GetOvx12KernelBinaryPtr@Base 6.4.3.p4.4
+libOvxGPUVXCBinary-evis.so imx-gpu-viv-wayland #MINVER#
+ GetOvxGPUKernelBinaryPtr@Base 6.4.3.p4.6-1
+libOvxGPUVXCBinary-lite.so imx-gpu-viv-wayland #MINVER#
+ GetOvxGPUKernelBinaryPtr@Base 6.4.3.p4.6-1
+libOvxGPUVXCBinary-nano.so imx-gpu-viv-wayland #MINVER#
+ GetOvxGPUKernelBinaryPtr@Base 6.4.3.p4.6-1
+libOvxGPUVXCBinary-ulite.so imx-gpu-viv-wayland #MINVER#
+ GetOvxGPUKernelBinaryPtr@Base 6.4.3.p4.6-1
 libSPIRV_viv.so imx-gpu-viv-wayland #MINVER#
  gcSPV_Conv2VIR@Base 6.4.3.p4.4
- gcSPV_CreateSPV@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# gcSPV_CreateSPV@Base 6.4.3.p4.4
  gcSPV_Decode@Base 6.4.3.p4.4
+ gcSPV_DestroySpvDecodeInfo@Base 6.4.3.p4.6-1
+ gcSPV_LoadSPVConverter@Base 6.4.3.p4.6-1
  gcSPV_PostDecode@Base 6.4.3.p4.4
  gcSPV_PreDecode@Base 6.4.3.p4.4
+ gcSPV_ReadSpvDecodeInfoFromBinary@Base 6.4.3.p4.6-1
 libVDK.so.1 imx-gpu-viv-wayland #MINVER#
  vdkCapturePointer@Base 6.4.3.p4.4
  vdkCreateClientBuffer@Base 6.4.3.p4.4
@@ -5888,19 +5735,29 @@ libVSC.so imx-gpu-viv-wayland #MINVER#
  VIR_GetSymFromId@Base 6.4.3.p4.4
  VIR_IdList_Add@Base 6.4.3.p4.4
  VIR_IdList_DeleteByValue@Base 6.4.3.p4.4
+ VIR_Inst_GenSequentialDestSwizzleForPack@Base 6.4.3.p4.6-1
  VIR_Inst_IsHWBarrier@Base 6.4.3.p4.4
  VIR_Inst_UpdateResOpType@Base 6.4.3.p4.4
  VIR_Link_AddLink@Base 6.4.3.p4.4
+ VIR_Opcode_GetInfo@Base 6.4.3.p4.6-1
  VIR_Operand_Change2Src@Base 6.4.3.p4.4
  VIR_Operand_Change2Src_WShift@Base 6.4.3.p4.4
+ VIR_Operand_ConvOperandTo64Bit@Base 6.4.3.p4.6-1
  VIR_Operand_Copy@Base 6.4.3.p4.4
  VIR_Operand_EvaluateOffsetByAccessChain@Base 6.4.3.p4.4
+ VIR_Operand_GetPrecision@Base 6.4.3.p4.6-1
  VIR_Operand_ReplaceUseOperandWithDef@Base 6.4.3.p4.4
+ VIR_Operand_SetConst@Base 6.4.3.p4.6-1
  VIR_Operand_SetEnable@Base 6.4.3.p4.4
  VIR_Operand_SetFunction@Base 6.4.3.p4.4
  VIR_Operand_SetImmediate@Base 6.4.3.p4.4
+ VIR_Operand_SetImmediateBoolean@Base 6.4.3.p4.6-1
+ VIR_Operand_SetImmediateFloat@Base 6.4.3.p4.6-1
  VIR_Operand_SetImmediateInt@Base 6.4.3.p4.4
+ VIR_Operand_SetImmediateUchar@Base 6.4.3.p4.6-1
+ VIR_Operand_SetImmediateUint64@Base 6.4.3.p4.6-1
  VIR_Operand_SetImmediateUint@Base 6.4.3.p4.4
+ VIR_Operand_SetImmediateUshort@Base 6.4.3.p4.6-1
  VIR_Operand_SetIntrinsic@Base 6.4.3.p4.4
  VIR_Operand_SetLabel@Base 6.4.3.p4.4
  VIR_Operand_SetParameters@Base 6.4.3.p4.4
@@ -5909,6 +5766,7 @@ libVSC.so imx-gpu-viv-wayland #MINVER#
  VIR_Operand_SetRelIndexingImmed@Base 6.4.3.p4.4
  VIR_Operand_SetSwizzle@Base 6.4.3.p4.4
  VIR_Operand_SetSymbol@Base 6.4.3.p4.4
+ VIR_Operand_SetTempRegister@Base 6.4.3.p4.6-1
  VIR_Operand_SetTexldBias@Base 6.4.3.p4.4
  VIR_Operand_SetTexldFetchMS@Base 6.4.3.p4.4
  VIR_Operand_SetTexldGather@Base 6.4.3.p4.4
@@ -5926,13 +5784,18 @@ libVSC.so imx-gpu-viv-wayland #MINVER#
  VIR_Shader_AddStructType@Base 6.4.3.p4.4
  VIR_Shader_AddSymbol@Base 6.4.3.p4.4
  VIR_Shader_CompositeConstruct@Base 6.4.3.p4.4
+ VIR_Shader_ConstantsInUniforms@Base 6.4.3.p4.6-1
  VIR_Shader_DecodeCompilerVersionToShVersion@Base 6.4.3.p4.4
  VIR_Shader_DecodeLangVersionToCompilerVersion@Base 6.4.3.p4.4
+ VIR_Shader_Dump@Base 6.4.3.p4.6-1
  VIR_Shader_DuplicateVariablelFromSymId@Base 6.4.3.p4.4
  VIR_Shader_FindString@Base 6.4.3.p4.4
  VIR_Shader_FindSymbolByName@Base 6.4.3.p4.4
  VIR_Shader_GetBuiltInTypes@Base 6.4.3.p4.4
  VIR_Shader_GetCreatedSymAliasTable@Base 6.4.3.p4.4
+ VIR_Shader_GetLocalInvocationIndex@Base 6.4.3.p4.6-1
+ VIR_Shader_GetWorkGroupCountUniform@Base 6.4.3.p4.6-1
+ VIR_Shader_InitKernelFunctionProperties@Base 6.4.3.p4.6-1
  VIR_Shader_IsNameBuiltIn@Base 6.4.3.p4.4
  VIR_Shader_TreatPushConstantAsBuffer@Base 6.4.3.p4.4
  VIR_Swizzle_GenSwizzleByComponentCount@Base 6.4.3.p4.4
@@ -5940,16 +5803,29 @@ libVSC.so imx-gpu-viv-wayland #MINVER#
  VIR_Swizzle_SwizzleWShiftEnable@Base 6.4.3.p4.4
  VIR_SymAliasTable_Insert@Base 6.4.3.p4.4
  VIR_Symbol_GetUniformPointer@Base 6.4.3.p4.4
+ VIR_Symbol_SetPrecision@Base 6.4.3.p4.6-1
  VIR_TypeId_ComposeNonOpaqueType@Base 6.4.3.p4.4
+ VIR_TypeId_ComposeType@Base 6.4.3.p4.6-1
  VIR_TypeId_Conv2Enable@Base 6.4.3.p4.4
  VIR_TypeId_Conv2Swizzle@Base 6.4.3.p4.4
  VIR_TypeId_ConvertType@Base 6.4.3.p4.4
  VIR_Type_AddField@Base 6.4.3.p4.4
  VIR_Type_CalcByteOffset@Base 6.4.3.p4.4
  VIR_Type_CalcDataByteSizeForStruct@Base 6.4.3.p4.4
+ VIR_Type_GetComponentTypeByteSize@Base 6.4.3.p4.6-1
  VIR_Type_GetTypeAlignment@Base 6.4.3.p4.4
  VIR_Type_GetTypeByteSize@Base 6.4.3.p4.4
  VIR_Type_GetVirRegCount@Base 6.4.3.p4.4
+ VSC_IO_Finalize@Base 6.4.3.p4.6-1
+ VSC_IO_Init@Base 6.4.3.p4.6-1
+ VSC_IO_readBlock@Base 6.4.3.p4.6-1
+ VSC_IO_readInt@Base 6.4.3.p4.6-1
+ VSC_IO_readLong@Base 6.4.3.p4.6-1
+ VSC_IO_readUint@Base 6.4.3.p4.6-1
+ VSC_IO_writeBlock@Base 6.4.3.p4.6-1
+ VSC_IO_writeInt@Base 6.4.3.p4.6-1
+ VSC_IO_writeLong@Base 6.4.3.p4.6-1
+ VSC_IO_writeUint@Base 6.4.3.p4.6-1
  dbg_dumpCode@Base 6.4.3.p4.4
  dbg_dumpIR@Base 6.4.3.p4.4
  dbg_dumpMCode@Base 6.4.3.p4.4
@@ -5976,6 +5852,7 @@ libVSC.so imx-gpu-viv-wayland #MINVER#
  gcATTRIBUTE_IsPosition@Base 6.4.3.p4.4
  gcATTRIBUTE_IsSample@Base 6.4.3.p4.4
  gcATTRIBUTE_SetPrecision@Base 6.4.3.p4.4
+ gcATTRIBUTE_UpdateShadingMode@Base 6.4.3.p4.6-1
  gcBLOCKTABLE_AddData@Base 6.4.3.p4.4
  gcBLOCKTABLE_Destory@Base 6.4.3.p4.4
  gcBLOCKTABLE_GetAddress@Base 6.4.3.p4.4
@@ -5993,9 +5870,12 @@ libVSC.so imx-gpu-viv-wayland #MINVER#
  gcCreateInputConversionDirective@Base 6.4.3.p4.4
  gcCreateNP2TextureDirective@Base 6.4.3.p4.4
  gcCreateOutputConversionDirective@Base 6.4.3.p4.4
+ gcCreatePointSizeDirective@Base 6.4.3.p4.6-1
+ gcCreatePointSmoothDirective@Base 6.4.3.p4.6-1
  gcCreateReadImageDirective@Base 6.4.3.p4.4
  gcCreateRemoveAssignmentForAlphaChannel@Base 6.4.3.p4.4
  gcCreateSampleMaskDirective@Base 6.4.3.p4.4
+ gcCreateShadingModelDirective@Base 6.4.3.p4.6-1
  gcCreateTcsInputMismatch@Base 6.4.3.p4.4
  gcCreateWriteImageDirective@Base 6.4.3.p4.4
  gcCreateYFlippedShaderDirective@Base 6.4.3.p4.4
@@ -6052,7 +5932,7 @@ libVSC.so imx-gpu-viv-wayland #MINVER#
  gcLoadCLSingleKernel@Base 6.4.3.p4.4
  gcLoadComputeProgram@Base 6.4.3.p4.4
  gcLoadGraphicsProgram@Base 6.4.3.p4.4
- gcLoadProgramState@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# gcLoadProgramState@Base 6.4.3.p4.4
  gcOPT_DoConstantFoldingLTC@Base 6.4.3.p4.4
  gcOPT_GetUniformSrcLTC@Base 6.4.3.p4.4
  gcOPT_ResetFeature@Base 6.4.3.p4.4
@@ -6065,7 +5945,9 @@ libVSC.so imx-gpu-viv-wayland #MINVER#
  gcOUTPUT_GetName@Base 6.4.3.p4.4
  gcOUTPUT_GetNameEx@Base 6.4.3.p4.4
  gcOUTPUT_GetType@Base 6.4.3.p4.4
+ gcOUTPUT_IsRenderTarget@Base 6.4.3.p4.6-1
  gcOUTPUT_SetLayoutQualifier@Base 6.4.3.p4.4
+ gcOUTPUT_UpdateShadingMode@Base 6.4.3.p4.6-1
  gcOpt_Dump@Base 6.4.3.p4.4
  gcOptimizeShader@Base 6.4.3.p4.4
  gcQueryFormatConvertionDirectiveSampler@Base 6.4.3.p4.4
@@ -6153,6 +6035,7 @@ libVSC.so imx-gpu-viv-wayland #MINVER#
  gcSHADER_GetAttributeAndBuiltinInputCount@Base 6.4.3.p4.4
  gcSHADER_GetAttributeByName@Base 6.4.3.p4.4
  gcSHADER_GetAttributeCount@Base 6.4.3.p4.4
+ gcSHADER_GetBuiltinNameKind@Base 6.4.3.p4.6-1
  gcSHADER_GetCompilerVersion@Base 6.4.3.p4.4
  gcSHADER_GetConstantMemorySize@Base 6.4.3.p4.4
  gcSHADER_GetDebugInfo@Base 6.4.3.p4.4
@@ -6257,6 +6140,7 @@ libVSC.so imx-gpu-viv-wayland #MINVER#
  gcSHADER_ResetFlag@Base 6.4.3.p4.4
  gcSHADER_Save@Base 6.4.3.p4.4
  gcSHADER_SaveEx@Base 6.4.3.p4.4
+ gcSHADER_SetAllOutputShadingModeToFlat@Base 6.4.3.p4.6-1
  gcSHADER_SetAttrLocationByDriver@Base 6.4.3.p4.4
  gcSHADER_SetBuildOptions@Base 6.4.3.p4.4
  gcSHADER_SetCLProgramBinaryType@Base 6.4.3.p4.4
@@ -6267,8 +6151,10 @@ libVSC.so imx-gpu-viv-wayland #MINVER#
  gcSHADER_SetDefaultUBO@Base 6.4.3.p4.4
  gcSHADER_SetDisableEZ@Base 6.4.3.p4.4
  gcSHADER_SetEarlyFragTest@Base 6.4.3.p4.4
+ gcSHADER_SetFixedFunction@Base 6.4.3.p4.6-1
  gcSHADER_SetFlag@Base 6.4.3.p4.4
  gcSHADER_SetFragOutUsage@Base 6.4.3.p4.4
+ gcSHADER_SetGeoLayout@Base 6.4.3.p4.6-1
  gcSHADER_SetLocalMemorySize@Base 6.4.3.p4.4
  gcSHADER_SetMaxKernelFunctionArgs@Base 6.4.3.p4.4
  gcSHADER_SetNotStagesRelatedLinkError@Base 6.4.3.p4.4
@@ -6288,9 +6174,10 @@ libVSC.so imx-gpu-viv-wayland #MINVER#
  gcSaveCLSingleKernel@Base 6.4.3.p4.4
  gcSaveComputeProgram@Base 6.4.3.p4.4
  gcSaveGraphicsProgram@Base 6.4.3.p4.4
- gcSaveProgramState@Base 6.4.3.p4.4
+#MISSING: 6.4.3.p4.6-1# gcSaveProgramState@Base 6.4.3.p4.4
  gcSetCLCompiler@Base 6.4.3.p4.4
  gcSetGLSLCompiler@Base 6.4.3.p4.4
+ gcSetHWCaps@Base 6.4.3.p4.6-1
  gcSetOptimizerOption@Base 6.4.3.p4.4
  gcTYPE_GetTypeInfo@Base 6.4.3.p4.4
  gcTYPE_IsTypePacked@Base 6.4.3.p4.4
@@ -6313,6 +6200,9 @@ libVSC.so imx-gpu-viv-wayland #MINVER#
  gcValidateProgramPipeline@Base 6.4.3.p4.4
  gceLAYOUT_QUALIFIER_HasHWNotSupportingBlendMode@Base 6.4.3.p4.4
  gcvShaderTypeInfo@Base 6.4.3.p4.4
+ vscBLIterator_First@Base 6.4.3.p4.6-1
+ vscBLIterator_Init@Base 6.4.3.p4.6-1
+ vscBLIterator_Next@Base 6.4.3.p4.6-1
  vscBMS_Finalize@Base 6.4.3.p4.4
  vscBMS_Initialize@Base 6.4.3.p4.4
  vscBV_Finalize@Base 6.4.3.p4.4
@@ -6353,19 +6243,29 @@ libVSC.so imx-gpu-viv-wayland #MINVER#
  vscDIStep@Base 6.4.3.p4.4
  vscDestroyDebugInfo@Base 6.4.3.p4.4
  vscDestroyPrivateData@Base 6.4.3.p4.4
+ vscDestroyProgramLinkerParam@Base 6.4.3.p4.6-1
  vscDestroyShader@Base 6.4.3.p4.4
+ vscDestroyShaderResourceLayout@Base 6.4.3.p4.6-1
  vscDumper_Initialize@Base 6.4.3.p4.4
  vscDupDebugInfo@Base 6.4.3.p4.4
+ vscERR_CastErrCode2GcStatus@Base 6.4.3.p4.6-1
  vscERR_ReportError@Base 6.4.3.p4.4
  vscERR_ReportWarning@Base 6.4.3.p4.4
+ vscEvaluateCRC32@Base 6.4.3.p4.6-1
  vscExtractSubShader@Base 6.4.3.p4.4
+ vscFillDataForUavEntry@Base 6.4.3.p4.6-1
  vscFinalizeHwPipelineShadersStates@Base 6.4.3.p4.4
  vscFinalizeKEP@Base 6.4.3.p4.4
  vscFinalizePEP@Base 6.4.3.p4.4
  vscFinalizeSEP@Base 6.4.3.p4.4
  vscFreeVirIntrinsicLib@Base 6.4.3.p4.4
  vscGetDebugInfo@Base 6.4.3.p4.4
+ vscGetKernelFunctionCount@Base 6.4.3.p4.6-1
+ vscGetKernelFunctionNameByIndex@Base 6.4.3.p4.6-1
+ vscGetShaderIdFromShaderHandle@Base 6.4.3.p4.6-1
  vscGetShaderKindFromShaderHandle@Base 6.4.3.p4.4
+ vscGetShaderVersion@Base 6.4.3.p4.6-1
+ vscGetSizeInByteForUavEntry@Base 6.4.3.p4.6-1
  vscGetTemporaryDir@Base 6.4.3.p4.4
  vscImageSamplerHasImgLdCompCountIssue@Base 6.4.3.p4.4
  vscImageSamplerNeedLibFuncForHWCfg@Base 6.4.3.p4.4
@@ -6375,9 +6275,12 @@ libVSC.so imx-gpu-viv-wayland #MINVER#
  vscInitializeSEP@Base 6.4.3.p4.4
  vscIsValidSEP@Base 6.4.3.p4.4
  vscLinkHwShaders@Base 6.4.3.p4.4
+ vscLinkKernel@Base 6.4.3.p4.6-1
  vscLinkKernelProgram@Base 6.4.3.p4.4
  vscLinkProgram@Base 6.4.3.p4.4
  vscLoadEPFromBinary@Base 6.4.3.p4.4
+ vscLoadHwPipelineShadersStatesFromBinary@Base 6.4.3.p4.6-1
+ vscLoadKernel@Base 6.4.3.p4.6-1
  vscLoadShaderFromBinary@Base 6.4.3.p4.4
  vscMC_BeginCodec@Base 6.4.3.p4.4
  vscMC_DisassembleInst@Base 6.4.3.p4.4
@@ -6393,13 +6296,22 @@ libVSC.so imx-gpu-viv-wayland #MINVER#
  vscQueryImgLdStSuppport@Base 6.4.3.p4.4
  vscQueryShaderBinarySize@Base 6.4.3.p4.4
  vscQueryTexldUSupport@Base 6.4.3.p4.4
+ vscQueryWorkGroupSize@Base 6.4.3.p4.6-1
+ vscReadProgramLinkerParamFromBinary@Base 6.4.3.p4.6-1
+ vscReadShaderResourceFromIoBuffer@Base 6.4.3.p4.6-1
  vscSaveEPToBinary@Base 6.4.3.p4.4
+ vscSaveHwPipelineShadersStatesToBinary@Base 6.4.3.p4.6-1
+ vscSaveProgramLinkerParamToBinary@Base 6.4.3.p4.6-1
+ vscSaveShaderResourceToIoBuffer@Base 6.4.3.p4.6-1
  vscSaveShaderToBinary@Base 6.4.3.p4.4
  vscSetDriverVIRPath@Base 6.4.3.p4.4
+ vscSetIsInternalShader@Base 6.4.3.p4.6-1
  vscSetIsLibraryShader@Base 6.4.3.p4.4
+ vscSwapEndian@Base 6.4.3.p4.6-1
 libgbm.so.1 imx-gpu-viv-wayland #MINVER#
  _gbm_create_device@Base 6.4.3.p4.4
  gbm_bo_create@Base 6.4.3.p4.4
+ gbm_bo_create_with_modifiers2@Base 6.4.3.p4.6-1
  gbm_bo_create_with_modifiers@Base 6.4.3.p4.4
  gbm_bo_destroy@Base 6.4.3.p4.4
  gbm_bo_get_bpp@Base 6.4.3.p4.4
@@ -6429,6 +6341,7 @@ libgbm.so.1 imx-gpu-viv-wayland #MINVER#
  gbm_device_get_format_modifier_plane_count@Base 6.4.3.p4.4
  gbm_device_is_format_supported@Base 6.4.3.p4.4
  gbm_surface_create@Base 6.4.3.p4.4
+ gbm_surface_create_with_modifiers2@Base 6.4.3.p4.6-1
  gbm_surface_create_with_modifiers@Base 6.4.3.p4.4
  gbm_surface_destroy@Base 6.4.3.p4.4
  gbm_surface_get_in_fence_fd@Base 6.4.3.p4.4
@@ -6438,6 +6351,8 @@ libgbm.so.1 imx-gpu-viv-wayland #MINVER#
  gbm_surface_set_in_fence_fd@Base 6.4.3.p4.4
  gbm_surface_set_sync_post@Base 6.4.3.p4.4
 libgbm_viv.so imx-gpu-viv-wayland #MINVER#
+ __gbm_viv_dereference_handle@Base 6.4.3.p4.6-1
+ __gbm_viv_reference_handle@Base 6.4.3.p4.6-1
  _gGBMFormatTable@Base 6.4.3.p4.4
  gbm_viv_backend@Base 6.4.3.p4.4
  gbm_viv_create_buffers@Base 6.4.3.p4.4
