@@ -1,3 +1,2 @@
 gpu-core/usr/lib/lib*.so* /usr/lib/aarch64-linux-gnu/
-gpu-core/usr/lib/wayland/* /usr/lib/aarch64-linux-gnu/
 gpu-core/etc/Vivante.icd /etc/OpenCL/vendors/
