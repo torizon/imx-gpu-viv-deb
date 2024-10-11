@@ -1,3 +1,9 @@
+imx-gpu-viv (6.4.11.p2.4-1+toradex1) bookworm; urgency=medium
+
+  * d/control: add libdrm-dev as imx-gpu-viv-wayland-dev's dependency.
+
+ -- Carlos Henrique Lima Melara <carlos.melara@toradex.com>  Fri, 11 Oct 2024 16:02:23 -0300
+
 imx-gpu-viv (6.4.11.p2.4-1) UNRELEASED; urgency=medium
 
   * Bump to v6.4.11.p2.4
