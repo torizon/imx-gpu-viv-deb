@@ -56,7 +56,7 @@ Description: Vivante Wayland binaries
 Package: imx-gpu-viv-wayland-dev
 Section: libdevel
 Architecture: arm64
-Depends: imx-gpu-viv-wayland
+Depends: imx-gpu-viv-wayland, libdrm-dev
 Provides:
  libegl-dev,
  libgbm-dev,
