@@ -2,7 +2,7 @@ Source: imx-gpu-viv
 Priority: optional
 Maintainer: Toradex Packaging Team <debian-pkg-team@toradex.com>
 Build-Depends: ca-certificates,
- debhelper,
+ debhelper-compat (= 13),
  libdrm-common,
  libdrm2,
  libwayland-client0,
