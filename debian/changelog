@@ -1,3 +1,22 @@
+imx-gpu-viv (6.4.11.p2.4-2) bookworm; urgency=medium
+
+  * Team upload.
+  * Bump Standards-Version to 13.
+      - d/compat: remove;
+      - d/control: Build-Depends on debhelper-compat.
+  * d/control: update file.
+      - Fix Provides, Conflicts, Replaces declarations, including versioned
+        declarations to improve dependency resolution and updating packages;
+          - Remove libglx-dev from Provides;
+      - Update Architecture field to any;
+      - Update Maintainer field;
+      - Add Multi-Arch field so it's co-installable on other arches;
+      - Bump Standards-Version to 4.7.0.
+  * d/imx-gpu-viv-wayland.install: sort file.
+  * d/imx-gpu-viv-wayland.symbols: update symbols file.
+
+ -- Carlos Henrique Lima Melara <carlos.melara@toradex.com>  Fri, 18 Oct 2024 14:43:31 -0300
+
 imx-gpu-viv (6.4.11.p2.4-1+toradex1) bookworm; urgency=medium
 
   * d/control: add libdrm-dev as imx-gpu-viv-wayland-dev's dependency.
