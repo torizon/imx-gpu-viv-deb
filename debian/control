@@ -1,106 +1,96 @@
 Source: imx-gpu-viv
 Priority: optional
-Maintainer: Abdur Rehman <abdur.rehman@toradex.com>
-Build-Depends:
- ca-certificates,
- debhelper,
- libx11-6,
- libxfixes3,
- libxdamage1,
- libxext6,
+Maintainer: Toradex Packaging Team <debian-pkg-team@toradex.com>
+Build-Depends: ca-certificates,
+ debhelper-compat (= 13),
+ libdrm-common,
  libdrm2,
- libwayland-server0,
  libwayland-client0,
  libwayland-cursor0,
  libwayland-egl1,
- libdrm-common,
+ libwayland-server0,
+ libx11-6,
  libx11-data,
  libxau6,
  libxcb1,
+ libxdamage1,
  libxdmcp6,
+ libxext6,
+ libxfixes3,
  wget
-Standards-Version: 4.1.4
+Standards-Version: 4.7.0
 Section: libs
 
 Package: imx-gpu-viv-wayland
 Section: libs
-Architecture: arm64
-Provides:
- libegl1,
- libgbm1 (=22.2.0-1),
- libgl1,
- libgles1,
- libgles2,
- ocl-icd-libopencl1,
- libopencl-1.2-1
-Conflicts:
- libegl1,
+Architecture: any
+Multi-Arch: same
+Provides: libegl1 (= 1.6.0-1),
+ libgbm1 (= 22.3.6-1+deb12u1),
+ libgl1 (= 1.6.0-1),
+ libgles1 (= 1.6.0-1),
+ libgles2 (= 1.6.0-1),
+ libopencl-1.2-1,
+ ocl-icd-libopencl1
+Conflicts: libegl1,
  libgbm1,
  libgl1,
  libgles1,
  libgles2,
- ocl-icd-libopencl1,
- libopencl-1.2-1
-Replaces:
- libegl1,
+ libopencl-1.2-1,
+ ocl-icd-libopencl1
+Replaces: libegl1,
  libgbm1,
  libgl1,
  libgles1,
  libgles2,
- ocl-icd-libopencl1,
- libopencl-1.2-1
-Depends: ${shlibs:Depends}, ${misc:Depends}
+ libopencl-1.2-1,
+ ocl-icd-libopencl1
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Vivante Wayland binaries
  Vivante Userspace Graphics libraries for wayland.
 
 Package: imx-gpu-viv-wayland-dev
 Section: libdevel
-Architecture: arm64
-Depends: imx-gpu-viv-wayland, libdrm-dev
-Provides:
- libegl-dev,
- libgbm-dev,
- libgl-dev,
- libgles-dev,
- libglx-dev,
+Architecture: any
+Multi-Arch: same
+Depends: imx-gpu-viv-wayland (= ${binary:Version}),
+ libdrm-dev,
+ ${misc:Depends}
+Provides: libegl-dev (= 1.6.0-1),
+ libgbm-dev (= 22.3.6-1+deb12u1),
+ libgl-dev (= 1.6.0-1),
+ libgles-dev (= 1.6.0-1),
  ocl-icd-opencl-dev,
  opencl-c-headers,
- opencl-clhpp-headers,
- libgl1-mesa-dev,
- libgles1-mesa-dev,
- libgles2-mesa-dev,
- libegl1-mesa-dev
-Conflicts:
- libegl-dev,
+ opencl-clhpp-headers
+Conflicts: libegl-dev,
+ libegl1-mesa-dev (<< 19.3.0~rc6-1),
  libgbm-dev,
  libgl-dev,
+ libgl1-mesa-dev (<< 19.3.0~rc6-1),
  libgles-dev,
- libglx-dev,
+ libgles1-mesa-dev (<< 19.3.0~rc6-1),
+ libgles2-mesa-dev (<< 19.3.0~rc6-1),
  ocl-icd-opencl-dev,
  opencl-c-headers,
- opencl-clhpp-headers,
- libgl1-mesa-dev,
- libgles1-mesa-dev,
- libgles2-mesa-dev,
- libegl1-mesa-dev
-Replaces:
- libegl-dev,
+ opencl-clhpp-headers
+Replaces: libegl-dev,
+ libegl1-mesa-dev (<< 19.3.0~rc6-1),
  libgbm-dev,
  libgl-dev,
+ libgl1-mesa-dev (<< 19.3.0~rc6-1),
  libgles-dev,
- libglx-dev,
+ libgles1-mesa-dev (<< 19.3.0~rc6-1),
+ libgles2-mesa-dev (<< 19.3.0~rc6-1),
  ocl-icd-opencl-dev,
  opencl-c-headers,
- opencl-clhpp-headers,
- libgl1-mesa-dev,
- libgles1-mesa-dev,
- libgles2-mesa-dev,
- libegl1-mesa-dev
+ opencl-clhpp-headers
 Description: Development files for imx-gpu-viv-wayland
  Vivante development files for wayland.
 
 Package: imx-gpu-viv-tools
-Architecture: arm64
+Architecture: any
 Section: devel
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Vivante Tools
