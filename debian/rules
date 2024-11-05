@@ -19,9 +19,13 @@ override_dh_auto_configure:
 	./$(FILENAME).bin --auto-accept
 	mv $(FILENAME)/* .
 	rm -rf $(FILENAME)
+	# Also remove usr/include/KHR/khrplatform.h and
+	# usr/lib/pkgconfig/gl.pc. We are using Debian's
+	# default ones which comes from libgl-dev package.
+	find . -iname khrplatform.h -exec rm -vf '{}' \;
+	find . -iname gl.pc -exec rm -vf '{}' \;
+
 
 override_dh_strip_nondeterminism:
 
 override_dh_strip:
-
-# override_dh_makeshlibs:
