@@ -1,3 +1,12 @@
+imx-gpu-viv (6.4.11.p2.4-3) bookworm; urgency=medium
+
+  * Team upload.
+  * Do not provide libgl1 and libgl-dev anymore.
+      - d/control: remove Provides, Conflicts, Replaces on libgl1 and libgl-dev;
+      - d/rules: remove conflicting files in favor of Debian's version.
+
+ -- Carlos Henrique Lima Melara <carlos.melara@toradex.com>  Tue, 05 Nov 2024 14:41:42 -0300
+
 imx-gpu-viv (6.4.11.p2.4-2) bookworm; urgency=medium
 
   * Team upload.
