@@ -4,12 +4,13 @@
 # Uncomment this to turn on verbose mode.
 export DH_VERBOSE=1
 
+DEB_HOST_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
 DEB_BUILD_OPTIONS=noautodbgsym
+
 FILENAME="imx-gpu-viv-6.4.11.p2.4d-aarch64"
 URL="https://www.nxp.com/lgfiles/sdk/lsdk2406/$(FILENAME).bin"
 
-LIBVULKAN_VERSION=1.2.1
-LIBVULKAN_VERSION_MAJOR=1
+LIBVULKAN_API_VERSION=1.3.239
 
 %:
 	dh $@
@@ -22,9 +23,15 @@ override_dh_auto_configure:
 	# Also remove usr/include/KHR/khrplatform.h and
 	# usr/lib/pkgconfig/gl.pc. We are using Debian's
 	# default ones which comes from libgl-dev package.
-	find . -iname khrplatform.h -exec rm -vf '{}' \;
+	rm -rvf `find . -iname khr`
 	find . -iname gl.pc -exec rm -vf '{}' \;
+	# And vulkan headers too as is done in meta-freescale
+	rm -rvf `find . -iname vulkan`
 
+execute_before_dh_install:
+	sed -e "s|%libdir%|/usr/lib/$(DEB_HOST_GNU_TYPE)|" \
+	    -e "s|%api_version%|$(LIBVULKAN_API_VERSION)|" \
+	    -i `find . -iname imx_icd.json`
 
 override_dh_strip_nondeterminism:
 
