@@ -1,3 +1,14 @@
+imx-gpu-viv (6.4.11.p2.4-4) bookworm; urgency=medium
+
+  * Team upload.
+  * Do not install vulkan headers, but add imx_icd so it loads libvulkan_VSI
+      - d/extra_files/imx_icd.json: add file from meta-freescale to tell
+        vulkan-loader to use libvulkan_VSI provided by imx-gpu-viv-wayland;
+      - d/imx-gpu-viv-wayland.install: install imx_icd.json;
+      - d/rules: sed imx_icd.json with correct values and drop vulkan headers.
+
+ -- Carlos Henrique Lima Melara <carlos.melara@toradex.com>  Thu, 07 Nov 2024 18:10:11 -0300
+
 imx-gpu-viv (6.4.11.p2.4-3) bookworm; urgency=medium
 
   * Team upload.
