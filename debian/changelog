@@ -1,3 +1,16 @@
+imx-gpu-viv (6.4.11.p2.8-1) bookworm; urgency=medium
+
+  * Team upload.
+  * New upstream release 6.4.11.p2.8.
+  * Remove imx-gpu-viv-tools package which was dropped by NXP.
+      - d/control: drop imx-gpu-viv-tools stanza.
+      - d/imx-gpu-viv-tools.install: remove file.
+  * d/imx-gpu-wayland.symbols: update symbols from new upstream release.
+  * d/rules: bump imx-gpu-viv version to 6.4.11.p2.8.
+  * workflows: deb-builder: fix package name and add our repo to feeds.
+
+ -- Carlos Henrique Lima Melara <carlos.melara@toradex.com>  Mon, 30 Dec 2024 10:09:42 -0300
+
 imx-gpu-viv (6.4.11.p2.4-4) bookworm; urgency=medium
 
   * Team upload.
