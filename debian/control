@@ -82,10 +82,3 @@ Replaces: libegl-dev,
  opencl-clhpp-headers
 Description: Development files for imx-gpu-viv-wayland
  Vivante development files for wayland.
-
-Package: imx-gpu-viv-tools
-Architecture: any
-Section: devel
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: Vivante Tools
- Tools for Vivante
