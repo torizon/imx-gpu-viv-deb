@@ -460,6 +460,7 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoBUFFER_AppendFence@Base 6.4.3.p4.4
  gcoBUFFER_Capture@Base 6.4.3.p4.4
  gcoBUFFER_CaptureWrite@Base 6.4.3.p4.6
+ gcoBUFFER_CleanCAPBUF@Base 6.4.11.p2.8
  gcoBUFFER_Commit@Base 6.4.3.p4.4
  gcoBUFFER_Commit_Worker@Base 6.4.3.p4.4
  gcoBUFFER_Construct@Base 6.4.3.p4.4
@@ -478,6 +479,7 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoBUFFER_IsCAPBUFInUse@Base 6.4.3.p4.6
  gcoBUFFER_IsCaptureEnabled@Base 6.4.3.p4.4
  gcoBUFFER_IsEmpty@Base 6.4.3.p4.4
+ gcoBUFFER_MarkLocalMemoryUsage@Base 6.4.11.p2.8
  gcoBUFFER_OnIssueFence@Base 6.4.3.p4.4
  gcoBUFFER_PushCAPBUFMetaData@Base 6.4.3.p4.6
  gcoBUFFER_QueryCAPBUFMetaData@Base 6.4.3.p4.6
@@ -1160,6 +1162,7 @@ libGAL.so imx-gpu-viv-wayland #MINVER#
  gcoVX_BindKernel@Base 6.4.3.p4.4
  gcoVX_BindUniform@Base 6.4.3.p4.4
  gcoVX_CaptureState@Base 6.4.3.p4.4
+ gcoVX_CleanCAPBUF@Base 6.4.11.p2.8
  gcoVX_Commit@Base 6.4.3.p4.4
  gcoVX_Construct@Base 6.4.3.p4.4
  gcoVX_CreateHW@Base 6.4.3.p4.4
@@ -3377,6 +3380,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  gcfVX_AllocateVIRKernelArgs@Base 6.4.3.p4.6
  gcfVX_AllocateVIRPrvKernelArgs@Base 6.4.3.p4.6
  gcfVX_CaptureState@Base 6.4.3.p4.4
+ gcfVX_CleanCAPBUF@Base 6.4.11.p2.8
  gcfVX_Commit@Base 6.4.3.p4.4
  gcfVX_CreateShader@Base 6.4.3.p4.4
  gcfVX_CreateVIRShader@Base 6.4.3.p4.6
@@ -4479,6 +4483,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxnneGetGPUTensorMeanAxisShaderExecutable@Base 6.4.3.p4.4
  vxnneGetGPUTensorMulShaderExecutable@Base 6.4.3.p4.6
  vxnneGetGPUTensorPad2RefShaderExecutable@Base 6.4.3.p4.6
+ vxnneGetGPUTensorPad2RepShaderExecutable@Base 6.4.11.p2.8
  vxnneGetGPUTensorPad2ShaderExecutable@Base 6.4.3.p4.4
  vxnneGetGPUTensorPad2SymShaderExecutable@Base 6.4.3.p4.6
  vxnneGetGPUTensorPadShaderExecutable@Base 6.4.3.p4.4
@@ -4540,6 +4545,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxnneGetTensorMulShaderExecutable@Base 6.4.3.p4.4
  vxnneGetTensorPad2ShaderExecutable@Base 6.4.3.p4.4
  vxnneGetTensorPadRefShaderExecutable@Base 6.4.3.p4.4
+ vxnneGetTensorPadRepShaderExecutable@Base 6.4.11.p2.8
  vxnneGetTensorPadShaderExecutable@Base 6.4.3.p4.4
  vxnneGetTensorPadSymShaderExecutable@Base 6.4.3.p4.4
  vxnneGetTensorRoundingShaderExecutable@Base 6.4.3.p4.4
@@ -4814,7 +4820,6 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoGlobalData_InitShaderLocalMemory@Base 6.4.3.p4.4
  vxoGlobalData_IsFeatureAvailable@Base 6.4.3.p4.4
  vxoGlobalData_IsTPorTPLiteSupport@Base 6.4.3.p4.6
- vxoGraphOpt_ConvertAvgPool2Conv_delete1x1pooling@Base 6.4.3.p4.6
  vxoGraphOptimization@Base 6.4.3.p4.4
  vxoGraphOptimization_CalculateMaxDistance@Base 6.4.3.p4.6
  vxoGraphOptimization_ConcatTensors@Base 6.4.3.p4.4
@@ -4822,6 +4827,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoGraphOptimization_ConvertAvgPool2Conv@Base 6.4.3.p4.4
  vxoGraphOptimization_ConvertAvgPool2Conv_Support@Base 6.4.3.p4.6
  vxoGraphOptimization_ConvertAvgPool2Conv_createWeight@Base 6.4.3.p4.4
+ vxoGraphOptimization_ConvertAvgPool2Conv_delete1x1pooling@Base 6.4.11.p2.8
  vxoGraphOptimization_ConvertBatchFCAndTranspose@Base 6.4.3.p4.6
  vxoGraphOptimization_ConvertBatchFCAndTranspose_createGroupDyanmicWeightConv@Base 6.4.3.p4.6
  vxoGraphOptimization_ConvertBatchFCAndTranspose_createGroupMatrixB@Base 6.4.3.p4.6
@@ -4837,7 +4843,9 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoGraphOptimization_CreateWBParameter@Base 6.4.3.p4.4
  vxoGraphOptimization_DeleteReshape@Base 6.4.3.p4.4
  vxoGraphOptimization_DispelConcat@Base 6.4.3.p4.4
+ vxoGraphOptimization_GetPadMode@Base 6.4.11.p2.8
  vxoGraphOptimization_GetTensorBaseMemory@Base 6.4.3.p4.6
+ vxoGraphOptimization_IsPadOnChannel@Base 6.4.11.p2.8
  vxoGraphOptimization_IsWithinMaxDistance@Base 6.4.3.p4.6
  vxoGraphOptimization_LayerMerge@Base 6.4.3.p4.4
  vxoGraphOptimization_LayerSwaping@Base 6.4.3.p4.4
@@ -5494,6 +5502,7 @@ libOpenVX.so.1 imx-gpu-viv-wayland #MINVER#
  vxoXor_SH_GPU_Initializer@Base 6.4.3.p4.6
  vxo_getMaxShaderCopyTensorCount@Base 6.4.3.p4.4
  vxo_insertHandle@Base 6.4.3.p4.4
+ vxo_updateSHSwapRefInfo@Base 6.4.11.p2.8
  vxo_updateSwapHandle@Base 6.4.3.p4.4
  vxvxoGraphOptimization_isShapeMetElementWiseOpt@Base 6.4.3.p4.6
  writeBits@Base 6.4.3.p4.4
@@ -6001,6 +6010,7 @@ libVSC.so imx-gpu-viv-wayland #MINVER#
  gcSHADER_GetVariableCount@Base 6.4.3.p4.4
  gcSHADER_GetVariableIndexingRange@Base 6.4.3.p4.4
  gcSHADER_GetVariableTempTypes@Base 6.4.3.p4.4
+ gcSHADER_GetVecTypeHintString@Base 6.4.11.p2.8
  gcSHADER_GetVertexInstIdInputIndex@Base 6.4.3.p4.4
  gcSHADER_GetWorkGroupSize@Base 6.4.3.p4.4
  gcSHADER_GoVIRPass@Base 6.4.3.p4.4
