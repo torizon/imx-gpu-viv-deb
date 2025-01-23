@@ -1,3 +1,18 @@
+imx-gpu-viv (6.4.11.p2.8-2) bookworm; urgency=medium
+
+  * Team upload.
+  * Don't conflict with Debian's -dev libraries.
+      - debian/control: drop depends/conflicts/replaces from -dev
+      - debian/rules:
+          - drop the rules to find and delete .pc
+          - remove all .pc from imx-gpu-viv-wayland-dev.
+        files.
+      - debian/imx-gpu-viv-wayland.{preinst,postrm}: add diversion for .so symlinks
+      - debian/imx-gpu-viv-wayland-dev.{preinst,postrm}: add diversion for headers
+
+
+ -- Carlos Henrique Lima Melara <carlos.melara@toradex.com>  Thu, 23 Jan 2025 16:53:26 -0300
+
 imx-gpu-viv (6.4.11.p2.8-1) bookworm; urgency=medium
 
   * Team upload.
