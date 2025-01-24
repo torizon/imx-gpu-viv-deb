@@ -20,13 +20,6 @@ override_dh_auto_configure:
 	./$(FILENAME).bin --auto-accept
 	mv $(FILENAME)/* .
 	rm -rf $(FILENAME)
-	# Also remove usr/include/KHR/khrplatform.h and
-	# usr/lib/pkgconfig/gl.pc. We are using Debian's
-	# default ones which comes from libgl-dev package.
-	rm -rvf `find . -iname khr`
-	find . -iname gl.pc -exec rm -vf '{}' \;
-	# And vulkan headers too as is done in meta-freescale
-	rm -rvf `find . -iname vulkan`
 
 execute_before_dh_install:
 	sed -e "s|%libdir%|/usr/lib/$(DEB_HOST_GNU_TYPE)|" \

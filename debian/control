@@ -54,31 +54,5 @@ Multi-Arch: same
 Depends: imx-gpu-viv-wayland (= ${binary:Version}),
  libdrm-dev,
  ${misc:Depends}
-Provides: libegl-dev (= 1.6.0-1),
- libgbm-dev (= 22.3.6-1+deb12u1),
- libgles-dev (= 1.6.0-1),
- ocl-icd-opencl-dev,
- opencl-c-headers,
- opencl-clhpp-headers
-Conflicts: libegl-dev,
- libegl1-mesa-dev (<< 19.3.0~rc6-1),
- libgbm-dev,
- libgl1-mesa-dev (<< 19.3.0~rc6-1),
- libgles-dev,
- libgles1-mesa-dev (<< 19.3.0~rc6-1),
- libgles2-mesa-dev (<< 19.3.0~rc6-1),
- ocl-icd-opencl-dev,
- opencl-c-headers,
- opencl-clhpp-headers
-Replaces: libegl-dev,
- libegl1-mesa-dev (<< 19.3.0~rc6-1),
- libgbm-dev,
- libgl1-mesa-dev (<< 19.3.0~rc6-1),
- libgles-dev,
- libgles1-mesa-dev (<< 19.3.0~rc6-1),
- libgles2-mesa-dev (<< 19.3.0~rc6-1),
- ocl-icd-opencl-dev,
- opencl-c-headers,
- opencl-clhpp-headers
 Description: Development files for imx-gpu-viv-wayland
  Vivante development files for wayland.
